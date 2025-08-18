@@ -68,7 +68,47 @@
                         </defs>
                         </svg>
                     </div>
-                    <div class="pf-info-box"></div>
+                    <div class="pf-info-box">
+                        <div class="user-info-box">
+                            <div class="user-name">
+                                <span>유세미</span>
+                            </div>
+                            <div class="user-info">
+                                <div class="info-title">
+                                    <span>프로필</span>
+                                    <span>가치관</span>
+                                </div>
+                                <div class="info-desc">
+                                    <span>22세 / 대학생 / 자취 2년차</span>
+                                    <span>재밌게 살자!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-graph-box">
+                            <div class="info-title">
+                                <span>시간</span>
+                                <span>숙련도</span>
+                                <span>정보력</span>
+                            </div>
+                            <div class="info-graph">
+                                <div class="graph-box">
+                                    <div class="graph">
+                                        <div class="data data-1"></div>
+                                    </div>
+                                </div>
+                                <div class="graph-box">
+                                    <div class="graph">
+                                        <div class="data data-2"></div>
+                                    </div>
+                                </div>
+                                <div class="graph-box">
+                                    <div class="graph">
+                                        <div class="data data-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="info-box"></div>
             </div>
@@ -148,18 +188,95 @@
                 .pf-img-box {
                     width: 100%;
                     padding-bottom: 20px;
-
+                    
                     .pf-img {
                         margin: 0 auto;
                     }
                 }
-
+                
                 .pf-info-box {
                     width: 100%;
                     height: 321px;
                     background-color: #fff;
                     border: 2px solid #FF873D;
                     border-radius: 40px;
+                    padding: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                    .info-title, .info-desc {
+                        font-weight: 600;
+                        font-size: 18px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        width: 100%;
+                    }
+
+                    .user-info-box {
+                        width: 100%;
+                        
+                        .user-name {
+                            margin-bottom: 20px;
+                            font-size: 26px;
+                            font-weight: bold;
+                        }
+    
+                        .user-info {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+    
+                        .info-desc {
+                            font-weight: 400;
+                        }
+                    }
+
+
+                    .info-graph-box {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .info-graph {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                        }
+
+                        .graph-box {
+                            height: 27px;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .graph {
+                            width: 191px;
+                            height: 6px;
+                            border-radius: 10px;
+                            background-color: #E6E6E6;
+                        }
+
+                        .data {
+                            width: 58px;
+                            height: 100%;
+                            background-color: #FF873D;
+                            border-radius: 10px;
+                        }
+                        
+                        .data-2 {
+                            width: 70px;
+                        }
+
+                        .data-3 {
+                            width: 125px;
+                        }
+
+                    }
                 }
 
                 .info-box {
@@ -169,7 +286,6 @@
                     background-color: #fff;
                     border: 2px solid #FF873D;
                     border-radius: 40px;
-
                 }
             }
         }
