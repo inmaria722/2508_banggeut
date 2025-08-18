@@ -12,7 +12,9 @@
 </head>
 <body>
     <section class="persona-box">
-        <img class="bg-pattern" src="../imgs/bg-pattern.jpg" alt="">
+        <div class="bg-pattern">
+            <img src="../imgs/bg-pattern.jpg" alt="">
+        </div>
         <div class="con">
             <div class="title-box">
                 <div class="title">
@@ -179,15 +181,13 @@
         @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
         html,
-        html > body {
-            font-family: "Pretendard Variable";
+        html>body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system,
+                BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+                "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
         }
         /* ----------------- font - end ----------------- */
-
-        html > body {
-            font-family: 'Pretendard-Regular';
-        }
-
         h1, h2, h3, h4, h5, span {
             margin: 0;
             padding: 0;
