@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>persona</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <sec class="persona-box">
+        <img class="bg-pattern" src="https://i.ibb.co/v4QgBnsK/bg-pattern.jpg" alt="">
+        <div class="con">
+            <div class="title-box">
+                <div class="title">
+                    <h1>Persona</h1>
+                </div>
+                <div class="desc">
+                    <span>user research를 통한 인사이트를 기반으로 퍼소나 모델링을 진행했어요</span>
+                </div>
+            </div>
+            <div class="main-box"></div>
+        </div>
+    </sec>
+
+    <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Pretendard-Medium';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Pretendard-Semibold';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Pretendard-Bold';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        html > body {
+            font-family: 'Pretendard-Regular';
+        }
+
+        h1, h2, h3, h4, h5, span {
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
+
+        .persona-box {
+            width: 1920px;
+            
+            .bg-pattern {
+                position: absolute;
+                width: 1920px;
+                height: 1228px;
+                top: 0;
+                left: 0;
+                aspect-ratio: 1.78;
+                object-fit: cover;
+            }
+            
+            .con {
+                max-width: 1620px;
+                margin: 0 auto;
+                width: 100%;
+                padding: 200px 0px;
+                position: relative;
+            }
+            
+            .title-box {
+                margin-bottom: 100px;
+                width: 100%;
+                
+                .title {
+                    margin-bottom: 20px;
+                    color: #FF873D;
+                    font-size: 44px;
+                    font-weight: bold;
+                }
+                
+                .desc {
+                    font-size: 20px;
+                    color: #333333;
+                }
+            }
+        }
+    </style>
 </body>
 </html>
