@@ -359,11 +359,46 @@
                         </div>
                     </div>
                 </div>
-                <div class="current-box"></div>
+                <div class="current-box">
+                    <hr class="line"></hr>
+                    <div class="circle-box">
+                        <div class="circle">
+                            <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.2" d="M34 17.7812C34 27.1701 26.3888 34.7812 17 34.7812C7.61116 34.7812 0 27.1701 0 17.7812C0 8.39241 7.61116 0.78125 17 0.78125C26.3888 0.78125 34 8.39241 34 17.7812Z" fill="#FFBE90"/>
+                                <path d="M26 17.7812C26 22.7518 21.9706 26.7812 17 26.7812C12.0294 26.7812 8 22.7518 8 17.7812C8 12.8107 12.0294 8.78125 17 8.78125C21.9706 8.78125 26 12.8107 26 17.7812Z" fill="#FFBE90"/>
+                            </svg>
+                        </div>
+                        <div class="circle">
+                            <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.2" d="M34 17.7812C34 27.1701 26.3888 34.7812 17 34.7812C7.61116 34.7812 0 27.1701 0 17.7812C0 8.39241 7.61116 0.78125 17 0.78125C26.3888 0.78125 34 8.39241 34 17.7812Z" fill="#FFBE90"/>
+                                <path d="M26 17.7812C26 22.7518 21.9706 26.7812 17 26.7812C12.0294 26.7812 8 22.7518 8 17.7812C8 12.8107 12.0294 8.78125 17 8.78125C21.9706 8.78125 26 12.8107 26 17.7812Z" fill="#FFBE90"/>
+                            </svg>
+                        </div>
+                        <div class="circle">
+                            <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.2" d="M34 17.7812C34 27.1701 26.3888 34.7812 17 34.7812C7.61116 34.7812 0 27.1701 0 17.7812C0 8.39241 7.61116 0.78125 17 0.78125C26.3888 0.78125 34 8.39241 34 17.7812Z" fill="#FF873D"/>
+                                <path d="M26 17.7812C26 22.7518 21.9706 26.7812 17 26.7812C12.0294 26.7812 8 22.7518 8 17.7812C8 12.8107 12.0294 8.78125 17 8.78125C21.9706 8.78125 26 12.8107 26 17.7812Z" fill="#FF873D"/>
+                            </svg>
+                        </div>
+                        <div class="circle">
+                            <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.2" d="M34 17.7812C34 27.1701 26.3888 34.7812 17 34.7812C7.61116 34.7812 0 27.1701 0 17.7812C0 8.39241 7.61116 0.78125 17 0.78125C26.3888 0.78125 34 8.39241 34 17.7812Z" fill="#FFBE90"/>
+                                <path d="M26 17.7812C26 22.7518 21.9706 26.7812 17 26.7812C12.0294 26.7812 8 22.7518 8 17.7812C8 12.8107 12.0294 8.78125 17 8.78125C21.9706 8.78125 26 12.8107 26 17.7812Z" fill="#FFBE90"/>
+                            </svg>
+                        </div>
+                        <div class="circle">
+                            <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.2" d="M34 17.7812C34 27.1701 26.3888 34.7812 17 34.7812C7.61116 34.7812 0 27.1701 0 17.7812C0 8.39241 7.61116 0.78125 17 0.78125C26.3888 0.78125 34 8.39241 34 17.7812Z" fill="#FFBE90"/>
+                                <path d="M26 17.7812C26 22.7518 21.9706 26.7812 17 26.7812C12.0294 26.7812 8 22.7518 8 17.7812C8 12.8107 12.0294 8.78125 17 8.78125C21.9706 8.78125 26 12.8107 26 17.7812Z" fill="#FFBE90"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Current Level</span>
+                </div>
             </div>
         </div>
     </section>
-
+    
     <style>
         /* ----------------- font - start ----------------- */
         @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
@@ -591,6 +626,36 @@
 
                 }
 
+                .current-box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 50px 0;
+                    position: relative;
+
+                    .line {
+                        position: absolute;
+                        z-index: -1;
+                        top: 36%;
+                        width: 100%;
+                        border: 1px dotted #999;
+                        opacity: .5;
+                    }
+
+                    span {
+                        margin-top: 20px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #FF873D;
+                        text-align: center;
+                    }
+
+                    .circle-box {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 115px;
+                    }
+                }
             }
         }
     </style>
