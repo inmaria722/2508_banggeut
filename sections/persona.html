@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>persona</title>
 
+    <link rel="stylesheet" href="../style.css">
+
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -20,38 +22,68 @@
                     <span>user research를 통한 인사이트를 기반으로 퍼소나 모델링을 진행했어요</span>
                 </div>
             </div>
-            <div class="main-box"></div>
+            <div class="main-box">
+                <div class="profile-box">
+                    <div class="pf-img-box">
+                        <svg class="pf-img" width="278" height="278" viewBox="0 0 278 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_4712_132155)">
+                            <rect x="0.5" y="0.21875" width="277" height="277" rx="138.5" fill="#FF873D" />
+                            <path d="M3.36894 254.065L109.39 71.2705C122.58 48.5289 155.42 48.5289 168.61 71.2705L274.631 254.065C287.866 276.885 271.401 305.469 245.021 305.469H139H32.979C6.59846 305.469 -9.86663 276.885 3.36894 254.065Z" fill="url(#paint0_linear_4712_132155)" />
+                            <g filter="url(#filter0_n_4712_132155)">
+                                <path d="M3.36894 254.065L109.39 71.2705C122.58 48.5289 155.42 48.5289 168.61 71.2705L274.631 254.065C287.866 276.885 271.401 305.469 245.021 305.469H139H32.979C6.59846 305.469 -9.86663 276.885 3.36894 254.065Z" fill="url(#paint1_linear_4712_132155)" />
+                            </g>
+                            <circle cx="115.714" cy="180.847" r="11.1755" fill="#525252" />
+                            <circle cx="160.418" cy="180.847" r="11.1755" fill="#525252" />
+                            <circle cx="133.595" cy="214.374" r="20.116" fill="#FF8E3D" />
+                            <rect x="1.11755" y="-1.11755" width="33.5266" height="24.5862" rx="12.2931" transform="matrix(1 0 0 -1 104.538 225.538)" fill="#FF8E3D" stroke="#FFD588" stroke-width="2.23511" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_n_4712_132155" x="-1.30273" y="54.2148" width="280.604" height="251.254" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feTurbulence type="fractalNoise" baseFrequency="0.87642359733581543 0.87642359733581543" stitchTiles="stitch" numOctaves="3" result="noise" seed="4670" />
+                                <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+                                <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+                                    <feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 " />
+                                </feComponentTransfer>
+                                <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+                                <feFlood flood-color="rgba(255, 226, 197, 0.23)" result="color1Flood" />
+                                <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+                                <feMerge result="effect1_noise_4712_132155">
+                                    <feMergeNode in="shape" />
+                                    <feMergeNode in="color1" />
+                                </feMerge>
+                            </filter>
+                            <linearGradient id="paint0_linear_4712_132155" x1="202.448" y1="244.333" x2="205.321" y2="305.138" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.242195" stop-color="#FFD588" />
+                                <stop offset="1" stop-color="#FFBA4C" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_4712_132155" x1="202.448" y1="244.333" x2="205.504" y2="299.439" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0527574" stop-color="#FFCC7B" stop-opacity="0" />
+                                <stop offset="1" stop-color="#FFB135" />
+                            </linearGradient>
+                            <clipPath id="clip0_4712_132155">
+                                <rect x="0.5" y="0.21875" width="277" height="277" rx="138.5" fill="white" />
+                            </clipPath>
+                        </defs>
+                        </svg>
+                    </div>
+                    <div class="pf-info-box"></div>
+                </div>
+                <div class="info-box"></div>
+            </div>
         </div>
     </sec>
 
     <style>
-        @font-face {
-            font-family: 'Pretendard-Regular';
-            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-            font-weight: 400;
-            font-style: normal;
-        }
+        /* ----------------- font - start ----------------- */
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
-        @font-face {
-            font-family: 'Pretendard-Medium';
-            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-            font-weight: 500;
-            font-style: normal;
+        html,
+        html > body {
+            font-family: "Pretendard Variable";
         }
-
-        @font-face {
-            font-family: 'Pretendard-Semibold';
-            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-            font-weight: 600;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Pretendard-Bold';
-            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-            font-weight: 700;
-            font-style: normal;
-        }
+        /* ----------------- font - end ----------------- */
 
         html > body {
             font-family: 'Pretendard-Regular';
@@ -98,6 +130,46 @@
                 .desc {
                     font-size: 20px;
                     color: #333333;
+                }
+            }
+
+            .main-box {
+                width: 100%;
+                height: 618px;
+                display: flex;
+                gap: 40px;
+                align-items: center;
+                justify-content: center;
+                
+                .profile-box {
+                    width: 348px;
+                }
+                
+                .pf-img-box {
+                    width: 100%;
+                    padding-bottom: 20px;
+
+                    .pf-img {
+                        margin: 0 auto;
+                    }
+                }
+
+                .pf-info-box {
+                    width: 100%;
+                    height: 321px;
+                    background-color: #fff;
+                    border: 2px solid #FF873D;
+                    border-radius: 40px;
+                }
+
+                .info-box {
+                    width: 1232px;
+                    height: 100%;
+                    border: 1px solid red;
+                    background-color: #fff;
+                    border: 2px solid #FF873D;
+                    border-radius: 40px;
+
                 }
             }
         }
