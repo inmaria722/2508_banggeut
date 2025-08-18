@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>level</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <section class="level-box">
@@ -41,19 +44,67 @@
                     <span>포인트와 레벨업 시스템을 통해 지속적인 참여를 유도하고,<br>생활 능력 향상을 직관적으로 경험하도록 설계했어요</span>
                 </div>
             </div>
-            <div class="main-box"></div>
+            <div class="main-box">
+                <div class="gauge-box-wrap">
+                    <div class="gauge-box">
+                        <div class="gauge-box-con">
+                            <div class="level-text">
+                                <span>Lv.1</span>
+                                <span>Lv.2</span>
+                            </div>
+                            <div class="gauge-bar">
+                                <div class="bar">
+                                    <div class="bar-grow"></div>
+                                </div>
+                                <div class="clover">
+                                    <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.3139 16.0554C30.3139 24.4263 23.5279 31.2123 15.157 31.2123C6.786 31.2123 -4.43197e-07 24.4263 -2.85513e-07 16.0554C-1.27828e-07 7.68444 6.786 0.898438 15.157 0.898438C23.5279 0.898438 30.3139 7.68444 30.3139 16.0554Z" fill="#FFA264"/>
+                                    <path d="M30.3139 40.8679C30.3139 49.2388 23.5279 56.0248 15.157 56.0248C6.786 56.0248 -4.43197e-07 49.2388 -2.85513e-07 40.8679C-1.27828e-07 32.4969 6.786 25.7109 15.157 25.7109C23.5279 25.7109 30.3139 32.4969 30.3139 40.8679Z" fill="#FFA264"/>
+                                    <path d="M55.1176 16.0554C55.1176 24.4263 48.3316 31.2123 39.9607 31.2123C31.5897 31.2123 24.8037 24.4263 24.8037 16.0554C24.8037 7.68444 31.5897 0.898438 39.9607 0.898438C48.3316 0.898438 55.1176 7.68444 55.1176 16.0554Z" fill="#FFA264"/>
+                                    <path d="M55.1176 40.8679C55.1176 49.2388 48.3316 56.0248 39.9607 56.0248C31.5897 56.0248 24.8037 49.2388 24.8037 40.8679C24.8037 32.4969 31.5897 25.7109 39.9607 25.7109C48.3316 25.7109 55.1176 32.4969 55.1176 40.8679Z" fill="#FFA264"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="speech-bubble">
+                                <div class="triangle">
+                                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00028 0.34375L15.7945 13.8438H0.206055L8.00028 0.34375Z" fill="#FFA264"/>
+                                    </svg>
+                                </div>
+                                <span>10,000P 더 모으면 레벨 UP!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="level-card-box"></div>
+                <div class="current-box"></div>
+            </div>
         </div>
     </section>
 
     <style>
+        /* ----------------- font - start ----------------- */
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+        html,
+        html>body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system,
+                BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+                "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+        /* ----------------- font - end ----------------- */
+
         .level-box {
             width: 1920px;
-            background-color: #fff;
+            height: 1748.44px;
+            overflow: hidden;
             position: relative;
 
             .bg-circle {
                 position: absolute;
-                top: 616.39px;
+                top: 700px;
+                z-index: -1;
             }
 
             .con {
@@ -94,6 +145,76 @@
                         font-size: 20px;
                         font-weight: 400;
                         line-height: 2;
+                    }
+                }
+
+                .main-box {
+                    .gauge-box-wrap {
+                        padding: 50px 0 150px;
+                    }
+
+                    .gauge-box {
+                        margin: 0 auto;
+                        padding: 30px 50px;
+                        width: 736px;
+                        background-color: #F0F9F3;
+                        border: 5px solid rgba(110, 196, 135, 0.3);
+                        border-radius: 20px;   
+                    }
+
+                    .level-text {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #999;
+                    }
+
+                    .gauge-bar {
+                        padding: 18px 0 40px;
+                        position: relative;
+
+                        .bar {
+                            height: 25px;
+                            background-color: #fff;
+                            border-radius: 100px;
+                        }
+
+                        .bar-grow {
+                            background-color: #B4E5C4;
+                            height: 100%;
+                            width: 48%;
+                            border-radius: 100px;
+                        }
+
+                        .clover {
+                            position: absolute;
+                            z-index: 1;
+                            left: 285px;
+                            top: 2px;
+                        }
+                    }
+
+                    .speech-bubble {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+
+                        .triangle {
+                            position: absolute;
+                            top: -13px;
+                        }
+
+                        span {
+                            padding: 14px 20px;
+                            background-color: #FFA264;
+                            border-radius: 15px;
+                            color: #fff;
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
                     }
                 }
             }
