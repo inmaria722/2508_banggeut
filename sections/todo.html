@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class="todo-box">
+        <div class="con">
+            <div class="category-box">
+                <div class="category">
+                    <span>할 일 관리하기</span>
+                </div>
+            </div>
+            <div class="main-box">
+                <div class="left">
+                    <div class="phone-mockup">
+                        <img src="../imgs/phone-mockup(home-bottom).png" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img-box">
+                        <div class="todo-item">
+                            <img src="../imgs/to-do-box.png" alt="">
+                        </div>
+                    </div>
+                    <div class="title-box">
+                        <div class="title">
+                            <span>방긋과 함께<br><span class="orange">일정을 관리</span>해보세요</span>
+                        </div>
+                        <div class="desc">
+                            <span>자취 생활을 쉽게 관리할 수 있도록 할 일 관리 기능을 추가했어요<br>나만의 비서나 메모장 등 다양하게 활용할 수 있어요</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        /* ----------------- font - start ----------------- */
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+        html,
+        html>body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system,
+                BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+                "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+        /* ----------------- font - end ----------------- */
+
+
+        .todo-box {
+            width: 1920px;
+
+            .con {
+                max-width: 1620px;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                padding: 200px 0;
+
+                .title-box {
+                    padding: 58px 0 0 16px;
+
+                    .title {
+                        font-size: 44px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+                    
+                    .desc {
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 2;
+                    }
+
+                    .orange {
+                        color: #FF873D;
+                    }
+                }
+
+                .category-box {
+                    margin-bottom: 40px;
+
+                    .category {
+                        background-color: rgba(255,135,61,0.16);
+                        padding: 4px 12px;
+                        border-radius: 4px;
+                        display: inline-block;
+                        color: #FF873D;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+
+                .main-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 40px;
+
+                }
+                
+                .left {
+                    width: 928px;
+                    height: 700px;
+                    background-color: #FF873D;
+                    border-radius: 60px;
+                    padding: 100px 80px 0 80px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+
+                    .phone-mockup {
+                        width: 586px;
+                        height: 1218px;
+                        filter: drop-shadow(0px 0px 50px rgba(255, 244, 236, 0.3));
+                    }
+                }
+
+                .right {
+                    flex-grow: 1;
+
+                    .img-box {
+                        height: 400px;
+                        background-color: #3C98FF;
+                        border-radius: 60px;
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    .todo-item {
+                        position: absolute;
+                        width: 564px;
+                        height: 470.75px;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    </style>
+</body>
+</html>
