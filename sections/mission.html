@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mission</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class="mission-box">
+        <div class="con">
+            <div class="category-box">
+                <div class="category">
+                    <span>미션 수행하기</span>
+                </div>
+            </div>
+            <div class="main-box">
+                <div class="left">
+                    <div class="title-box">
+                        <div class="title">
+                            <span><span class="orange">데일리 미션</span>을 수행하고<br>포인트를 쌓아보세요</span>
+                        </div>
+                        <div class="desc">
+                            <span>사용자가 매일의 작은 미션을 완수하며 포인트를 모으고,<br>이를 통해 캐릭터 성장과 다양한 보상을 경험하도록 설계했어요</span>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <div class="popup">
+                            <img src="../imgs/mission-popup.png" alt="">
+                        </div>
+                        <div class="particles">
+                            <svg width="652" height="474" viewBox="0 0 652 474" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.6">
+                            <path d="M522.219 262.75L512.388 275.669" stroke="#FF873D" stroke-width="13.2321"/>
+                            <path d="M541.358 186.281L528.306 182.949" stroke="#3C98FF" stroke-width="8.27005"/>
+                            <path d="M559.657 117.953L564.006 133.594" stroke="#FF873D" stroke-width="13.2321"/>
+                            <path d="M564.585 232.469L568.934 248.109" stroke="#6EC487" stroke-width="13.2321"/>
+                            <path d="M617.479 82.0938L614.91 66.0645" stroke="#6EC487" stroke-width="8.27005"/>
+                            <path d="M619.858 208.484L614.34 200.181" stroke="#6EC487" stroke-width="8.27005"/>
+                            <path d="M275 32.7344L269.482 24.4314" stroke="#6EC487" stroke-width="8.27005"/>
+                            <path d="M517.187 19.0391L511.668 10.7361" stroke="#6EC487" stroke-width="8.27005"/>
+                            <path d="M547.134 53.7344L541.138 68.8204" stroke="#3C98FF" stroke-width="13.2321"/>
+                            <path d="M423.256 18.8281L429.849 30.5753" stroke="#FFF4EC" stroke-width="13.2321"/>
+                            <path d="M126.012 26.7031L141.279 21.1849" stroke="#FF873D" stroke-width="13.2321"/>
+                            <path d="M37.4365 71.25L46.593 81.1305" stroke="#3C98FF" stroke-width="8.27005"/>
+                            <path d="M98.0977 131.164L102.93 115.666" stroke="#FF873D" stroke-width="13.2321"/>
+                            <path d="M133.1 89.1875L137.932 73.6895" stroke="#6EC487" stroke-width="13.2321"/>
+                            <path d="M117.35 203.312L110.811 218.171" stroke="#6EC487" stroke-width="8.27005"/>
+                            <path d="M71.6777 22.1484L71.8085 32.1171" stroke="#6EC487" stroke-width="8.27005"/>
+                            <path d="M44.1182 225.875L44.249 235.844" stroke="#6EC487" stroke-width="8.27005"/>
+                            <path d="M37.7881 180.461L51.0095 171.041" stroke="#3C98FF" stroke-width="13.2321"/>
+                            <path d="M129.944 280.164L130.779 266.719" stroke="#FFF4EC" stroke-width="13.2321"/>
+                            </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="phone-mockup">
+                        <img src="../imgs/phone-mockup(mission).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        /* ----------------- font - start ----------------- */
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+        html,
+        html>body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system,
+                BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+                "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+        /* ----------------- font - end ----------------- */
+
+
+        .mission-box {
+            width: 1920px;
+
+            .con {
+                max-width: 1620px;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                padding: 200px 0;
+
+                .title-box {
+                    height: 300px;
+                    padding: 16px 0 0 16px;
+
+                    .title {
+                        font-size: 44px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+                    
+                    .desc {
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 2;
+                    }
+
+                    .orange {
+                        color: #FF873D;
+                    }
+                }
+
+                .category-box {
+                    margin-bottom: 40px;
+
+                    .category {
+                        background-color: rgba(255,135,61,0.16);
+                        padding: 4px 12px;
+                        border-radius: 4px;
+                        display: inline-block;
+                        color: #FF873D;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+
+                .main-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 40px;
+
+                }
+                
+                .right {
+                    width: 928px;
+                    height: 780px;
+                    background-color: #6EC487;
+                    border-radius: 60px;
+                    padding: 100px 80px 0 80px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+
+                    .phone-mockup {
+                        width: 586px;
+                        height: 1218px;
+                        filter: drop-shadow(0px 0px 50px rgba(255, 244, 236, 0.3));
+                    }
+                }
+
+                .left {
+                    flex-grow: 1;
+
+                    .img-box {
+                        height: 480px;
+                        background-color: #3C98FF;
+                        border-radius: 60px;
+                        position: relative;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .popup {
+                        width: 330px;
+                        height: 377.36px;
+                        box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .particles {
+                        position: absolute;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    </style>
+</body>
+</html>
