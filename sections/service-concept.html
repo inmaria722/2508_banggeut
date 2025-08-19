@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service-concept</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <section class="service-concept-box">
+        <div class="con">
+            <div class="title-box">
+                <div class="category">
+                    <span>Service Concept</span>
+                </div>
+                <div class="title">
+                    <span>1인 가구를 위한,<br>따뜻하고 든든한 라이프 가이드</span>
+                </div>
+                <div class="desc">
+                    <span>자취생이 주로 생활하는 ‘방’과, 삶의 어려움을 해결하고 ‘방긋’ 웃게 되는 순간<br>혼자 사는 공간에서 마주치는 불편을 줄이고, 생활을 더 가볍게 만드는 것이 우리의 역할</span>
+                </div>
+            </div>
+            <div class="app-logo-box">
+                <div class="phone-box">
+                    <img src="../imgs/service-concept-mockup.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        /* ----------------- font - start ----------------- */
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+        html,
+        html>body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system,
+                BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+                "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+        /* ----------------- font - end ----------------- */
+
+
+        .service-concept-box {
+            width: 1920px;
+
+            .con {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            .title-box {
+                width: 50%;
+                padding: 200px 0;
+                margin-left: 150px;
+
+                .category {
+                    color: #FF873D;
+                    gap: 6px;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+
+                .title {
+                    font-size: 44px;
+                    font-weight: 700;
+                    margin: 20px 0 30px 0;
+                }
+                
+                .desc {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 2;
+                }
+            }
+
+            .app-logo-box {
+                width: 50%;
+                height: 100%;
+                padding-left: 220px;
+                padding-bottom: 220px;
+
+                .phone-box {
+                    width: 800px;
+                    height: auto;
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    </style>
+</body>
+</html>
