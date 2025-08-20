@@ -10,7 +10,9 @@
     }
 /* ----------------- font - end ----------------- */
 
-
+::-webkit-scrollbar {
+  display: none;
+}
 
 * {
     box-sizing: border-box;

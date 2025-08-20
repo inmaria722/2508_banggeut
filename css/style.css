@@ -6,6 +6,10 @@ html > body {
 }
 
 /* ----------------- font - end ----------------- */
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   white-space: nowrap;
