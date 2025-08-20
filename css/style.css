@@ -1276,7 +1276,6 @@ img {
 /* ----------------- guide improvement - end ----------------- */
 /* ----------------- app screens - start ----------------- */
 .app-screen-box {
-  width: 1920px;
   height: 2700px;
   background-color: #FF873D;
   overflow: hidden;
@@ -1346,4 +1345,73 @@ img {
 
 /* ----------------- app screens - end ----------------- */
 /* ----------------- footer - start ----------------- */
+footer {
+  width: 1920px;
+  background-color: #FF873D;
+  position: relative;
+  overflow: hidden;
+}
+footer span {
+  display: block;
+}
+footer .semi {
+  position: absolute;
+  left: 1136.28px;
+  top: 30px;
+}
+footer .clover {
+  position: absolute;
+}
+footer .clover-right {
+  left: 1697px;
+  top: 40px;
+}
+footer .clover-left {
+  left: 1358px;
+  top: 766.81px;
+}
+footer .con {
+  max-width: 1620px;
+  width: 100%;
+  padding: 200px 0;
+  margin: 0 auto;
+  color: #fff;
+}
+footer .con .box-1 {
+  margin-bottom: 150px;
+}
+footer .con .box-1 .clover-box {
+  margin-bottom: 20px;
+}
+footer .con .box-1 .clover-box .clover {
+  position: static;
+}
+footer .con .box-1 .title {
+  font-size: 80px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+footer .con .box-1 .desc {
+  font-size: 26px;
+  font-weight: 600;
+}
+footer .con .box-2, footer .con .box-3 {
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-weight: 500;
+}
+footer .con .box-2 span:last-child, footer .con .box-3 span:last-child {
+  font-size: 24px;
+  opacity: 0.8;
+}
+footer .con .box-3 {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 0;
+}
+footer .con .sub {
+  margin-bottom: 20px;
+}
+
 /* ----------------- footer - end ----------------- */
