@@ -1435,6 +1435,123 @@ img {
 
 
 /* ----------------- challenge - start ----------------- */
+.challenge-box {
+    background-color: #FFFAF6;
+    position: relative;
+    z-index: -1;
+
+    .illustrates {
+        position: absolute;
+        top: 982.6px;
+        z-index: -1;
+    }
+
+    .con {
+        max-width: 1620px;
+        width: 100%;
+        height: 1270px;
+        margin: 0 auto;
+        padding: 200px 0 0;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .title-box {
+            margin-bottom: 100px;
+
+            .title {
+                text-align: center;
+                font-size: 44px;
+                font-weight: 700;
+                margin: 20px 0 30px 0;
+            }
+            
+            .desc {
+                text-align: center;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 2;
+            }
+        }
+
+        .category-box-c {
+            text-align: center;
+        }
+
+        .category-2 {
+            background-color: rgba(255,135,61,0.16);
+            padding: 4px 12px;
+            border-radius: 4px;
+            display: inline-block;
+            color: #FF873D;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .main-box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            .left, .right {
+                width: 50%;
+                display: flex;
+            }
+
+            .left {
+                justify-content: flex-end;
+                padding-right: 40px;
+            }
+
+            .phone-mockup {
+                width: 510px;
+            }
+
+            .right {
+                justify-content: flex-start;
+                padding-left: 50px;
+                padding-top: 50px;
+                
+                .challenge-list-box-wrap {
+                    display: flex;
+                    align-items: center;
+                    gap: 25px;
+                }
+
+                .challenge-list-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 14px;
+                }
+
+                .challenge-item {
+                    padding: 30px 20px;
+                    width: 421px;
+                    background: #FF873D;
+                    border-radius: 12px;
+                }
+
+                span {
+                    display: block;
+                    margin-bottom: 4px;
+                    color: #FFBE90;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+
+                span:last-child {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
 /* ----------------- challenge - end ----------------- */
 
 
