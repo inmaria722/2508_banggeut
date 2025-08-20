@@ -35,6 +35,114 @@ img {
 
 
 /* ----------------- overview - start ----------------- */
+.overview-box {
+height: 920px;
+position: relative;
+background-color: #ffffff;
+overflow: hidden;
+
+.bg-pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    aspect-ratio: 1.78;
+    object-fit: cover;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px;
+    max-width: 1620px;
+    margin: 0 auto;
+    width: 100%;
+
+    .title-box {
+    flex-direction: column;
+    margin: 30px 0px 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .category {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        flex: 0 0 auto;
+        span {
+        position: relative;
+        width: fit-content;
+        font-weight: 700;
+        color: #ff873d;
+        font-size: 16px;
+        text-align: center;
+        white-space: nowrap;
+        }
+    }
+
+    .title {
+        justify-content: center;
+        margin: 30px 0px 20px;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        width: 100%;
+        flex: 0 0 auto;
+
+        h1 {
+        font-weight: 700;
+        color: #333333;
+        font-size: 44px;
+        text-align: center;
+        line-height: 58px;
+        }
+    }
+    }
+
+    .objects {
+    position: absolute;
+    width: 3827px;
+    height: 1149px;
+    top: 351px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .square {
+        position: absolute;
+        top: 111px;
+        left: 2031px;
+    }
+
+    .pentagon {
+        position: absolute;
+        top: 0px;
+        left: 850px;
+    }
+
+    .clover {
+        position: absolute;
+        top: 156px;
+        left: 1558px;
+    }
+
+    .star {
+        position: absolute;
+        top: 166px;
+        left: 800px;
+    }
+
+    .triangle {
+        position: absolute;
+        top: 21px;
+        left: 2373px;
+    }
+    }
+}
+}
 /* ----------------- overview - end ----------------- */
 
 
