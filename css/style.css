@@ -437,6 +437,74 @@ img {
 
 /* ----------------- character - end ----------------- */
 /* ----------------- app banner - start ----------------- */
+.app-banner {
+  background-color: #FF873D;
+  width: 1920px;
+  height: 2171px;
+  position: relative;
+  overflow: hidden;
+}
+.app-banner .spray {
+  position: absolute;
+  top: 134px;
+  left: 0;
+}
+.app-banner .bubble {
+  position: absolute;
+  bottom: -5px;
+}
+.app-banner .semi {
+  position: absolute;
+  top: 908.33px;
+}
+.app-banner .basket {
+  position: absolute;
+  top: 1124.49px;
+  right: 0;
+}
+.app-banner .tool {
+  position: absolute;
+  left: 469.93px;
+  bottom: -5px;
+}
+.app-banner .star-right {
+  position: absolute;
+  left: 1100px;
+  top: 200px;
+}
+.app-banner .star-left {
+  position: absolute;
+  left: 500px;
+  top: 400px;
+}
+.app-banner .con {
+  position: absolute;
+  z-index: 10;
+  max-width: 1620px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 250px 0;
+}
+.app-banner .con .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.app-banner .con .phone-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.app-banner .con .phone-box img {
+  width: 1077px;
+  height: 1200px;
+  display: block;
+}
+
 /* ----------------- app banner - end ----------------- */
 /* ----------------- level - start ----------------- */
 /* ----------------- level - end ----------------- */
