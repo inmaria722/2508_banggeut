@@ -692,6 +692,182 @@ img {
 /* ----------------- blue - start ----------------- */
 /* ----------------- blue - end ----------------- */
 /* ----------------- needs - start ----------------- */
+.needs-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+}
+.needs-box .title-box,
+.needs-box .category,
+.needs-box .title,
+.needs-box .desc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.needs-box .con {
+  display: flex;
+  flex-direction: column;
+  max-width: 1620px;
+  width: 1620px;
+  align-items: center;
+  padding: 200px 0;
+  position: relative;
+}
+.needs-box .title-box {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 100px;
+}
+.needs-box .title-box .category span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff873d;
+}
+.needs-box .title-box .title {
+  padding: 20px 0 30px;
+}
+.needs-box .title-box .title h1 {
+  font-weight: 700;
+  color: #333;
+  font-size: 44px;
+  text-align: center;
+  line-height: 58px;
+}
+.needs-box .title-box .desc span {
+  width: 743px;
+  font-weight: 400;
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+}
+.needs-box .main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 0 138px;
+  width: 100%;
+}
+.needs-box .interview-box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 80px;
+  width: 100%;
+  border-radius: 40px;
+  background: linear-gradient(0deg, #fffaf6 0%, #fffaf6 100%);
+  overflow: hidden;
+}
+.needs-box .interview-box-wrap .interview-title {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.needs-box .interview-box-wrap .interview-title h1 {
+  color: #ffa264;
+  font-size: 44px;
+  line-height: 58px;
+  font-weight: 700;
+}
+.needs-box .interview-box-wrap .interview-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100%;
+  border-top: 1px solid #ffa264;
+}
+.needs-box .interview-box-wrap .interview-box .interview {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+}
+.needs-box .interview-box-wrap .interview-box .interview .num {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.needs-box .interview-box-wrap .interview-box .interview .num .num-span {
+  width: 50px;
+  height: 50px;
+  background-color: #ffa264;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.needs-box .interview-box-wrap .interview-box .interview .num .num-span span {
+  font-weight: 700;
+  color: #fff;
+  font-size: 20px;
+}
+.needs-box .interview-box-wrap .interview-box .interview .answer {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: right;
+  line-height: 50px;
+  color: transparent;
+}
+.needs-box .interview-box-wrap .interview-box .interview .answer .text-wrapper-3 {
+  color: #2c1506;
+}
+.needs-box .interview-box-wrap .interview-box .interview .answer .text-wrapper-4 {
+  color: #1a1a1a;
+}
+.needs-box .interview-box-wrap .interview-box .interview .answer .text-wrapper-5 {
+  color: #fff;
+}
+.needs-box .interview-box-wrap .interview-box .interview .answer .text-wrapper-6 {
+  color: #ffa264;
+}
+.needs-box .insight-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200px 138px 0;
+  width: 100%;
+}
+.needs-box .insight-box .insight-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 40px;
+  background-color: #fff4ec;
+  border-radius: 104px;
+}
+.needs-box .insight-box .insight-btn span {
+  font-weight: 700;
+  color: #ffa264;
+  font-size: 36px;
+  line-height: 58px;
+  white-space: nowrap;
+}
+.needs-box .insight-box .insight-btn .insight-circle {
+  width: 90px;
+  height: 90px;
+}
+.needs-box .insight-box .insight-text span {
+  font-weight: 700;
+  color: #ff873d;
+  font-size: 40px;
+  line-height: 58px;
+  text-align: center;
+}
+.needs-box .bg-clover {
+  position: absolute;
+  width: 531px;
+  height: 113px;
+  top: 1752px;
+  left: 0;
+}
+
 /* ----------------- needs - end ----------------- */
 /* ----------------- keyword - start ----------------- */
 /* ----------------- keyword - end ----------------- */
