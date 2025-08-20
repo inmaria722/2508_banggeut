@@ -17,6 +17,10 @@
     white-space: nowrap;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
 
 
 /* ----------------- banner - start ----------------- */
@@ -82,11 +86,15 @@
     .bg-pattern {
         position: absolute;
         width: 1920px;
-        height: 1228px;
+        height: 1234px;
         top: 0;
         left: 0;
         aspect-ratio: 1.78;
         object-fit: cover;
+
+        img {
+            height: 100%;
+        }
     }
     
     .con {
@@ -292,6 +300,31 @@
 
 
 /* ----------------- userflow - start ----------------- */
+.userflow-box {
+    background-color: #FFFAF6;
+    width: 1920px;
+    
+    .con {
+        width: 100%;
+        padding: 100px 0;
+    }
+}
+
+.userflow-box-1 {
+    padding: 0 0 0 150px;
+    
+    img {
+        border-radius: 40px 0 0 40px;
+    }
+}
+
+.userflow-box-2 {
+    padding: 0 150px 0 0;
+
+    img {
+        border-radius: 0 40px 40px 0;
+    }
+}
 /* ----------------- userflow - end ----------------- */
 
 

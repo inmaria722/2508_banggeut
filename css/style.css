@@ -11,6 +11,11 @@ html > body {
   white-space: nowrap;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 /* ----------------- banner - start ----------------- */
 /* ----------------- banner - end ----------------- */
 /* ----------------- overview - start ----------------- */
@@ -41,12 +46,15 @@ html > body {
 .persona-box .bg-pattern {
   position: absolute;
   width: 1920px;
-  height: 1228px;
+  height: 1234px;
   top: 0;
   left: 0;
   aspect-ratio: 1.78;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.persona-box .bg-pattern img {
+  height: 100%;
 }
 .persona-box .con {
   max-width: 1620px;
@@ -215,6 +223,29 @@ html > body {
 
 /* ----------------- persona - end ----------------- */
 /* ----------------- userflow - start ----------------- */
+.userflow-box {
+  background-color: #FFFAF6;
+  width: 1920px;
+}
+.userflow-box .con {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.userflow-box-1 {
+  padding: 0 0 0 150px;
+}
+.userflow-box-1 img {
+  border-radius: 40px 0 0 40px;
+}
+
+.userflow-box-2 {
+  padding: 0 150px 0 0;
+}
+.userflow-box-2 img {
+  border-radius: 0 40px 40px 0;
+}
+
 /* ----------------- userflow - end ----------------- */
 /* ----------------- wireframes - start ----------------- */
 /* ----------------- wireframes - end ----------------- */
