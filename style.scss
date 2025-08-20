@@ -453,6 +453,113 @@ img {
 
 
 /* ----------------- character - start ----------------- */
+.character-box {
+    background-color: #fff;
+    color: #1A1A1A;
+    position: relative;
+    z-index: -1;
+
+    .triangle-big {
+        position: absolute;
+        right: 0;
+        top: 1200px;
+        z-index: -1;
+    }
+
+    .triangle-small {
+        position: absolute;
+        left: 185.25px;
+        top: 555.64px;
+        z-index: -2;
+    }
+
+    .con {
+        max-width: 1340px;
+        width: 100%;
+        padding: 200px 0;
+        margin: 0 auto;
+    }
+
+    .title-box {
+        margin-bottom: 100px;
+
+        .category {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FF873D;
+            gap: 6px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 44px;
+            font-weight: 700;
+            margin: 20px 0 30px 0;
+        }
+    }
+
+    .character {
+        margin-bottom: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .text-box {
+            padding: 100px 0;
+            
+            .angle {
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-weight: 700;
+            }
+            
+            .name {
+                font-size: 44px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            .desc {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 2;
+            color: #333;
+            }
+
+            .yellow {
+                color: #FFB747;
+            }
+
+            .green {
+                color: #6EC487;
+            }
+
+            .blue {
+                color: #3C98FF;
+            }
+
+            .orange {
+                color: #FF873D;
+            }
+        }
+        
+        .box-2 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    .speech-bubble {
+        position: absolute;
+        left: 780px;
+        top: 32.39px;
+    }
+}
 /* ----------------- character - end ----------------- */
 
 

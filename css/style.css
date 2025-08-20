@@ -344,6 +344,97 @@ img {
 
 /* ----------------- logo - end ----------------- */
 /* ----------------- character - start ----------------- */
+.character-box {
+  background-color: #fff;
+  color: #1A1A1A;
+  position: relative;
+  z-index: -1;
+}
+.character-box .triangle-big {
+  position: absolute;
+  right: 0;
+  top: 1200px;
+  z-index: -1;
+}
+.character-box .triangle-small {
+  position: absolute;
+  left: 185.25px;
+  top: 555.64px;
+  z-index: -2;
+}
+.character-box .con {
+  max-width: 1340px;
+  width: 100%;
+  padding: 200px 0;
+  margin: 0 auto;
+}
+.character-box .title-box {
+  margin-bottom: 100px;
+}
+.character-box .title-box .category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FF873D;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.character-box .title-box .title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  margin: 20px 0 30px 0;
+}
+.character-box .character {
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.character-box .character .text-box {
+  padding: 100px 0;
+}
+.character-box .character .text-box .angle {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.character-box .character .text-box .name {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.character-box .character .text-box .desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2;
+  color: #333;
+}
+.character-box .character .text-box .yellow {
+  color: #FFB747;
+}
+.character-box .character .text-box .green {
+  color: #6EC487;
+}
+.character-box .character .text-box .blue {
+  color: #3C98FF;
+}
+.character-box .character .text-box .orange {
+  color: #FF873D;
+}
+.character-box .character .box-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.character-box .speech-bubble {
+  position: absolute;
+  left: 780px;
+  top: 32.39px;
+}
+
 /* ----------------- character - end ----------------- */
 /* ----------------- app banner - start ----------------- */
 /* ----------------- app banner - end ----------------- */
