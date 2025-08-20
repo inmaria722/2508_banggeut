@@ -424,6 +424,30 @@ img {
 
 
 /* ----------------- logo - start ----------------- */
+.logo-box {
+    height: 650px;
+
+    .con {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .symbol-box, .typography-box {
+            width: 50%;
+            height: 100%;
+            background-color: #FF873D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .typography-box {
+            background-color: #fff;
+        }
+    }
+}
 /* ----------------- logo - end ----------------- */
 
 
