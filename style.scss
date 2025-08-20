@@ -900,6 +900,65 @@ div {
 
 
 /* ----------------- patch - start ----------------- */
+.patch-box {
+background-color: #ff873d;
+position: relative;
+overflow: hidden;
+
+.bg-star {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: visible;
+}
+
+.con {
+    max-width: 1620px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 230px 0px 200px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    .title {
+    overflow: hidden;
+
+    div {
+        display: flex;
+        justify-content: center;
+        gap: 160px;
+    }
+
+    p {
+        color: #ffffff;
+        text-align: center;
+        font-size: 44px;
+        line-height: 80px;
+        font-weight: 700;
+    }
+    }
+
+    .patch {
+    background-color: #6ec487;
+    border-radius: 1000px;
+    border: 10px solid #f0f9f3;
+    padding: 10px 35px;
+    position: absolute;
+    top: 307px;
+    left: 50%;
+    transform: rotate(-4.266deg) translateX(-63%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    }
+}
+}
 /* ----------------- patch - end ----------------- */
 
 
