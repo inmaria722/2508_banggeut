@@ -17,6 +17,10 @@
     white-space: nowrap;
 }
 
+section {
+    width: 1920px;
+}
+
 img {
     display: block;
     width: 100%;
@@ -80,7 +84,6 @@ img {
 
 /* ----------------- persona - start ----------------- */
 .persona-box {
-    width: 1920px;
     color: #1A1A1A;
     
     .bg-pattern {
@@ -302,7 +305,6 @@ img {
 /* ----------------- userflow - start ----------------- */
 .userflow-box {
     background-color: #FFFAF6;
-    width: 1920px;
     
     .con {
         width: 100%;
@@ -331,7 +333,6 @@ img {
 
 /* ----------------- wireframes - start ----------------- */
 .wireframes-box {
-    width: 1920px;
     background-color: #FFFAF6;
 
     .con {
@@ -368,6 +369,56 @@ img {
 
 
 /* ----------------- service concept - start ----------------- */
+.service-concept-box {
+    .con {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title-box {
+        width: 50%;
+        padding: 200px 0;
+        margin-left: 150px;
+
+        .category {
+            color: #FF873D;
+            gap: 6px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .title {
+            font-size: 44px;
+            font-weight: 700;
+            margin: 20px 0 30px 0;
+        }
+        
+        .desc {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 2;
+        }
+    }
+
+    .app-logo-box {
+        width: 50%;
+        height: 100%;
+        padding-left: 220px;
+        padding-bottom: 220px;
+
+        .phone-box {
+            width: 800px;
+            height: auto;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
 /* ----------------- service concept - end ----------------- */
 
 
