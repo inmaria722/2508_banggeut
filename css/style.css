@@ -3299,7 +3299,7 @@ img {
 .community-improvement-box .con .main-box {
   background-color: rgba(240, 249, 243, 0.5);
   border-radius: 100px;
-  padding: 50px 0px;
+  padding: 150px 0px;
   display: flex;
   gap: 180px;
   justify-content: flex-end;
@@ -3324,7 +3324,7 @@ img {
   position: relative;
 }
 .community-improvement-box .con .main-box .to-be .text-box {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .community-improvement-box .con .main-box .to-be .text-box .to-be-green {
   color: #6ec487;
