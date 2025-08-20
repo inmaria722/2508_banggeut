@@ -248,6 +248,27 @@ img {
 
 /* ----------------- userflow - end ----------------- */
 /* ----------------- wireframes - start ----------------- */
+.wireframes-box {
+  width: 1920px;
+  background-color: #FFFAF6;
+}
+.wireframes-box .con {
+  max-width: 1620px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.wireframes-box .con .title-box {
+  font-size: 26px;
+  font-weight: 700;
+  color: #FF873D;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.wireframes-box .con img {
+  width: 100%;
+}
+
 /* ----------------- wireframes - end ----------------- */
 /* ----------------- ia - start ----------------- */
 /* ----------------- ia - end ----------------- */
