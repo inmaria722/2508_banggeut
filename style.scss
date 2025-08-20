@@ -895,6 +895,107 @@ div {
 
 
 /* ----------------- whiteboard - start ----------------- */
+.whiteboard-box {
+background: #ff873d;
+overflow: hidden;
+
+.con {
+    max-width: 1620px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 200px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .whiteboard {
+    background-color: #fffaf6;
+    border-radius: 30px;
+    padding: 150px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1620px;
+    position: relative;
+    overflow: hidden;
+
+    .box {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        height: 95px;
+        position: relative;
+
+        span {
+        color: #666666;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36px;
+        }
+
+        .orange {
+        border-radius: 30px;
+        border: 2px solid #ff873d;
+        padding: 10px 20px;
+        color: #ff873d;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        }
+
+        .green {
+        border-radius: 30px;
+        border: 2px solid #6ec487;
+        padding: 10px 20px;
+        color: #6ec487;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        }
+    }
+
+    .check-o {
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        left: 639px;
+        top: 156.78px;
+    }
+
+    .check-g {
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        left: 732px;
+        top: 252.78px;
+    }
+
+    .pen-r {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+    }
+
+    .pen-b {
+        position: absolute;
+        bottom: 0;
+        left: 202px;
+    }
+
+    .teacher-semi {
+        width: 458.61px;
+        height: 448.74px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    }
+}
+}
 /* ----------------- whiteboard - end ----------------- */
 
 
