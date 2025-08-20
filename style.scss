@@ -985,6 +985,121 @@ img {
 
 
 /* ----------------- home - start ----------------- */
+.home-box {
+    width: 1920px;
+
+    .con {
+        max-width: 1620px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 200px 0;
+
+        .title-box {
+            margin-bottom: 100px;
+
+            .category {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #FF873D;
+                gap: 6px;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .title {
+                text-align: center;
+                font-size: 44px;
+                font-weight: 700;
+                margin: 20px 0 30px 0;
+            }
+            
+            .desc {
+                text-align: center;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 2;
+            }
+        }
+
+        .main-box {
+            height: 1456px;
+            border-radius: 200px;
+            background-color: #FFFAF6;
+            position: relative;
+
+            .bg-text {
+                font-size: 250px;
+                font-weight: 700;
+                position: absolute;
+                left: 217px;
+                top: 106px;
+                color: #FF873D;
+                opacity: .04;
+            }
+
+            .phone-mockup {
+                position: absolute;
+                width: 415.89px;
+                height: 861.62px;
+                left: 862.43px;
+                top: 157.94px;
+                transform: rotate(25.98deg);
+            }
+
+            .phone-left {
+                left: 247.43px;
+                top: 358.94px;
+            }
+
+            .line-right {
+                position: absolute;
+                left: 1272px;
+                top: 744px;
+                transform: rotate(90deg);
+            }
+
+            .line-left {
+                position: absolute;
+                left: 524px;
+                top: 1183px;
+            }
+
+            .desc-box {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+            
+            .desc-left {
+                position: absolute;
+                left: 651px;
+                top: 1172px;
+            }
+
+            .desc-right {
+                position: absolute;
+                left: 1263px;
+                top: 937px;
+            }
+
+            .desc-title {
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: 700;
+                color: #FF873D;
+            }
+
+            .desc-text {
+                font-size: 20px;
+                font-weight: 400;
+                color: #333;
+            }
+        }
+    }
+}
 /* ----------------- home - end ----------------- */
 
 
