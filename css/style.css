@@ -29,6 +29,38 @@ img {
 /* ----------------- overview - start ----------------- */
 /* ----------------- overview - end ----------------- */
 /* ----------------- marquee - start ----------------- */
+.marquee-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  background-color: #ff873d;
+  overflow: hidden;
+}
+.marquee-box div {
+  display: flex;
+  gap: 20px;
+}
+.marquee-box div span {
+  font-weight: 700;
+  color: #ffbe90;
+  font-size: 36px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.marquee-box div .clover {
+  width: 43px;
+  height: 43px;
+}
+.marquee-box div .pentagon {
+  width: 43px;
+  height: 43px;
+}
+.marquee-box div .triangle {
+  width: 50px;
+  height: 43px;
+}
+
 /* ----------------- marquee - end ----------------- */
 /* ----------------- background - start ----------------- */
 .background-box {

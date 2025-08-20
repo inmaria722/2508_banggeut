@@ -40,6 +40,42 @@ img {
 
 
 /* ----------------- marquee - start ----------------- */
+.marquee-box {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px 0px;
+background-color: #ff873d;
+overflow: hidden;
+
+div {
+    display: flex;
+    gap: 20px;
+
+    span {
+    font-weight: 700;
+    color: #ffbe90;
+    font-size: 36px;
+    line-height: normal;
+    text-transform: uppercase;
+    }
+
+    .clover {
+    width: 43px;
+    height: 43px;
+    }
+
+    .pentagon {
+    width: 43px;
+    height: 43px;
+    }
+
+    .triangle {
+    width: 50px;
+    height: 43px;
+    }
+}
+}
 /* ----------------- marquee - end ----------------- */
 
 
