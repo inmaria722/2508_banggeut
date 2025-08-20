@@ -31,6 +31,330 @@ img {
 /* ----------------- marquee - start ----------------- */
 /* ----------------- marquee - end ----------------- */
 /* ----------------- background - start ----------------- */
+.background-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #ffffff;
+}
+.background-box .text-box {
+  display: flex;
+  padding-bottom: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.background-box .text-box span {
+  font-weight: 600;
+  color: #2c1506;
+  font-size: 20px;
+  text-align: center;
+}
+.background-box .source {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100%;
+}
+.background-box .source span {
+  font-weight: 400;
+  color: #808080;
+  font-size: 16px;
+  text-align: center;
+  line-height: 23px;
+}
+.background-box .con {
+  display: flex;
+  flex-direction: column;
+  max-width: 1620px;
+  align-items: flex-start;
+  padding: 200px 0;
+  flex-grow: 1;
+  position: relative;
+}
+.background-box .title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 100px;
+  width: 100%;
+}
+.background-box .title-box .category {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.background-box .title-box .category span {
+  font-weight: 700;
+  color: #ff873d;
+  font-size: 16px;
+}
+.background-box .title-box .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 30px;
+  width: 100%;
+}
+.background-box .title-box .title h1 {
+  font-weight: 700;
+  color: #333;
+  font-size: 44px;
+  text-align: center;
+  line-height: 58px;
+}
+.background-box .title-box .desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.background-box .title-box .desc span {
+  width: 743px;
+  font-weight: 400;
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+}
+.background-box .main-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.background-box .main-box .background-1 {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  height: 579.22px;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 50px;
+}
+.background-box .main-box .background-1 .graph-box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 439.22px;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box img {
+  position: absolute;
+  width: 324px;
+  height: 240px;
+  margin-left: 50px;
+  margin-top: 42px;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .graph {
+  display: flex;
+  flex-direction: column;
+  height: 283.22px;
+  padding-top: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .graph .top-num,
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .graph .mid-num,
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .graph .bottom-num {
+  display: flex;
+  align-items: center;
+  padding: 15.78px 0 5px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .graph .top-num span,
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .graph .mid-num span,
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .graph .bottom-num span {
+  font-weight: 400;
+  color: #666;
+  font-size: 12px;
+  white-space: nowrap;
+  width: 100%;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .graph .num-2024 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 15px;
+  position: absolute;
+  top: 12px;
+  left: 210px;
+  background-color: #ff873d;
+  border-radius: 40px;
+  z-index: 999;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .graph .num-2024 h1 {
+  font-weight: 700;
+  color: #fff4ec;
+  font-size: 20px;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .year {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 39px;
+  padding: 10px 8px 0 0;
+  width: 100%;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .year .year-box {
+  display: inline-flex;
+  align-items: center;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .year .year-box span {
+  font-weight: 700;
+  font-size: 16px;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .year .year-box.y-2020 span {
+  color: #ccc;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .year .year-box.y-2021 span {
+  color: #b3b3b3;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .year .year-box.y-2022 span {
+  color: #808080;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .year .year-box.y-2023 span {
+  color: #ffa264;
+}
+.background-box .main-box .background-1 .graph-box-wrap .graph-box .year .year-box.y-2024 span {
+  color: #ff873d;
+}
+.background-box .main-box .background-2 {
+  display: flex;
+  width: 540px;
+  height: 577.22px;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 50px;
+  position: relative;
+  overflow: hidden;
+}
+.background-box .main-box .background-2::before {
+  content: "";
+  position: absolute;
+  padding: 1px;
+  border-radius: 40px;
+}
+.background-box .main-box .background-2 .reason-box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.background-box .main-box .background-2 .reason-box-wrap .reason-box {
+  display: flex;
+  flex-direction: column;
+  height: 312.22px;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.background-box .main-box .background-2 .reason-box-wrap .reason-box .reason,
+.background-box .main-box .background-2 .reason-box-wrap .reason-box .reason-2 {
+  padding: 15px 80px;
+  border-radius: 30px 30px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.background-box .main-box .background-2 .reason-box-wrap .reason-box .reason span,
+.background-box .main-box .background-2 .reason-box-wrap .reason-box .reason-2 span {
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.background-box .main-box .background-2 .reason-box-wrap .reason-box .reason {
+  background-color: #ffa264;
+}
+.background-box .main-box .background-2 .reason-box-wrap .reason-box .reason-2 {
+  background-color: #ff873d;
+}
+.background-box .main-box .background-3 {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  height: 574.22px;
+  align-items: center;
+  padding: 70px 50px;
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.background-box .main-box .background-3 .news-box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.background-box .main-box .background-3 .news-box-wrap .name {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.background-box .main-box .background-3 .news-box-wrap .name .name-box {
+  display: inline-flex;
+  padding: 6px 24px;
+  background-color: rgba(255, 142, 61, 0.6);
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+}
+.background-box .main-box .background-3 .news-box-wrap .name .name-box span {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.background-box .main-box .background-3 .news-box-wrap .desc-box {
+  display: flex;
+  flex-direction: column;
+  height: 310.22px;
+  align-items: flex-start;
+  width: 100%;
+}
+.background-box .main-box .background-3 .news-box-wrap .desc-box .span-box {
+  display: flex;
+  padding: 10px 0 30px;
+  width: 100%;
+}
+.background-box .main-box .background-3 .news-box-wrap .desc-box .span-box span {
+  font-weight: 600;
+  color: #2c1506;
+  font-size: 20px;
+}
+.background-box .main-box .background-3 .news-box-wrap .desc-box .desc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.background-box .main-box .background-3 .news-box-wrap .desc-box .desc span {
+  font-weight: 400;
+  color: #808080;
+  font-size: 20px;
+  line-height: 32px;
+  white-space: wrap;
+}
+
 /* ----------------- background - end ----------------- */
 /* ----------------- whiteboard - start ----------------- */
 /* ----------------- whiteboard - end ----------------- */
@@ -49,6 +373,7 @@ img {
 /* ----------------- persona - start ----------------- */
 .persona-box {
   color: #1A1A1A;
+  position: relative;
 }
 .persona-box .bg-pattern {
   position: absolute;
