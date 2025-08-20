@@ -12,6 +12,13 @@
 
 
 
+* {
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+
+
 /* ----------------- banner - start ----------------- */
 /* ----------------- banner - end ----------------- */
 
@@ -68,6 +75,218 @@
 
 
 /* ----------------- persona - start ----------------- */
+.persona-box {
+    width: 1920px;
+    color: #1A1A1A;
+    
+    .bg-pattern {
+        position: absolute;
+        width: 1920px;
+        height: 1228px;
+        top: 0;
+        left: 0;
+        aspect-ratio: 1.78;
+        object-fit: cover;
+    }
+    
+    .con {
+        max-width: 1620px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 200px 0px;
+        position: relative;
+    }
+    
+    .title-box {
+        margin-bottom: 100px;
+        width: 100%;
+        
+        .title {
+            margin-bottom: 20px;
+            color: #FF873D;
+            font-size: 44px;
+            font-weight: bold;
+        }
+        
+        .desc {
+            font-size: 20px;
+            color: #333333;
+        }
+    }
+
+    .main-box {
+        width: 100%;
+        height: 618px;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        
+        .profile-box {
+            width: 348px;
+            
+            .pf-img-box {
+                width: 100%;
+                padding-bottom: 20px;
+                
+                .pf-img {
+                    margin: 0 auto;
+                }
+            }
+            
+            .pf-info-box {
+                width: 100%;
+                height: 321px;
+                background-color: #fff;
+                border: 2px solid #FF873D;
+                border-radius: 40px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                .info-title, .info-desc {
+                    font-weight: 600;
+                    font-size: 18px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 100%;
+                }
+
+                .user-info-box {
+                    width: 100%;
+                    
+                    .user-name {
+                        margin-bottom: 20px;
+                        font-size: 26px;
+                        font-weight: bold;
+                    }
+
+                    .user-info {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .info-desc {
+                        font-weight: 400;
+                    }
+                }
+
+
+                .info-graph-box {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .info-graph {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+
+                    .graph-box {
+                        height: 27px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .graph {
+                        width: 191px;
+                        height: 6px;
+                        border-radius: 10px;
+                        background-color: #E6E6E6;
+                    }
+
+                    .data {
+                        width: 58px;
+                        height: 100%;
+                        background-color: #FF873D;
+                        border-radius: 10px;
+                    }
+                    
+                    .data-2 {
+                        width: 70px;
+                    }
+
+                    .data-3 {
+                        width: 125px;
+                    }
+
+                }
+            }
+        }
+        
+
+        .info-box {
+            width: 1232px;
+            height: 100%;
+            border: 1px solid red;
+            background-color: #fff;
+            border: 2px solid #FF873D;
+            border-radius: 40px;
+            padding: 0 60px;
+
+            .persona-talk {
+                font-size: 30px;
+                font-weight: 600;
+                padding-top: 40px;
+                padding-bottom: 60px;
+
+                span {
+                    color: #FF873D;
+                }
+            }
+
+            .info {
+                margin-bottom: 60px;
+                display: flex;
+
+                .title {
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+
+                .info-item {
+                    width: 50%;
+                }
+
+                .keywords {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 20px;
+                    padding: 0px 0px 10px;
+
+                    span {
+                        background-color: #FFF4EC;
+                        border: 1px solid #FFBE90;
+                        border-radius: 50px;
+                        padding: 10px 20px;
+                        color: #FF873D;
+                    }
+
+                    .orange {
+                        background-color: #FF873D;
+                        border: none;
+                        color: #fff;
+                    }
+                }
+
+                .info-item-text {
+                    list-style: inside;
+                    font-size: 20px;
+                    font-weight: 400;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
 /* ----------------- persona - end ----------------- */
 
 

@@ -1,0 +1,268 @@
+/* ----------------- font - start ----------------- */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+html,
+html > body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* ----------------- font - end ----------------- */
+* {
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+/* ----------------- banner - start ----------------- */
+/* ----------------- banner - end ----------------- */
+/* ----------------- overview - start ----------------- */
+/* ----------------- overview - end ----------------- */
+/* ----------------- marquee - start ----------------- */
+/* ----------------- marquee - end ----------------- */
+/* ----------------- background - start ----------------- */
+/* ----------------- background - end ----------------- */
+/* ----------------- whiteboard - start ----------------- */
+/* ----------------- whiteboard - end ----------------- */
+/* ----------------- patch - start ----------------- */
+/* ----------------- patch - end ----------------- */
+/* ----------------- survey - start ----------------- */
+/* ----------------- survey - end ----------------- */
+/* ----------------- blue - start ----------------- */
+/* ----------------- blue - end ----------------- */
+/* ----------------- needs - start ----------------- */
+/* ----------------- needs - end ----------------- */
+/* ----------------- keyword - start ----------------- */
+/* ----------------- keyword - end ----------------- */
+/* ----------------- goal - start ----------------- */
+/* ----------------- goal - end ----------------- */
+/* ----------------- persona - start ----------------- */
+.persona-box {
+  width: 1920px;
+  color: #1A1A1A;
+}
+.persona-box .bg-pattern {
+  position: absolute;
+  width: 1920px;
+  height: 1228px;
+  top: 0;
+  left: 0;
+  aspect-ratio: 1.78;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.persona-box .con {
+  max-width: 1620px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 200px 0px;
+  position: relative;
+}
+.persona-box .title-box {
+  margin-bottom: 100px;
+  width: 100%;
+}
+.persona-box .title-box .title {
+  margin-bottom: 20px;
+  color: #FF873D;
+  font-size: 44px;
+  font-weight: bold;
+}
+.persona-box .title-box .desc {
+  font-size: 20px;
+  color: #333333;
+}
+.persona-box .main-box {
+  width: 100%;
+  height: 618px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.persona-box .main-box .profile-box {
+  width: 348px;
+}
+.persona-box .main-box .profile-box .pf-img-box {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.persona-box .main-box .profile-box .pf-img-box .pf-img {
+  margin: 0 auto;
+}
+.persona-box .main-box .profile-box .pf-info-box {
+  width: 100%;
+  height: 321px;
+  background-color: #fff;
+  border: 2px solid #FF873D;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.persona-box .main-box .profile-box .pf-info-box .info-title, .persona-box .main-box .profile-box .pf-info-box .info-desc {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.persona-box .main-box .profile-box .pf-info-box .user-info-box {
+  width: 100%;
+}
+.persona-box .main-box .profile-box .pf-info-box .user-info-box .user-name {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.persona-box .main-box .profile-box .pf-info-box .user-info-box .user-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.persona-box .main-box .profile-box .pf-info-box .user-info-box .info-desc {
+  font-weight: 400;
+}
+.persona-box .main-box .profile-box .pf-info-box .info-graph-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.persona-box .main-box .profile-box .pf-info-box .info-graph-box .info-graph {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.persona-box .main-box .profile-box .pf-info-box .info-graph-box .graph-box {
+  height: 27px;
+  display: flex;
+  align-items: center;
+}
+.persona-box .main-box .profile-box .pf-info-box .info-graph-box .graph {
+  width: 191px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #E6E6E6;
+}
+.persona-box .main-box .profile-box .pf-info-box .info-graph-box .data {
+  width: 58px;
+  height: 100%;
+  background-color: #FF873D;
+  border-radius: 10px;
+}
+.persona-box .main-box .profile-box .pf-info-box .info-graph-box .data-2 {
+  width: 70px;
+}
+.persona-box .main-box .profile-box .pf-info-box .info-graph-box .data-3 {
+  width: 125px;
+}
+.persona-box .main-box .info-box {
+  width: 1232px;
+  height: 100%;
+  border: 1px solid red;
+  background-color: #fff;
+  border: 2px solid #FF873D;
+  border-radius: 40px;
+  padding: 0 60px;
+}
+.persona-box .main-box .info-box .persona-talk {
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.persona-box .main-box .info-box .persona-talk span {
+  color: #FF873D;
+}
+.persona-box .main-box .info-box .info {
+  margin-bottom: 60px;
+  display: flex;
+}
+.persona-box .main-box .info-box .info .title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.persona-box .main-box .info-box .info .info-item {
+  width: 50%;
+}
+.persona-box .main-box .info-box .info .keywords {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0px 0px 10px;
+}
+.persona-box .main-box .info-box .info .keywords span {
+  background-color: #FFF4EC;
+  border: 1px solid #FFBE90;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: #FF873D;
+}
+.persona-box .main-box .info-box .info .keywords .orange {
+  background-color: #FF873D;
+  border: none;
+  color: #fff;
+}
+.persona-box .main-box .info-box .info .info-item-text {
+  list-style: inside;
+  font-size: 20px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* ----------------- persona - end ----------------- */
+/* ----------------- userflow - start ----------------- */
+/* ----------------- userflow - end ----------------- */
+/* ----------------- wireframes - start ----------------- */
+/* ----------------- wireframes - end ----------------- */
+/* ----------------- ia - start ----------------- */
+/* ----------------- ia - end ----------------- */
+/* ----------------- design system - start ----------------- */
+/* ----------------- design system - end ----------------- */
+/* ----------------- service concept - start ----------------- */
+/* ----------------- service concept - end ----------------- */
+/* ----------------- logo - start ----------------- */
+/* ----------------- logo - end ----------------- */
+/* ----------------- character - start ----------------- */
+/* ----------------- character - end ----------------- */
+/* ----------------- app banner - start ----------------- */
+/* ----------------- app banner - end ----------------- */
+/* ----------------- level - start ----------------- */
+/* ----------------- level - end ----------------- */
+/* ----------------- item choose - start ----------------- */
+/* ----------------- item choose - end ----------------- */
+/* ----------------- phone - start ----------------- */
+/* ----------------- phone - end ----------------- */
+/* ----------------- home - start ----------------- */
+/* ----------------- home - end ----------------- */
+/* ----------------- todo - start ----------------- */
+/* ----------------- todo - end ----------------- */
+/* ----------------- mission - start ----------------- */
+/* ----------------- mission - end ----------------- */
+/* ----------------- routine - start ----------------- */
+/* ----------------- routine - end ----------------- */
+/* ----------------- challenge - start ----------------- */
+/* ----------------- challenge - end ----------------- */
+/* ----------------- search - start ----------------- */
+/* ----------------- search - end ----------------- */
+/* ----------------- guide - start ----------------- */
+/* ----------------- guide - end ----------------- */
+/* ----------------- scrap - start ----------------- */
+/* ----------------- scrap - end ----------------- */
+/* ----------------- community - start ----------------- */
+/* ----------------- community - end ----------------- */
+/* ----------------- change - start ----------------- */
+/* ----------------- change - end ----------------- */
+/* ----------------- community improvement - start ----------------- */
+/* ----------------- community improvement - end ----------------- */
+/* ----------------- shopping improvement - start ----------------- */
+/* ----------------- shopping improvement - end ----------------- */
+/* ----------------- guide improvement - start ----------------- */
+/* ----------------- guide improvement - end ----------------- */
+/* ----------------- app screens - start ----------------- */
+/* ----------------- app screens - end ----------------- */
+/* ----------------- footer - start ----------------- */
+/* ----------------- footer - end ----------------- */
