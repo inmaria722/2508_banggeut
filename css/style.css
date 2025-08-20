@@ -3232,6 +3232,9 @@ img {
 /* ----------------- change - start ----------------- */
 /* ----------------- change - end ----------------- */
 /* ----------------- community improvement - start ----------------- */
+.community-improvement-box {
+  position: relative;
+}
 .community-improvement-box .clover {
   position: absolute;
   left: 50%;
@@ -3432,6 +3435,167 @@ img {
 
 /* ----------------- community improvement - end ----------------- */
 /* ----------------- shopping improvement - start ----------------- */
+.shopping-improvement-box {
+  position: relative;
+}
+.shopping-improvement-box .clover-g {
+  opacity: 0.8;
+  position: absolute;
+  left: calc(50% - 750px);
+  top: 507px;
+}
+.shopping-improvement-box .clover-b {
+  position: absolute;
+  left: calc(50% + 549px);
+  top: 355px;
+}
+.shopping-improvement-box .clover-o {
+  opacity: 0.3;
+  position: absolute;
+  left: calc(50% + 133px);
+  top: 806px;
+}
+.shopping-improvement-box .con {
+  padding: 200px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1620px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.shopping-improvement-box .con .title-box {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shopping-improvement-box .con .title-box .category-im {
+  display: flex;
+  justify-content: center;
+}
+.shopping-improvement-box .con .title-box .category-im span {
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: 1px solid #3c98ff;
+  padding: 10px 20px;
+  color: #3c98ff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.shopping-improvement-box .con .title-box .title {
+  margin: 20px 0px 30px 0px;
+  display: flex;
+  justify-content: center;
+}
+.shopping-improvement-box .con .title-box .title h1 {
+  display: flex;
+  justify-content: center;
+  color: #333333;
+  text-align: center;
+  font-size: 44px;
+  line-height: 58px;
+  font-weight: 700;
+}
+.shopping-improvement-box .con .title-box .desc {
+  display: flex;
+  justify-content: center;
+}
+.shopping-improvement-box .con .title-box .desc span {
+  color: #333333;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.shopping-improvement-box .main-box {
+  padding: 0 150px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.shopping-improvement-box .main-box .text-box {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 320px;
+}
+.shopping-improvement-box .main-box .text-box span {
+  color: #000000;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+}
+.shopping-improvement-box .main-box .text-box p {
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.shopping-improvement-box .main-box .phone-box {
+  border-radius: 35px;
+  padding-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 319px;
+  height: 705.48px;
+  position: relative;
+}
+.shopping-improvement-box .main-box .phone-box img {
+  width: 340px;
+}
+.shopping-improvement-box .main-box .as-is {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.shopping-improvement-box .main-box .as-is .phone-box-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 749px;
+}
+.shopping-improvement-box .main-box .to-be {
+  width: 571px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+.shopping-improvement-box .main-box .to-be .to-be-blue {
+  color: #3c98ff;
+}
+.shopping-improvement-box .main-box .to-be .comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 356px;
+  position: absolute;
+  right: -20px;
+  top: 375.73px;
+  z-index: 1;
+}
+.shopping-improvement-box .main-box .to-be .comment img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shopping-improvement-box .main-box .to-be .im-line {
+  width: 131px;
+  position: absolute;
+  left: 50px;
+  top: 454px;
+  overflow: visible;
+}
+
 /* ----------------- shopping improvement - end ----------------- */
 /* ----------------- guide improvement - start ----------------- */
 /* ----------------- guide improvement - end ----------------- */
