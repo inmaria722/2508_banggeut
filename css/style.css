@@ -502,6 +502,7 @@ img {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: transparent;
 }
 .app-banner .con .phone-box img {
   width: 1077px;
