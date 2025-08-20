@@ -1010,6 +1010,181 @@ img {
 
 /* ----------------- keyword - end ----------------- */
 /* ----------------- goal - start ----------------- */
+.goal-box {
+  box-sizing: border-box;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.goal-box .bg-line,
+.goal-box .bg-square {
+  position: absolute;
+}
+.goal-box .bg-line {
+  right: 0;
+  bottom: 0;
+}
+.goal-box .bg-square {
+  right: 0;
+  top: 0;
+}
+.goal-box .con {
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1620px;
+  max-width: 1620px;
+  position: relative;
+  overflow: hidden;
+}
+.goal-box .title-box {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.goal-box .title-box .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.goal-box .title-box .category span {
+  color: #6ec487;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.goal-box .title-box .title {
+  padding: 20px 0 30px;
+}
+.goal-box .title-box .title h1 {
+  color: #333;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: left;
+}
+.goal-box .title-box .desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goal-box .title-box .desc span {
+  color: #302e2a;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
+.goal-box .goal-list-box-wrap {
+  padding: 50px 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  width: 1146px;
+}
+.goal-box .goal-list-box-wrap .goal-list-box {
+  display: flex;
+  width: 100%;
+  height: 131px;
+}
+.goal-box .goal-list-box-wrap .goal-list-box .before,
+.goal-box .goal-list-box-wrap .goal-list-box .after {
+  flex: 1;
+  height: 131px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goal-box .goal-list-box-wrap .goal-list-box .before {
+  background: #f0f9f3;
+  border-radius: 100px 0 0 100px;
+}
+.goal-box .goal-list-box-wrap .goal-list-box .before .div3 {
+  color: #4d4d4d;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.5;
+  text-align: left;
+}
+.goal-box .goal-list-box-wrap .goal-list-box .after {
+  background: #6ec487;
+  border-radius: 100px;
+  margin-left: -100px;
+}
+.goal-box .goal-list-box-wrap .goal-list-box .after .div4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+.goal-box .arrows-down {
+  opacity: 0.2;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.goal-box .arrows-down .arrow-box,
+.goal-box .arrows-down .arrow-box-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.goal-box .arrows-down .arrow-box-2 {
+  padding: 20px 0;
+}
+.goal-box .conclusion-box {
+  padding: 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+}
+.goal-box .conclusion-box .conclusion {
+  background: #6ec487;
+  border-radius: 50px;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+.goal-box .conclusion-box .conclusion span {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+.goal-box .conclusion-box .semi-circle {
+  position: absolute;
+  left: 759px;
+  top: 2px;
+  width: 101px;
+  height: 101px;
+  background: #ffa264;
+  border: 5px solid #6ec487;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.goal-box .conclusion-box .semi-circle .semi {
+  position: relative;
+  top: 6px;
+  width: 120px;
+  height: 120px;
+}
+
 /* ----------------- goal - end ----------------- */
 /* ----------------- persona - start ----------------- */
 .persona-box {
