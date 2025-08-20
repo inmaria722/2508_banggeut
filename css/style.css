@@ -508,7 +508,6 @@ img {
 /* ----------------- app banner - end ----------------- */
 /* ----------------- level - start ----------------- */
 .level-box {
-  height: 1748.44px;
   overflow: hidden;
   position: relative;
 }
@@ -520,7 +519,7 @@ img {
 .level-box .con {
   max-width: 1620px;
   width: 100%;
-  height: 100%;
+  height: 1808px;
   margin: 0 auto;
   padding: 200px 0;
 }
@@ -715,8 +714,78 @@ img {
 
 /* ----------------- level - end ----------------- */
 /* ----------------- item choose - start ----------------- */
+.item-choose-box {
+  height: 624px;
+  background-color: #3C98FF;
+  position: relative;
+  overflow: visible;
+}
+.item-choose-box .phone-mockup {
+  position: absolute;
+  width: 505.32px;
+  height: 1046.9px;
+  left: 480px;
+  top: 120px;
+  transform: rotate(-39.03deg);
+}
+.item-choose-box .sticker-semi {
+  position: absolute;
+  left: 1028.51px;
+  top: 292.51px;
+  z-index: 1;
+}
+.item-choose-box .left-hand {
+  position: absolute;
+  left: 994px;
+  top: 489.22px;
+  z-index: 2;
+}
+.item-choose-box .right-hand {
+  position: absolute;
+  left: 1380px;
+  top: 520.22px;
+  z-index: 2;
+}
+.item-choose-box .speech-bubble {
+  position: absolute;
+  left: 1443.53px;
+  top: 274.39px;
+}
+.item-choose-box .sticker-box {
+  position: absolute;
+  left: 665.08px;
+  top: -111.41px;
+}
+
 /* ----------------- item choose - end ----------------- */
 /* ----------------- phone - start ----------------- */
+.phone-box {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.phone-box .con {
+  max-width: 1620px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+.phone-box .con .main-box {
+  height: 793px;
+  background-color: #FF873D;
+  border-radius: 100px;
+  padding: 50px 60px;
+  overflow: hidden;
+  position: relative;
+}
+.phone-box .con .main-box .phone-mockup {
+  position: absolute;
+  width: 650px;
+  height: 1346px;
+  left: 485px;
+  top: 147px;
+}
+
 /* ----------------- phone - end ----------------- */
 /* ----------------- home - start ----------------- */
 /* ----------------- home - end ----------------- */
