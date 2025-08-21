@@ -3111,7 +3111,7 @@ img {
 /* ----------------- userflow - end ----------------- */
 /* ----------------- wireframes - start ----------------- */
 .wireframes-box {
-  background-color: #FFFAF6;
+  background: linear-gradient(180deg, #FFFAF6 0%, #FFFFFF 114.52%);
 }
 .wireframes-box .con {
   max-width: 1620px;
