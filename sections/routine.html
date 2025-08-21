@@ -14,6 +14,9 @@
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="../JS/routine.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <section class="routine-box">
@@ -33,13 +36,13 @@
       </div>
       <div class="con">
         <div class="title-box">
-          <div class="category-box-c">
+          <div class="category-box-c" fade="up">
             <div class="category-2">루틴 추가하기</div>
           </div>
-          <div class="title">
+          <div class="title" fade="up" data-delay="0.2">
             <span>나만의 자취 루틴으로<br />자취 생활 마스터가 되어보세요</span>
           </div>
-          <div class="desc">
+          <div class="desc" fade="up" data-delay="0.4">
             <span
               >반복되는 일정을 루틴화 해, 효율적으로 관리할 수 있도록
               했어요</span
@@ -52,7 +55,7 @@
               <div class="img-box">
                 <img src="../imgs/home-screen.png" alt="" />
               </div>
-              <div class="screen-name-box">
+              <div class="screen-name-box" fade="up" data-delay="0.8">
                 <span>홈 - 루틴 생성 버튼</span>
               </div>
             </div>
@@ -160,7 +163,7 @@
                   </defs>
                 </svg>
               </div>
-              <div class="screen-name-box">
+              <div class="screen-name-box" fade="up" data-delay="0.8">
                 <span>나의 루틴 페이지</span>
               </div>
             </div>
@@ -239,15 +242,15 @@
               </div>
             </div>
             <div class="routine-mockup">
-              <div class="phone-mockup">
+              <div class="phone-mockup" fade="right" data-delay="1.2">
                 <img src="../imgs/phone-mockup(routine).png" alt="" />
               </div>
-              <div class="screen-name-box">
+              <div class="screen-name-box" fade="up" data-delay="0.8">
                 <span>루틴 생성 페이지</span>
               </div>
             </div>
           </div>
-          <div class="line">
+          <div class="line" fade="right" data-delay="0.8">
             <svg
               width="206"
               height="23"
@@ -274,21 +277,7 @@
     </section>
 
     <style>
-      /* ----------------- font - start ----------------- */
-      @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-
-      html,
-      html > body {
-        font-family: "Pretendard Variable", Pretendard, -apple-system,
-          BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-          "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
-          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      }
-      /* ----------------- font - end ----------------- */
-
       .routine-box {
-        width: 1920px;
-
         .bg-triangle {
           position: absolute;
           left: 200px;
