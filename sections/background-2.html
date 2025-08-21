@@ -1,465 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>background-1</title>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+  </head>
+  <body>
     <section class="background-box-2">
-        <div class="con">
-            <div class="title-box">
-                <div class="category">
-                <span>Background</span>
-                </div>
-                
-                <div class="title">
-                <h1>1인 가구 시장도<br/>함께 성장하고 있어요</h1>
-                </div>
-                
-                <div class="desc">
-                <span>혼자 사는 라이프스타일을 중심으로 식품·주거·가전·서비스 산업도 빠르게 확대되고 있어요</span>
-                </div>
-            </div>
-            <div class="main-box">
-                <div class="graph-box-wrap">
-                <div class="left">
-                    <div class="text-box">
-                    <div class="text-1">
-                        <span>간편식 Hmr 소비 증가</span>
-                    </div>
-                    <div class="text-2">
-                        <span>2018년 이후 간편식시장은 급격히 확대되고 있는 추세</span>
-                    </div>
-                    </div>
-                    <div class="graph-box">
-                    <div class="graph">
-                        <div class="graph_bar">
-                        <div class="bar-2018" aria-hidden="true"></div>
-                        <div class="year">
-                            <span class="year-text-wrap text-2018">2018</span>
-                        </div>
-                        </div>
-                        <div class="graph_bar">
-                        <div class="bar-2020" aria-hidden="true"></div>
-                        <div class="year">
-                            <span class="year-text-wrap text-2020">2020</span>
-                        </div>
-                        </div>
-                        <div class="graph_bar">
-                        <div class="bar-2022" aria-hidden="true"></div>
-                        <div class="year">
-                            <span class="year-text-wrap text-2022">2022</span>
-                        </div>
-                        </div>
-                        <div class="graph_bar">
-                        <div class="bar-2023" aria-hidden="true"></div>
-                        <div class="year">
-                            <span class="year-text-wrap text-2023">2023</span>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="source">
-                    <span>*출처 : 한국농수산식품유통공사</span>
-                    </div>
-                    <div class="num-2023" aria-label="7조원">
-                    <span>7조원</span>
-                    </div>
-                    <div class="arrow_img-box">
-                    <img src="https://i.ibb.co/5hLn9hKm/arrow-up.png" alt="arrow-up" border="0">
-                    </div>
+      <div class="con">
+        <div class="title-box">
+          <div class="category">
+            <span>Background</span>
+          </div>
 
-                </div>
-                <div class="right">
-                    <div class="text-box">
-                    <div class="text-1">
-                        <span>1인 가구 소형가전 선호도</span>
-                    </div>
-                    <div class="text-2">
-                        <span>1인 가구의 83.9%는 소형가전을 선호</span>
-                    </div>
-                    </div>
-                    <div class="graph-circle-box">
-                    <div class="circle-box-img">
-                        <img src="https://i.ibb.co/YTfySfSs/circle.png" alt="circle" border="0">
-                    </div>
-                    </div>
-                    <div class="circle-num">
-                    <span>83.9%</span>
-                    </div>
-                    <div class="source">
-                    <span>*출처 : 쿠첸(매우 높다+높다 응답 합산 수치)</span>
-                    </div>
-                </div>
-                </div>
-                <div class="arrows-down">
-                <div class="arrows-down_box"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
-            <path d="M11 18.2187L0.607694 0.21875L21.3923 0.218752L11 18.2187Z" fill="#FF8E3D" fill-opacity="0.3"/>
-            </svg></div>
-                <div class="arrows-down_box-center"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
-            <path d="M11 18.2187L0.607694 0.21875L21.3923 0.218752L11 18.2187Z" fill="#FF8E3D" fill-opacity="0.5"/>
-            </svg></div>
-                <div class="arrows-down_box"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
-            <path d="M11 18.2187L0.607694 0.21875L21.3923 0.218752L11 18.2187Z" fill="#FF873D"/>
-            </svg></div>
-                </div>
-                <div class="conclusion">
-                <div class="text-but">
-                    <span>But,</span>
-                </div>
-                <div class="text-insight">
-                    <span>
-                    1인 가구와 시장은 계속 증가하고 있지만 자취생을 위한 앱은 여기저기 흩어져,<br/>이제는 통합적으로
-                    케어해주는 하나의 플랫폼이 필요해요
-                    </span>
-                </div>
-                </div>
-            </div>
+          <div class="title">
+            <h1>1인 가구 시장도<br />함께 성장하고 있어요</h1>
+          </div>
+
+          <div class="desc">
+            <span
+              >혼자 사는 라이프스타일을 중심으로 식품·주거·가전·서비스 산업도
+              빠르게 확대되고 있어요</span
+            >
+          </div>
         </div>
+        <div class="main-box">
+          <div class="graph-box-wrap">
+            <div class="left">
+              <div class="text-box">
+                <div class="text-1">
+                  <span>간편식 Hmr 소비 증가</span>
+                </div>
+                <div class="text-2">
+                  <span
+                    >2018년 이후 간편식시장은 급격히 확대되고 있는 추세</span
+                  >
+                </div>
+              </div>
+              <div class="graph-box">
+                <div class="graph">
+                  <div class="graph_bar">
+                    <div class="bar-2018" aria-hidden="true"></div>
+                    <div class="year">
+                      <span class="year-text-wrap text-2018">2018</span>
+                    </div>
+                  </div>
+                  <div class="graph_bar">
+                    <div class="bar-2020" aria-hidden="true"></div>
+                    <div class="year">
+                      <span class="year-text-wrap text-2020">2020</span>
+                    </div>
+                  </div>
+                  <div class="graph_bar">
+                    <div class="bar-2022" aria-hidden="true"></div>
+                    <div class="year">
+                      <span class="year-text-wrap text-2022">2022</span>
+                    </div>
+                  </div>
+                  <div class="graph_bar">
+                    <div class="bar-2023" aria-hidden="true"></div>
+                    <div class="year">
+                      <span class="year-text-wrap text-2023">2023</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="source">
+                <span>*출처 : 한국농수산식품유통공사</span>
+              </div>
+              <div class="num-2023" aria-label="7조원">
+                <span>7조원</span>
+              </div>
+              <div class="arrow_img-box">
+                <img
+                  src="https://i.ibb.co/5hLn9hKm/arrow-up.png"
+                  alt="arrow-up"
+                  border="0"
+                />
+              </div>
+            </div>
+            <div class="right">
+              <div class="text-box">
+                <div class="text-1">
+                  <span>1인 가구 소형가전 선호도</span>
+                </div>
+                <div class="text-2">
+                  <span>1인 가구의 83.9%는 소형가전을 선호</span>
+                </div>
+              </div>
+              <div class="graph-circle-box">
+                <div class="circle-box-img">
+                  <img
+                    src="https://i.ibb.co/YTfySfSs/circle.png"
+                    alt="circle"
+                    border="0"
+                  />
+                </div>
+              </div>
+              <div class="circle-num">
+                <span>83.9%</span>
+              </div>
+              <div class="source">
+                <span>*출처 : 쿠첸(매우 높다+높다 응답 합산 수치)</span>
+              </div>
+            </div>
+          </div>
+          <div class="arrows-down">
+            <div class="arrows-down_box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="19"
+                viewBox="0 0 22 19"
+                fill="none"
+              >
+                <path
+                  d="M11 18.2187L0.607694 0.21875L21.3923 0.218752L11 18.2187Z"
+                  fill="#FF8E3D"
+                  fill-opacity="0.3"
+                />
+              </svg>
+            </div>
+            <div class="arrows-down_box-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="19"
+                viewBox="0 0 22 19"
+                fill="none"
+              >
+                <path
+                  d="M11 18.2187L0.607694 0.21875L21.3923 0.218752L11 18.2187Z"
+                  fill="#FF8E3D"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </div>
+            <div class="arrows-down_box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="19"
+                viewBox="0 0 22 19"
+                fill="none"
+              >
+                <path
+                  d="M11 18.2187L0.607694 0.21875L21.3923 0.218752L11 18.2187Z"
+                  fill="#FF873D"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="conclusion">
+            <div class="text-but">
+              <span>But,</span>
+            </div>
+            <div class="text-insight">
+              <span>
+                1인 가구와 시장은 계속 증가하고 있지만 자취생을 위한 앱은
+                여기저기 흩어져,<br />이제는 통합적으로 케어해주는 하나의
+                플랫폼이 필요해요
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <style>
-        .background-box-2 {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-color: #ffffff;
-
-  .text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    .text-1 {
-      padding-bottom: 10px;
-      span {
-        font-weight: 600;
-        color: #2c1506;
-        font-size: 20px;
-      }
-    }
-
-    .text-2 {
-      span {
-        font-weight: 400;
-        color: #ffa264;
-        font-size: 14px;
-        text-align: center;
-        line-height: 20px;
-      }
-    }
-  }
-
-  .source {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: -1px;
-
-    span {
-      font-weight: 400;
-      color: #808080;
-      font-size: 16px;
-      line-height: 23px;
-      white-space: nowrap;
-    }
-  }
-
-  .con {
-    display: flex;
-    flex-direction: column;
-    max-width: 1620px;
-    align-items: flex-start;
-    padding: 200px 0;
-    flex-grow: 1;
-    position: relative;
-  }
-
-  .title-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 100px;
-    width: 100%;
-
-    .category {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      span {
-        font-size: 16px;
-        font-weight: 700;
-        color: #ff873d;
-      }
-    }
-
-    .title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px 0 30px;
-      width: 100%;
-      h1 {
-        font-weight: 700;
-        color: #333;
-        font-size: 44px;
-        text-align: center;
-        line-height: 58px;
-      }
-    }
-
-    .desc {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      span {
-        width: 743px;
-        font-weight: 400;
-        color: #333;
-        font-size: 20px;
-        text-align: center;
-        line-height: 32px;
-      }
-    }
-  }
-
-  .main-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    position: relative;
-
-    .graph-box-wrap {
-      display: flex;
-      gap: 50px;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 683px;
-    }
-
-    .left,
-    .right {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 80px 100px;
-      flex: 1;
-      background-color: #fffaf6;
-      border-radius: 40px;
-      overflow: hidden;
-      position: relative;
-
-      .graph-box {
+      .background-box-2 {
         display: flex;
-        flex-direction: column;
+        width: 100%;
         align-items: center;
-        width: 585px;
-        padding: 50px 0;
+        justify-content: center;
         position: relative;
-        .graph {
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-          width: 530px;
+        background-color: #ffffff;
 
-          .graph_bar {
+        .text-box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          .text-1 {
+            padding-bottom: 10px;
+            span {
+              font-weight: 600;
+              color: #2c1506;
+              font-size: 20px;
+            }
+          }
+
+          .text-2 {
+            span {
+              font-weight: 400;
+              color: #ffa264;
+              font-size: 14px;
+              text-align: center;
+              line-height: 20px;
+            }
+          }
+        }
+
+        .source {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 100%;
+          margin-bottom: -1px;
+
+          span {
+            font-weight: 400;
+            color: #808080;
+            font-size: 16px;
+            line-height: 23px;
+            white-space: nowrap;
+          }
+        }
+
+        .con {
+          display: flex;
+          flex-direction: column;
+          max-width: 1620px;
+          align-items: flex-start;
+          padding: 200px 0;
+          flex-grow: 1;
+          position: relative;
+        }
+
+        .title-box {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-bottom: 100px;
+          width: 100%;
+
+          .category {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            span {
+              font-size: 16px;
+              font-weight: 700;
+              color: #ff873d;
+            }
+          }
+
+          .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0 30px;
+            width: 100%;
+            h1 {
+              font-weight: 700;
+              color: #333;
+              font-size: 44px;
+              text-align: center;
+              line-height: 58px;
+            }
+          }
+
+          .desc {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            span {
+              width: 743px;
+              font-weight: 400;
+              color: #333;
+              font-size: 20px;
+              text-align: center;
+              line-height: 32px;
+            }
+          }
+        }
+
+        .main-box {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          position: relative;
+
+          .graph-box-wrap {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 683px;
+          }
+
+          .left,
+          .right {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 100px;
+            flex: 1;
+            background-color: #fffaf6;
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
 
-            .bar-2018,
-            .bar-2020,
-            .bar-2022,
-            .bar-2023 {
+            .graph-box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 585px;
+              padding: 50px 0;
               position: relative;
-              width: 100px;
-              border-radius: 25px 25px 10px 10px;
-              background-color: #ffa264;
-            }
-            .bar-2018 {
-              height: 75px;
-              opacity: 0.2;
-            }
-            .bar-2020 {
-              height: 119px;
-              opacity: 0.5;
-            }
-            .bar-2022 {
-              height: 186px;
-              opacity: 0.8;
-            }
-            .bar-2023 {
-              height: 304px;
-              background-color: #ff873d;
+              .graph {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                width: 530px;
+
+                .graph_bar {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+
+                  .bar-2018,
+                  .bar-2020,
+                  .bar-2022,
+                  .bar-2023 {
+                    position: relative;
+                    width: 100px;
+                    border-radius: 25px 25px 10px 10px;
+                    background-color: #ffa264;
+                  }
+                  .bar-2018 {
+                    height: 75px;
+                    opacity: 0.2;
+                  }
+                  .bar-2020 {
+                    height: 119px;
+                    opacity: 0.5;
+                  }
+                  .bar-2022 {
+                    height: 186px;
+                    opacity: 0.8;
+                  }
+                  .bar-2023 {
+                    height: 304px;
+                    background-color: #ff873d;
+                  }
+
+                  .year {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100px;
+                    padding-top: 10px;
+                    span {
+                      font-weight: 700;
+                      font-size: 16px;
+                    }
+                    .text-2018 {
+                      color: #ffe8d9;
+                    }
+                    .text-2020 {
+                      color: #ffcead;
+                    }
+                    .text-2022 {
+                      color: #ffa463cc;
+                    }
+                    .text-2023 {
+                      color: #ff873d;
+                    }
+                  }
+                }
+              }
             }
 
-            .year {
+            .num-2023 {
+              position: absolute;
+              top: 190px;
+              left: 610px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              padding: 15px 20px;
+              background-color: #fff;
+              border-radius: 45px;
+              box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+              span {
+                font-weight: 700;
+                color: #2c1506;
+                font-size: 26px;
+              }
+            }
+
+            .arrow_img-box {
+              position: absolute;
+              left: 24%;
+              bottom: 40%;
+              img {
+                width: 348px;
+                object-fit: cover;
+              }
+            }
+          }
+
+          .right {
+            .graph-circle-box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              height: 448px;
+
+              .circle-box-img {
+                position: relative;
+                width: 359px;
+                height: 359px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .circle-num {
+                position: absolute;
+                top: 418px;
+                left: 180px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px 20px;
+                background-color: #fff;
+                border-radius: 50px;
+                box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+                span {
+                  font-weight: 700;
+                  color: #2c1506;
+                  font-size: 26px;
+                }
+              }
+            }
+          }
+
+          .arrows-down {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px;
+            width: 100%;
+
+            .arrows-down_box,
+            .arrows-down_box-center {
               display: flex;
               align-items: center;
               justify-content: center;
-              width: 100px;
-              padding-top: 10px;
+            }
+            .arrows-down_box-center {
+              padding: 20px 0;
+            }
+          }
+
+          .conclusion {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 60px 100px;
+            width: 100%;
+            overflow: hidden;
+
+            .text-but {
+              display: flex;
+              justify-content: center;
+              width: 100%;
               span {
                 font-weight: 700;
-                font-size: 16px;
-              }
-              .text-2018 {
-                color: #ffe8d9;
-              }
-              .text-2020 {
-                color: #ffcead;
-              }
-              .text-2022 {
-                color: #ffa463cc;
-              }
-              .text-2023 {
                 color: #ff873d;
+                font-size: 30px;
+                text-align: center;
+                line-height: 50px;
+              }
+            }
+
+            .text-insight {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              padding-top: 20px;
+              span {
+                font-weight: 700;
+                color: #ff873d;
+                font-size: 32px;
+                text-align: center;
+                line-height: 53px;
               }
             }
           }
         }
       }
-
-      .num-2023 {
-        position: absolute;
-        top: 190px;
-        left: 610px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px 20px;
-        background-color: #fff;
-        border-radius: 45px;
-        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
-        span {
-          font-weight: 700;
-          color: #2c1506;
-          font-size: 26px;
-        }
-      }
-
-      .arrow_img-box {
-        position: absolute;
-        left: 24%;
-        bottom: 40%;
-        img {
-          width: 348px;
-          object-fit: cover;
-        }
-      }
-    }
-
-    .right {
-      .graph-circle-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 448px;
-
-        .circle-box-img {
-          position: relative;
-          width: 359px;
-          height: 359px;
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .circle-num {
-          position: absolute;
-          top: 418px;
-          left: 180px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          padding: 15px 20px;
-          background-color: #fff;
-          border-radius: 50px;
-          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
-          span {
-            font-weight: 700;
-            color: #2c1506;
-            font-size: 26px;
-          }
-        }
-      }
-    }
-
-    .arrows-down {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 80px;
-      width: 100%;
-
-      .arrows-down_box,
-      .arrows-down_box-center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .arrows-down_box-center {
-        padding: 20px 0;
-      }
-    }
-
-    .conclusion {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 60px 100px;
-      width: 100%;
-      overflow: hidden;
-
-      .text-but {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        span {
-          font-weight: 700;
-          color: #ff873d;
-          font-size: 30px;
-          text-align: center;
-          line-height: 50px;
-        }
-      }
-
-      .text-insight {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding-top: 20px;
-        span {
-          font-weight: 700;
-          color: #ff873d;
-          font-size: 32px;
-          text-align: center;
-          line-height: 53px;
-        }
-      }
-    }
-  }
-        }
     </style>
-</body>
+  </body>
 </html>

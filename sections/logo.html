@@ -1,83 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>logo</title>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+  </head>
+  <body>
     <section class="logo-box">
-        <div class="con">
-            <div class="symbol-box">
-                <div class="symbol">
-                    <svg width="180" height="181" viewBox="0 0 180 181" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.297852" y="0.851562" width="179.404" height="179.865" rx="42.7995" fill="white"/>
-                    <path d="M43.1885 126.173V82.122L89.9028 53.4141L137.347 82.122V126.173" stroke="#FF873D" stroke-width="13.3008"/>
-                    <path d="M64.8643 100.93V100.93C76.0907 120.029 103.778 119.952 115.134 100.93V100.93" stroke="#FF873D" stroke-width="13.3008" stroke-linecap="round"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="typography-box">
-                <div class="typography">
-                    <svg width="300" height="156" viewBox="0 0 300 156" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M287.246 62.0492L257.54 63.8592C260.956 57.0247 264.092 45.988 264.092 35.0527V23.3435H160.013V0.367188H293.276V29.2433C293.276 44.7919 291.005 54.7021 287.246 62.0492Z" fill="#FF873D"/>
-                    <path d="M135.662 0.367787V27.9235H146.825V56.3457H135.662L135.199 85.2878H108.194V0.367188L135.662 0.367787ZM64.8644 0.367787H94.2402V85.2878H22.7105C10.1678 85.2878 0 75.12 0 62.5773V0.367787H29.7154V17.5251H64.8644V0.367787ZM29.7154 40.5748V55.3474C29.7154 58.483 32.2573 61.025 35.393 61.025H64.8644V40.5748H29.7154Z" fill="#FF873D"/>
-                    <path d="M242.398 101.96V90.4453H226.814V124.189C229.508 128.819 232.838 133.153 237.263 136.68C241.689 140.318 246.74 143.349 252.416 145.774C258.188 148.198 264.49 150.273 271.321 151.486C278.152 152.808 291.821 153.213 299.422 153.213V129.24C292.206 129.13 280.352 128.414 274.003 127.091C267.749 125.768 262.265 123.95 257.551 121.635C252.933 119.21 249.229 116.344 246.439 113.038C243.745 109.731 242.398 106.039 242.398 101.96Z" fill="#FF873D"/>
-                    <path d="M211.326 101.96V90.4453H226.91V124.189C224.216 128.819 220.887 133.153 216.462 136.68C212.036 140.318 206.985 143.349 201.309 145.774C195.536 148.198 189.234 150.273 182.404 151.486C175.573 152.808 161.903 153.213 154.303 153.213V129.24C161.518 129.13 173.372 128.414 179.722 127.091C185.975 125.768 191.459 123.95 196.174 121.635C200.792 119.21 204.496 116.344 207.286 113.038C209.979 109.731 211.326 106.039 211.326 101.96Z" fill="#FF873D"/>
-                    <path d="M141.674 123.169C141.674 103.98 129.163 90.4453 105.664 90.4453H70.8369H36.0101C12.1724 90.4453 0 104.323 0 123.169C0 141.844 12.1724 155.197 36.0101 155.197H105.664C129.163 155.197 141.674 142.358 141.674 123.169Z" fill="#FF873D"/>
-                    <path d="M32.9365 120.669C32.9365 115.038 38.0093 110.767 43.5573 111.725L55.6302 113.81C65.8225 115.57 76.241 115.57 86.4333 113.81L98.5063 111.725C104.054 110.767 109.127 115.038 109.127 120.669C109.127 125.085 105.948 128.861 101.595 129.612L89.6612 131.673C77.3328 133.802 64.7307 133.802 52.4023 131.673L40.4681 129.612C36.1159 128.861 32.9365 125.085 32.9365 120.669Z" fill="#FFFAF6"/>
-                    <path d="M153.968 82.3003V59.0938C202.495 64.5054 251.473 64.5054 300 59.0938V82.3003C251.473 87.712 202.495 87.712 153.968 82.3003Z" fill="#FF873D"/>
-                    </svg>
-                </div>
-            </div>
+      <div class="con">
+        <div class="symbol-box">
+          <div class="symbol">
+            <svg
+              width="180"
+              height="181"
+              viewBox="0 0 180 181"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.297852"
+                y="0.851562"
+                width="179.404"
+                height="179.865"
+                rx="42.7995"
+                fill="white"
+              />
+              <path
+                d="M43.1885 126.173V82.122L89.9028 53.4141L137.347 82.122V126.173"
+                stroke="#FF873D"
+                stroke-width="13.3008"
+              />
+              <path
+                d="M64.8643 100.93V100.93C76.0907 120.029 103.778 119.952 115.134 100.93V100.93"
+                stroke="#FF873D"
+                stroke-width="13.3008"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
         </div>
+        <div class="typography-box">
+          <div class="typography">
+            <svg
+              width="300"
+              height="156"
+              viewBox="0 0 300 156"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M287.246 62.0492L257.54 63.8592C260.956 57.0247 264.092 45.988 264.092 35.0527V23.3435H160.013V0.367188H293.276V29.2433C293.276 44.7919 291.005 54.7021 287.246 62.0492Z"
+                fill="#FF873D"
+              />
+              <path
+                d="M135.662 0.367787V27.9235H146.825V56.3457H135.662L135.199 85.2878H108.194V0.367188L135.662 0.367787ZM64.8644 0.367787H94.2402V85.2878H22.7105C10.1678 85.2878 0 75.12 0 62.5773V0.367787H29.7154V17.5251H64.8644V0.367787ZM29.7154 40.5748V55.3474C29.7154 58.483 32.2573 61.025 35.393 61.025H64.8644V40.5748H29.7154Z"
+                fill="#FF873D"
+              />
+              <path
+                d="M242.398 101.96V90.4453H226.814V124.189C229.508 128.819 232.838 133.153 237.263 136.68C241.689 140.318 246.74 143.349 252.416 145.774C258.188 148.198 264.49 150.273 271.321 151.486C278.152 152.808 291.821 153.213 299.422 153.213V129.24C292.206 129.13 280.352 128.414 274.003 127.091C267.749 125.768 262.265 123.95 257.551 121.635C252.933 119.21 249.229 116.344 246.439 113.038C243.745 109.731 242.398 106.039 242.398 101.96Z"
+                fill="#FF873D"
+              />
+              <path
+                d="M211.326 101.96V90.4453H226.91V124.189C224.216 128.819 220.887 133.153 216.462 136.68C212.036 140.318 206.985 143.349 201.309 145.774C195.536 148.198 189.234 150.273 182.404 151.486C175.573 152.808 161.903 153.213 154.303 153.213V129.24C161.518 129.13 173.372 128.414 179.722 127.091C185.975 125.768 191.459 123.95 196.174 121.635C200.792 119.21 204.496 116.344 207.286 113.038C209.979 109.731 211.326 106.039 211.326 101.96Z"
+                fill="#FF873D"
+              />
+              <path
+                d="M141.674 123.169C141.674 103.98 129.163 90.4453 105.664 90.4453H70.8369H36.0101C12.1724 90.4453 0 104.323 0 123.169C0 141.844 12.1724 155.197 36.0101 155.197H105.664C129.163 155.197 141.674 142.358 141.674 123.169Z"
+                fill="#FF873D"
+              />
+              <path
+                d="M32.9365 120.669C32.9365 115.038 38.0093 110.767 43.5573 111.725L55.6302 113.81C65.8225 115.57 76.241 115.57 86.4333 113.81L98.5063 111.725C104.054 110.767 109.127 115.038 109.127 120.669C109.127 125.085 105.948 128.861 101.595 129.612L89.6612 131.673C77.3328 133.802 64.7307 133.802 52.4023 131.673L40.4681 129.612C36.1159 128.861 32.9365 125.085 32.9365 120.669Z"
+                fill="#FFFAF6"
+              />
+              <path
+                d="M153.968 82.3003V59.0938C202.495 64.5054 251.473 64.5054 300 59.0938V82.3003C251.473 87.712 202.495 87.712 153.968 82.3003Z"
+                fill="#FF873D"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
-
     <style>
-        /* ----------------- font - start ----------------- */
-        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+      /* ----------------- font - start ----------------- */
+      @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
-        html,
-        html>body {
-            font-family: "Pretendard Variable", Pretendard, -apple-system,
-                BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-                "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
-                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      html,
+      html > body {
+        font-family: "Pretendard Variable", Pretendard, -apple-system,
+          BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+          "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+      }
+      /* ----------------- font - end ----------------- */
+
+      .logo-box {
+        width: 1920px;
+        height: 650px;
+
+        .con {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .symbol-box,
+          .typography-box {
+            width: 50%;
+            height: 100%;
+            background-color: #ff873d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .typography-box {
+            background-color: #fff;
+          }
         }
-        /* ----------------- font - end ----------------- */
-
-
-        .logo-box {
-            width: 1920px;
-            height: 650px;
-
-            .con {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .symbol-box, .typography-box {
-                    width: 50%;
-                    height: 100%;
-                    background-color: #FF873D;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .typography-box {
-                    background-color: #fff;
-                }
-            }
-        }
+      }
     </style>
-</body>
+  </body>
 </html>

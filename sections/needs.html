@@ -1,291 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>needs</title>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+  </head>
+  <body>
     <section class="needs-box">
-        <div class="con">
-            <div class="title-box">
-            <div class="category">
-                <span>Needs</span>
-            </div>
-            <div class="title">
-                <h1>그렇다면 사람들은 무엇이 필요하다고 느낄까요?</h1>
-            </div>
-            <div class="desc">
-                <span>응답자들의 답변을 바탕으로 서비스의 기반이 될 인사이트를 도출했어요</span>
-            </div>
-            </div>
-            <div class="main-box">
-            <div class="interview-box-wrap">
-                <div class="interview-title">
-                <h1>NEEDS</h1>
-                </div>
-                <div class="interview-box">
-                <div class="interview">
-                    <div class="num">
-                    <span class="num-span"><span>1</span></span>
-                    </div>
-                    <div class="answer">
-                        <span class="text-wrapper-3">필요한 정보가 너무 흩어져 있어서,<br />하나 찾으려면 블로그, 유튜브, 커뮤니티 다 왔다 갔다 해야
-                            해요<br /></span>
-                        <span class="text-wrapper-4">자취할 때</span>
-                        <span class="text-wrapper-6">필요한 정보만 딱 모아놓은 플랫폼</span>
-                        <span class="text-wrapper-4">이 있으면 좋겠어요</span>
-                        </div>
-                </div>
-                </div>
-            </div>
-            <div class="interview-box-wrap">
-                <div class="interview-title">
-                    <h1>NEEDS</h1>
-                </div>
-                <div class="interview-box">
-                <div class="interview">
-                    <div class="num">
-                    <span class="num-span"><span>2</span></span>
-                    </div>
-                    <div class="answer">
-                        <span class="text-wrapper-3">내 상황에 딱 맞는 정보는 찾기가 어렵더라고요<br /></span>
-                        <span class="text-wrapper-6">실제 자취하고 있는 사람들이 직접</span>
-                        <span class="text-wrapper-4">겪은 얘기만<br />따로 모아둔 공간이 있었으면 좋겠어요</span>
-                        </div>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="insight-box">
-            <div class="insight-btn">
-                <span>Insight</span>
-                <div class="insight-circle"><svg xmlns="http://www.w3.org/2000/svg" width="90" height="91" viewBox="0 0 90 91" fill="none">
-                    <rect y="0.21875" width="90" height="90" rx="45" fill="#FF873D" />
-                    <ellipse cx="36.0991" cy="36.3169" rx="10.8794" ry="10.8794" fill="#FFF4EC" />
-                    <ellipse cx="36.0991" cy="54.1215" rx="10.8794" ry="10.8794" fill="#FFF4EC" />
-                    <ellipse cx="53.9018" cy="36.3169" rx="10.8794" ry="10.8794" fill="#FFF4EC" />
-                    <ellipse cx="53.9018" cy="54.1215" rx="10.8794" ry="10.8794" fill="#FFF4EC" />
-                </svg></div>
-            </div>
-            <div class="insight-text">
-                <span>필요한 건 빠르게 알고, <br />다른 사람들이랑 소통하고 싶어요</span>
-            </div>
-            </div>
+      <div class="con">
+        <div class="title-box">
+          <div class="category">
+            <span>Needs</span>
+          </div>
+          <div class="title">
+            <h1>그렇다면 사람들은 무엇이 필요하다고 느낄까요?</h1>
+          </div>
+          <div class="desc">
+            <span
+              >응답자들의 답변을 바탕으로 서비스의 기반이 될 인사이트를
+              도출했어요</span
+            >
+          </div>
         </div>
-        <div class="bg-clover">
-            <svg width="531" height="151" viewBox="0 0 531 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.13" d="M381.643 62.7219C481.912 82.5653 547.11 179.938 527.267 280.209C515.115 341.611 473.888 389.857 420.73 413.482C460.885 455.573 480.627 515.888 468.475 577.291C448.631 677.562 351.261 742.761 250.992 722.918C189.586 710.766 141.336 669.536 117.714 616.371C75.6234 656.531 15.3085 676.277 -46.0972 664.125C-146.366 644.282 -211.564 546.912 -191.721 446.641C-179.57 385.238 -138.346 336.987 -85.188 313.362C-125.34 271.272 -145.081 210.96 -132.93 149.558C-113.086 49.2867 -15.7157 -15.914 84.5535 3.92885C145.958 16.0807 194.207 57.3098 217.83 110.473C259.921 70.3138 320.238 50.57 381.643 62.7219ZM176.506 319.289C161.057 334.029 143.155 346.018 123.643 354.689C138.381 370.139 150.368 388.043 159.038 407.556C174.487 392.816 192.39 380.827 211.901 372.155C197.163 356.706 185.176 338.802 176.506 319.289Z" fill="#FFBE90"/>
-            </svg>
+        <div class="main-box">
+          <div class="interview-box-wrap">
+            <div class="interview-title">
+              <h1>NEEDS</h1>
+            </div>
+            <div class="interview-box">
+              <div class="interview">
+                <div class="num">
+                  <span class="num-span"><span>1</span></span>
+                </div>
+                <div class="answer">
+                  <span class="text-wrapper-3"
+                    >필요한 정보가 너무 흩어져 있어서,<br />하나 찾으려면
+                    블로그, 유튜브, 커뮤니티 다 왔다 갔다 해야 해요<br
+                  /></span>
+                  <span class="text-wrapper-4">자취할 때</span>
+                  <span class="text-wrapper-6"
+                    >필요한 정보만 딱 모아놓은 플랫폼</span
+                  >
+                  <span class="text-wrapper-4">이 있으면 좋겠어요</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="interview-box-wrap">
+            <div class="interview-title">
+              <h1>NEEDS</h1>
+            </div>
+            <div class="interview-box">
+              <div class="interview">
+                <div class="num">
+                  <span class="num-span"><span>2</span></span>
+                </div>
+                <div class="answer">
+                  <span class="text-wrapper-3"
+                    >내 상황에 딱 맞는 정보는 찾기가 어렵더라고요<br
+                  /></span>
+                  <span class="text-wrapper-6"
+                    >실제 자취하고 있는 사람들이 직접</span
+                  >
+                  <span class="text-wrapper-4"
+                    >겪은 얘기만<br />따로 모아둔 공간이 있었으면 좋겠어요</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="insight-box">
+          <div class="insight-btn">
+            <span>Insight</span>
+            <div class="insight-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="90"
+                height="91"
+                viewBox="0 0 90 91"
+                fill="none"
+              >
+                <rect
+                  y="0.21875"
+                  width="90"
+                  height="90"
+                  rx="45"
+                  fill="#FF873D"
+                />
+                <ellipse
+                  cx="36.0991"
+                  cy="36.3169"
+                  rx="10.8794"
+                  ry="10.8794"
+                  fill="#FFF4EC"
+                />
+                <ellipse
+                  cx="36.0991"
+                  cy="54.1215"
+                  rx="10.8794"
+                  ry="10.8794"
+                  fill="#FFF4EC"
+                />
+                <ellipse
+                  cx="53.9018"
+                  cy="36.3169"
+                  rx="10.8794"
+                  ry="10.8794"
+                  fill="#FFF4EC"
+                />
+                <ellipse
+                  cx="53.9018"
+                  cy="54.1215"
+                  rx="10.8794"
+                  ry="10.8794"
+                  fill="#FFF4EC"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="insight-text">
+            <span
+              >필요한 건 빠르게 알고, <br />다른 사람들이랑 소통하고
+              싶어요</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="bg-clover">
+        <svg
+          width="531"
+          height="151"
+          viewBox="0 0 531 151"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.13"
+            d="M381.643 62.7219C481.912 82.5653 547.11 179.938 527.267 280.209C515.115 341.611 473.888 389.857 420.73 413.482C460.885 455.573 480.627 515.888 468.475 577.291C448.631 677.562 351.261 742.761 250.992 722.918C189.586 710.766 141.336 669.536 117.714 616.371C75.6234 656.531 15.3085 676.277 -46.0972 664.125C-146.366 644.282 -211.564 546.912 -191.721 446.641C-179.57 385.238 -138.346 336.987 -85.188 313.362C-125.34 271.272 -145.081 210.96 -132.93 149.558C-113.086 49.2867 -15.7157 -15.914 84.5535 3.92885C145.958 16.0807 194.207 57.3098 217.83 110.473C259.921 70.3138 320.238 50.57 381.643 62.7219ZM176.506 319.289C161.057 334.029 143.155 346.018 123.643 354.689C138.381 370.139 150.368 388.043 159.038 407.556C174.487 392.816 192.39 380.827 211.901 372.155C197.163 356.706 185.176 338.802 176.506 319.289Z"
+            fill="#FFBE90"
+          />
+        </svg>
+      </div>
     </section>
 
     <style>
       .needs-box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  position: relative;
-  background-color: #ffffff;
-
-  .title-box,
-  .category,
-  .title,
-  .desc {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .con {
-    display: flex;
-    flex-direction: column;
-    max-width: 1620px;
-    width: 1620px;
-    align-items: center;
-    padding: 200px 0;
-    position: relative;
-  }
-
-  .title-box {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 100px;
-
-    .category span {
-      font-size: 16px;
-      font-weight: 700;
-      color: #ff873d;
-    }
-
-    .title {
-      padding: 20px 0 30px;
-
-      h1 {
-        font-weight: 700;
-        color: #333;
-        font-size: 44px;
-        text-align: center;
-        line-height: 58px;
-      }
-    }
-
-    .desc span {
-      width: 743px;
-      font-weight: 400;
-      color: #333;
-      font-size: 20px;
-      text-align: center;
-      line-height: 32px;
-    }
-  }
-
-  .main-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 80px;
-    padding: 0 138px;
-    width: 100%;
-  }
-
-  .interview-box-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 80px;
-    width: 100%;
-    border-radius: 40px;
-    background: linear-gradient(0deg, #fffaf6 0%, #fffaf6 100%);
-    overflow: hidden;
-
-    .interview-title {
-      width: 100%;
-      padding-bottom: 20px;
-
-      h1 {
-        color: #ffa264;
-        font-size: 44px;
-        line-height: 58px;
-        font-weight: 700;
-      }
-    }
-
-    .interview-box {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      padding-top: 50px;
-      width: 100%;
-      border-top: 1px solid #ffa264;
-
-      .interview {
         display: flex;
-        justify-content: space-between;
-        flex-grow: 1;
+        flex-direction: column;
+        width: 100%;
         align-items: center;
+        position: relative;
+        background-color: #ffffff;
 
-        .num {
+        .title-box,
+        .category,
+        .title,
+        .desc {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .con {
+          display: flex;
+          flex-direction: column;
+          max-width: 1620px;
+          width: 1620px;
+          align-items: center;
+          padding: 200px 0;
+          position: relative;
+        }
+
+        .title-box {
+          flex-direction: column;
+          align-items: flex-start;
+          padding-bottom: 100px;
+
+          .category span {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ff873d;
+          }
+
+          .title {
+            padding: 20px 0 30px;
+
+            h1 {
+              font-weight: 700;
+              color: #333;
+              font-size: 44px;
+              text-align: center;
+              line-height: 58px;
+            }
+          }
+
+          .desc span {
+            width: 743px;
+            font-weight: 400;
+            color: #333;
+            font-size: 20px;
+            text-align: center;
+            line-height: 32px;
+          }
+        }
+
+        .main-box {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          gap: 10px;
+          gap: 80px;
+          padding: 0 138px;
+          width: 100%;
+        }
 
-          .num-span {
-            width: 50px;
-            height: 50px;
-            background-color: #ffa264;
-            border-radius: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .interview-box-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 60px 80px;
+          width: 100%;
+          border-radius: 40px;
+          background: linear-gradient(0deg, #fffaf6 0%, #fffaf6 100%);
+          overflow: hidden;
 
-            span {
+          .interview-title {
+            width: 100%;
+            padding-bottom: 20px;
+
+            h1 {
+              color: #ffa264;
+              font-size: 44px;
+              line-height: 58px;
               font-weight: 700;
-              color: #fff;
-              font-size: 20px;
+            }
+          }
+
+          .interview-box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 50px;
+            width: 100%;
+            border-top: 1px solid #ffa264;
+
+            .interview {
+              display: flex;
+              justify-content: space-between;
+              flex-grow: 1;
+              align-items: center;
+
+              .num {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+
+                .num-span {
+                  width: 50px;
+                  height: 50px;
+                  background-color: #ffa264;
+                  border-radius: 100px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+
+                  span {
+                    font-weight: 700;
+                    color: #fff;
+                    font-size: 20px;
+                  }
+                }
+              }
+
+              .answer {
+                font-weight: 600;
+                font-size: 30px;
+                text-align: right;
+                line-height: 50px;
+                color: transparent;
+
+                .text-wrapper-3 {
+                  color: #2c1506;
+                }
+                .text-wrapper-4 {
+                  color: #1a1a1a;
+                }
+                .text-wrapper-5 {
+                  color: #fff;
+                }
+                .text-wrapper-6 {
+                  color: #ffa264;
+                }
+              }
             }
           }
         }
 
-        .answer {
-          font-weight: 600;
-          font-size: 30px;
-          text-align: right;
-          line-height: 50px;
-          color: transparent;
+        .insight-box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 200px 138px 0;
+          width: 100%;
 
-          .text-wrapper-3 {
-            color: #2c1506;
+          .insight-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px 40px;
+            background-color: #fff4ec;
+            border-radius: 104px;
+
+            span {
+              font-weight: 700;
+              color: #ffa264;
+              font-size: 36px;
+              line-height: 58px;
+              white-space: nowrap;
+            }
+
+            .insight-circle {
+              width: 90px;
+              height: 90px;
+            }
           }
-          .text-wrapper-4 {
-            color: #1a1a1a;
-          }
-          .text-wrapper-5 {
-            color: #fff;
-          }
-          .text-wrapper-6 {
-            color: #ffa264;
+
+          .insight-text {
+            span {
+              font-weight: 700;
+              color: #ff873d;
+              font-size: 40px;
+              line-height: 58px;
+              text-align: center;
+            }
           }
         }
-      }
-    }
-  }
 
-  .insight-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 200px 138px 0;
-    width: 100%;
-
-    .insight-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 30px;
-      padding: 20px 40px;
-      background-color: #fff4ec;
-      border-radius: 104px;
-
-      span {
-        font-weight: 700;
-        color: #ffa264;
-        font-size: 36px;
-        line-height: 58px;
-        white-space: nowrap;
-      }
-
-      .insight-circle {
-        width: 90px;
-        height: 90px;
-      }
-    }
-
-    .insight-text {
-      span {
-        font-weight: 700;
-        color: #ff873d;
-        font-size: 40px;
-        line-height: 58px;
-        text-align: center;
-      }
-    }
-  }
-
-  .bg-clover {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+        .bg-clover {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
       }
     </style>
-</body>
+  </body>
 </html>
