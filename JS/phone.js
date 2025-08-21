@@ -27,4 +27,21 @@ document.addEventListener("DOMContentLoaded", function () {
       scrub: true,
     },
   });
+
+  gsap.fromTo(
+    ".clover",
+    {
+      rotate: 0,
+    },
+    {
+      rotate: 90,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".phone-box",
+        start: "top center",
+        toggleActions: "play none none none",
+      },
+    }
+  );
 });
