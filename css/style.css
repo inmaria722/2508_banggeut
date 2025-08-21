@@ -46,42 +46,34 @@ img {
 }
 .banner .star-left {
   position: absolute;
-  width: 477px;
-  height: 477px;
   top: 625px;
-  left: 149px;
+  left: 80px;
 }
 .banner .star-right {
   position: absolute;
-  width: 462px;
-  height: 462px;
-  top: 577px;
-  left: 987px;
+  top: 625px;
+  right: 80px;
 }
 .banner .dami {
   position: absolute;
-  width: 380px;
-  height: 389px;
   top: 713px;
-  left: 994px;
+  left: 1060px;
 }
 .banner .nemi {
   position: absolute;
-  width: 384px;
-  height: 341px;
   top: 762px;
-  left: 217px;
-  aspect-ratio: 1.05;
+  left: 160px;
 }
 .banner .banner-text-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 0px 60px;
+  padding: 0px 0px 80px;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+  color: #fff;
 }
 .banner .banner-text-left-box {
   display: inline-flex;
@@ -95,13 +87,9 @@ img {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: -1px;
-  font-family: "Pretendard-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: 600;
   font-size: 20px;
   letter-spacing: 0;
-  line-height: normal;
 }
 .banner .banner-text-right-box {
   display: inline-flex;
@@ -114,12 +102,7 @@ img {
 }
 .banner .banner-right {
   position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Pretendard-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: 600;
   font-size: 20px;
   letter-spacing: 0;
   line-height: normal;
@@ -197,8 +180,7 @@ img {
 .banner .phone {
   position: relative;
   width: 758px;
-  height: 723.73px;
-  margin-bottom: -50px;
+  bottom: 30px;
 }
 
 /* ----------------- banner - end ----------------- */
