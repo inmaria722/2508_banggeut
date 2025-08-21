@@ -13,23 +13,27 @@
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- 라이브러리 -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/JS/overview.js"></script>
   </head>
   <body>
     <section class="overview-box">
       <div class="bg-pattern">
-        <img src="./img_yuna/bg-pattern.jpg" />
+        <img src="/img_yuna/bg-pattern.jpg" />
       </div>
 
       <div class="con">
         <div class="title-box">
-          <div class="category"><span>Overview</span></div>
-          <div class="title">
+          <div class="category" fade="up"><span>Overview</span></div>
+          <div class="title" fade="up" data-delay="0.2">
             <h1>다수의 플랫폼, 흩어진 정보<br />불편하지 않나요?</h1>
           </div>
         </div>
 
         <div class="objects">
-          <div class="pentagon">
+          <div class="graphic pentagon" data-delay="0.5">
             <svg
               width="833"
               height="812"
@@ -43,21 +47,21 @@
               />
             </svg>
           </div>
-          <div class="square">
+          <div class="graphic square" data-delay="0.6">
             <svg
-              width="751"
-              height="509"
-              viewBox="0 0 751 509"
+              width="900"
+              height="595"
+              viewBox="0 0 900 595"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M723.074 59.1007L32.8448 0.235552C12.8875 -1.46647 -3.1007 16.4931 0.900049 36.1192L84.2465 444.984C86.9044 458.023 97.8339 467.753 111.093 468.883L575.073 508.453C588.549 509.602 601.129 501.592 605.787 488.893L748.69 99.3237C755.503 80.7496 742.787 60.7819 723.074 59.1007Z"
+                d="M867.07 69.5976L39.8892 0.835229C15.9721 -1.15296 -3.18841 19.8262 1.60615 42.7521L101.49 520.361C104.675 535.592 117.773 546.957 133.663 548.278L689.703 594.501C705.853 595.844 720.929 586.486 726.511 571.652L897.768 116.583C905.934 94.8864 890.694 71.5614 867.07 69.5976Z"
                 fill="#6EC487"
               />
             </svg>
           </div>
-          <div class="clover">
+          <div class="graphic clover" data-delay="0">
             <svg
               width="690"
               height="690"
@@ -71,7 +75,7 @@
               />
             </svg>
           </div>
-          <div class="star">
+          <div class="graphic star" data-delay="0.2">
             <svg
               width="719"
               height="720"
@@ -85,7 +89,7 @@
               />
             </svg>
           </div>
-          <div class="triangle">
+          <div class="graphic triangle" data-delay="0.4">
             <svg
               width="685"
               height="713"
@@ -128,6 +132,7 @@
           max-width: 1620px;
           margin: 0 auto;
           width: 100%;
+          position: relative;
 
           .title-box {
             flex-direction: column;
