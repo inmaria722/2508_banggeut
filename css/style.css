@@ -4946,6 +4946,287 @@ img {
 
 /* ----------------- guide - end ----------------- */
 /* ----------------- scrap - start ----------------- */
+.scrap-box {
+  background: var(--base-bcw, #ffffff);
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.scrap-box .con {
+  padding: 200px 0px 200px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  height: 2500px;
+  max-width: 1620px;
+  position: relative;
+}
+.scrap-box .con .bg-clover {
+  width: 1252px;
+  height: 1252px;
+  position: static;
+  position: relative;
+  z-index: 0;
+}
+.scrap-box .con .bg-clover .bg-clover-1 {
+  background: #f5f9ff;
+  border-radius: 50%;
+  width: 688.6px;
+  height: 688.6px;
+  position: absolute;
+  left: 184px;
+  top: 500px;
+}
+.scrap-box .con .bg-clover .bg-clover-2 {
+  background: #f5f9ff;
+  border-radius: 50%;
+  width: 688.6px;
+  height: 688.6px;
+  position: absolute;
+  left: 184px;
+  top: 1150px;
+}
+.scrap-box .con .bg-clover .bg-clover-3 {
+  background: #f5f9ff;
+  border-radius: 50%;
+  width: 688.6px;
+  height: 688.6px;
+  position: absolute;
+  left: 747.4px;
+  top: 500px;
+}
+.scrap-box .con .bg-clover .bg-clover-4 {
+  background: #f5f9ff;
+  border-radius: 50%;
+  width: 688.6px;
+  height: 688.6px;
+  position: absolute;
+  left: 747.4px;
+  top: 1150px;
+}
+.scrap-box .con .star {
+  border-radius: 0px;
+  flex-shrink: 0;
+  width: 220.46px;
+  height: 220.46px;
+  position: absolute;
+  left: 1053.83px;
+  top: 875px;
+  transform: translate(-115.87px, 55.97px);
+  overflow: visible;
+}
+.scrap-box .con > .semi {
+  flex-shrink: 0;
+  width: 354.53px;
+  height: 364.33px;
+  position: absolute;
+  left: 1238.37px;
+  top: 1458px;
+  transform: translate(-46.62px, 0px);
+  overflow: visible;
+}
+.scrap-box .con > .nemi {
+  flex-shrink: 0;
+  width: 308.84px;
+  height: 311.15px;
+  position: absolute;
+  left: 107px;
+  top: 648.52px;
+  transform: translate(0px, -46.51px);
+  overflow: visible;
+  aspect-ratio: 308.84/311.15;
+}
+.scrap-box .con > .title-box {
+  padding: 0px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.scrap-box .con > .title-box > .category {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.scrap-box .con > .title-box > .category > .clover {
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  overflow: visible;
+}
+.scrap-box .con > .title-box > .category > .category-text {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.scrap-box .con > .title-box > .category > .category-text > .scrap-layout {
+  color: var(--main-mcb, #3c98ff);
+  text-align: left;
+  font-family: var(---font-family, "Pretendard-Bold", sans-serif);
+  font-size: var(---font-size, 16px);
+  font-weight: var(---font-weight, 700);
+  position: relative;
+}
+.scrap-box .clover2 {
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  overflow: visible;
+}
+.scrap-box .title {
+  padding: 20px 0px 30px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.scrap-box .div {
+  color: var(--gray-gc9, #333333);
+  text-align: center;
+  font-family: var(---font-family, "Pretendard-Bold", sans-serif);
+  font-size: var(---font-size, 44px);
+  line-height: var(---line-height, 58px);
+  font-weight: var(---font-weight, 700);
+  position: relative;
+}
+.scrap-box .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.scrap-box .div2 {
+  color: var(--gray-gc9, #333333);
+  text-align: center;
+  font-family: var(---font-family, "Pretendard-Regular", sans-serif);
+  font-size: var(---font-size, 20px);
+  line-height: var(---line-height, 32px);
+  font-weight: var(---font-weight, 400);
+  position: relative;
+}
+.scrap-box .main-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1790px;
+  position: relative;
+  z-index: 2;
+}
+.scrap-box .phone-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 3;
+}
+.scrap-box .btn-box {
+  padding: 0px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.scrap-box .btn {
+  background: #ffffff;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--gray-gc2, #e6e6e6);
+  border-width: 1px;
+  padding: 14px 20px 14px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.scrap-box .scrap-circle {
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.scrap-box .div3 {
+  color: var(--gray-gc9, #333333);
+  text-align: center;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: var(--t-26, 26px);
+  font-weight: var(--w-7, 700);
+  position: relative;
+}
+.scrap-box .phone-overflow-img {
+  border-radius: 0px 0px 40px 40px;
+  flex-shrink: 0;
+  width: 382px;
+  height: 980px;
+  position: absolute;
+  left: 0px;
+  top: 780.78px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 382/980;
+}
+.scrap-box .phone-mockup {
+  flex-shrink: 0;
+  width: 382px;
+  height: 791px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* ----------------- scrap - end ----------------- */
 /* ----------------- community - start ----------------- */
 /* ----------------- community - end ----------------- */
