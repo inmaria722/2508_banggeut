@@ -4626,6 +4626,324 @@ img {
 
 /* ----------------- search - end ----------------- */
 /* ----------------- guide - start ----------------- */
+.guide-box {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.guide-box .con {
+  padding: 200px 0px 200px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  max-width: 1620px;
+  position: relative;
+  overflow: hidden;
+}
+.guide-box .bg-gradient-circle {
+  background: radial-gradient(closest-side, rgb(255, 190, 144) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 5000px;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1373px;
+  height: 1373px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: hidden;
+}
+.guide-box .title-box {
+  padding: 0px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.guide-box .category {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.guide-box .clover {
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  overflow: visible;
+}
+.guide-box .span {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.guide-box .guide-layout {
+  color: var(--main-mco, #ff873d);
+  text-align: left;
+  font-family: var(---font-family, "Pretendard-Bold", sans-serif);
+  font-size: var(---font-size, 16px);
+  font-weight: var(---font-weight, 700);
+  position: relative;
+}
+.guide-box .clover2 {
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  overflow: visible;
+}
+.guide-box .title {
+  padding: 20px 0px 30px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.guide-box .div {
+  color: var(--gray-gc9, #333333);
+  text-align: center;
+  font-family: var(---font-family, "Pretendard-Bold", sans-serif);
+  font-size: var(---font-size, 44px);
+  line-height: var(---line-height, 58px);
+  font-weight: var(---font-weight, 700);
+  position: relative;
+}
+.guide-box .desc {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.guide-box .div2 {
+  color: var(--gray-gc9, #333333);
+  text-align: center;
+  font-family: var(---font-family, "Pretendard-Regular", sans-serif);
+  font-size: var(---font-size, 20px);
+  line-height: var(---line-height, 32px);
+  font-weight: var(---font-weight, 400);
+  position: relative;
+}
+.guide-box .main-box {
+  padding: 100px 0px 100px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1360px;
+  position: relative;
+}
+.guide-box .phone-box-phone-box-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.guide-box .phone-mockup {
+  flex-shrink: 0;
+  width: 362px;
+  height: 750px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 362/750;
+}
+.guide-box .desc2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 320px;
+  position: relative;
+}
+.guide-box .div3 {
+  color: var(--gray-gc10, #1a1a1a);
+  text-align: left;
+  font-family: var(---font-family, "Pretendard-SemiBold", sans-serif);
+  font-size: var(---font-size, 20px);
+  font-weight: var(---font-weight, 600);
+  position: relative;
+}
+.guide-box .phone-box-phone-box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.guide-box .btn-box {
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.guide-box .btn {
+  background: #ffffff;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--gray-gc2, #e6e6e6);
+  border-width: 1px;
+  padding: 14px 20px 14px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.guide-box .clover-circle {
+  background: var(--gray-gc1, #f2f2f2);
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--gray-gc2, #e6e6e6);
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+}
+.guide-box .clover3 {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: static;
+  aspect-ratio: 1;
+}
+.guide-box .ellipse-92 {
+  background: var(--main-mco, #ff873d);
+  border-radius: 50%;
+  width: 13.75px;
+  height: 13.75px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.guide-box .ellipse-94 {
+  background: var(--main-mco, #ff873d);
+  border-radius: 50%;
+  width: 13.75px;
+  height: 13.75px;
+  position: absolute;
+  left: 10px;
+  top: 21.25px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.guide-box .ellipse-93 {
+  background: var(--main-mco, #ff873d);
+  border-radius: 50%;
+  width: 13.75px;
+  height: 13.75px;
+  position: absolute;
+  left: 21.25px;
+  top: 10px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.guide-box .ellipse-95 {
+  background: var(--main-mco, #ff873d);
+  border-radius: 50%;
+  width: 13.75px;
+  height: 13.75px;
+  position: absolute;
+  left: 21.25px;
+  top: 21.25px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.guide-box .div4 {
+  color: var(--gray-gc9, #333333);
+  text-align: center;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: var(--t-26, 26px);
+  font-weight: var(--w-7, 700);
+  position: relative;
+}
+.guide-box .desc3 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 320px;
+  position: relative;
+}
+.guide-box .phone-box-phone-box-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+
 /* ----------------- guide - end ----------------- */
 /* ----------------- scrap - start ----------------- */
 /* ----------------- scrap - end ----------------- */
