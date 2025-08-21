@@ -16,4 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     }
   );
+
+  gsap.to(".main-box", {
+    height: "1800px",
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".main-box",
+      start: "top top",
+      end: "+=500",
+      scrub: true,
+    },
+  });
 });
