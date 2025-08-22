@@ -3549,11 +3549,24 @@ img {
   top: 1200px;
   z-index: -1;
 }
-.character-box .triangle-small {
+.character-box .star {
   position: absolute;
-  left: 185.25px;
-  top: 555.64px;
+  left: 1100px;
+  top: 550px;
   z-index: -2;
+  animation: rotateClockwise 7s ease-in-out infinite;
+}
+.character-box .star-2 {
+  position: absolute;
+  left: 390px;
+  top: 2480px;
+  animation: rotateClockwise 8s ease-in-out infinite;
+}
+.character-box .clover {
+  position: absolute;
+  left: 156px;
+  top: 1200px;
+  animation: rotateCounterClockwise 6s ease-in-out infinite;
 }
 .character-box .con {
   max-width: 1340px;
@@ -3621,6 +3634,8 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 0 20px;
+  position: relative;
 }
 .character-box .speech-bubble {
   position: absolute;
@@ -6091,3 +6106,19 @@ footer .con .sub {
 }
 
 /* ----------------- footer - end ----------------- */
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateCounterClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
