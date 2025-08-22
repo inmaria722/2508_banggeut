@@ -362,6 +362,7 @@ img {
   padding: 200px 0;
   flex-grow: 1;
   position: relative;
+  margin: 0 auto;
 }
 .background-box .title-box {
   display: flex;
@@ -697,6 +698,7 @@ img {
   padding: 200px 0;
   flex-grow: 1;
   position: relative;
+  margin: 0 auto;
 }
 .background-box-2 .title-box {
   display: flex;
@@ -3245,7 +3247,9 @@ img {
   color: #ff873d;
 }
 .persona-box .main-box .info-box .info .keywords .orange {
-  animation: toOrange 0.6s 2s ease-in-out forwards !important;
+  background-color: #fff4ec;
+  border: 1px solid #ffbe90;
+  color: #ff873d;
 }
 .persona-box .main-box .info-box .info .info-item-text {
   list-style: inside;

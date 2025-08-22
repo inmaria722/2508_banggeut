@@ -407,6 +407,7 @@ img {
     padding: 200px 0;
     flex-grow: 1;
     position: relative;
+    margin: 0 auto;
   }
 
   .title-box {
@@ -786,6 +787,7 @@ img {
     padding: 200px 0;
     flex-grow: 1;
     position: relative;
+    margin: 0 auto;
   }
 
   .title-box {
@@ -3612,7 +3614,9 @@ img {
           }
 
           .orange {
-            animation: toOrange 0.6s 2s ease-in-out forwards !important;
+            background-color: #fff4ec;
+            border: 1px solid #ffbe90;
+            color: #ff873d;
           }
         }
 
@@ -6046,7 +6050,6 @@ img {
     object-fit: cover;
   }
 }
-
 /* ----------------- scrap - end ----------------- */
 
 /* ----------------- community - start ----------------- */

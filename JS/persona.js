@@ -1,22 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  $('[fade="up"]').each(function (i, e) {
-    const delay = $(e).data("delay") || 0;
-
-    gsap.from(e, {
-      opacity: 0,
-      y: 60,
-      duration: 0.8,
-      delay: delay,
-      scrollTrigger: {
-        trigger: e,
-        start: "top 80%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-  });
-
   $('[slide="up"]').each(function (i, e) {
     const delay = $(e).data("delay") || 0;
 
@@ -84,6 +68,28 @@ window.addEventListener("DOMContentLoaded", function () {
       delay: 1.2,
       scrollTrigger: {
         trigger: ".pf-info-box",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      },
+    }
+  );
+
+  gsap.fromTo(
+    ".orange",
+    {
+      backgroundColor: "#fff4ec",
+      borderColor: "#ffbe90",
+      color: "#ff873d",
+    },
+    {
+      backgroundColor: "#ff873d",
+      borderColor: "#ff873d",
+      color: "#fff",
+      duration: 0.6,
+      delay: 2,
+      ease: "ease.inOut",
+      scrollTrigger: {
+        trigger: ".persona-box",
         start: "top 80%",
         toggleActions: "play reverse play reverse",
       },
