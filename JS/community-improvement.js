@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     gsap.from(e, {
       opacity: 0,
-      duration: 0.8,
+      duration: 1,
       delay: delay,
       scrollTrigger: {
         trigger: e,
