@@ -49,4 +49,20 @@ window.addEventListener("DOMContentLoaded", function () {
       },
     });
   });
+
+  $('[fade="in"]').each(function (i, e) {
+    const delay = $(e).data("delay") || 0;
+
+    gsap.from(e, {
+      opacity: 0,
+      duration: 1,
+      ease: "linear",
+      delay: delay,
+      scrollTrigger: {
+        trigger: e,
+        start: "top center",
+        toggleActions: "play reverse play reverse",
+      },
+    });
+  });
 });

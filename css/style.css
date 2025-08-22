@@ -4057,8 +4057,8 @@ img {
 }
 .home-box .con .main-box .line-right {
   position: absolute;
-  left: 1272px;
-  top: 744px;
+  left: 1210px;
+  top: 860px;
   transform: rotate(90deg);
 }
 .home-box .con .main-box .line-left {
@@ -4074,13 +4074,13 @@ img {
 }
 .home-box .con .main-box .desc-left {
   position: absolute;
-  left: 651px;
+  left: 670px;
   top: 1172px;
 }
 .home-box .con .main-box .desc-right {
   position: absolute;
   left: 1263px;
-  top: 937px;
+  top: 950px;
 }
 .home-box .con .main-box .desc-title {
   margin-bottom: 10px;
