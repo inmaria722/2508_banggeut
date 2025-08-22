@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".phone-box .main-box",
         start: "top center",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );

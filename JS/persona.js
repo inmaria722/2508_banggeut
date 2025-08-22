@@ -75,7 +75,7 @@ window.addEventListener("DOMContentLoaded", function () {
   );
 
   gsap.fromTo(
-    ".orange",
+    ".persona-box .orange",
     {
       backgroundColor: "#fff4ec",
       borderColor: "#ffbe90",
