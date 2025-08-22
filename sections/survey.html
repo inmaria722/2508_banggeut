@@ -14,18 +14,22 @@
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- 라이브러리 -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/JS/survey.js"></script>
   </head>
   <body>
     <section class="survey-box">
       <div class="con">
         <div class="title-box">
-          <div class="category">
+          <div class="category" fade="up">
             <span>Survey</span>
           </div>
-          <div class="title">
+          <div class="title" fade="up" data-delay="0.2">
             <h1>자취생들은 어떻게 생각하고 있을까요?</h1>
           </div>
-          <div class="desc">
+          <div class="desc" fade="up" data-delay="0.4">
             <p>
               실제 자취생들의 이야기를 듣기위해 1인 가구를 대상으로 설문조사를
               진행했어요
@@ -34,19 +38,19 @@
 
           <div class="survey-info-box-wrap">
             <div class="survey-info-box">
-              <div class="info-txt info-response">
+              <div class="info-txt info-response" fade="up" data-delay="0.8">
                 <span>Response</span>
                 <span>총 50명 응답</span>
               </div>
-              <div class="info-txt info-duration">
+              <div class="info-txt info-duration" fade="up" data-delay="0.9">
                 <span>Duration</span>
                 <span>2025.06.25 - 06.30</span>
               </div>
-              <div class="info-txt info-questions">
+              <div class="info-txt info-questions" fade="up" data-delay="1">
                 <span>Questions</span>
                 <span>총 50문항</span>
               </div>
-              <div class="info-txt info-tool">
+              <div class="info-txt info-tool" fade="up" data-delay="1.1">
                 <span>Tool</span>
                 <span>naver Forms</span>
               </div>
@@ -181,13 +185,13 @@
                 <div class="right-box">
                   <div class="bar-graph-box">
                     <div class="bars">
-                      <div class="bar-bar bar-bar-1">
+                      <div class="bar-bar-wrap">
+                        <div class="bar-bar bar-bar-1"></div>
                         <span>정보 검색</span>
                       </div>
                       <div class="bar-bar-wrap">
-                        <div class="bar-bar bar-bar-sub bar-bar-2">
-                          <span>정부 지원</span>
-                        </div>
+                        <div class="bar-bar bar-bar-sub bar-bar-2"></div>
+                        <span>정부 지원</span>
                         <div class="bar-line">
                           <svg
                             height="2"
@@ -220,9 +224,8 @@
                         </div>
                       </div>
                       <div class="bar-bar-wrap">
-                        <div class="bar-bar bar-bar-sub bar-bar-3">
-                          <span>해결하지 못함</span>
-                        </div>
+                        <div class="bar-bar bar-bar-sub bar-bar-3"></div>
+                        <span>해결하지 못함</span>
                         <div class="bar-line">
                           <svg
                             height="2"
@@ -255,9 +258,8 @@
                         </div>
                       </div>
                       <div class="bar-bar-wrap">
-                        <div class="bar-bar bar-bar-sub bar-bar-4">
-                          <span>기타</span>
-                        </div>
+                        <div class="bar-bar bar-bar-sub bar-bar-4"></div>
+                        <span>기타</span>
                         <div class="bar-line">
                           <svg
                             height="2"
@@ -326,13 +328,19 @@
                   </div>
                   <div class="bar-graph-box-col">
                     <div class="bar-graph">
-                      <div class="bar-col bar-col-1">
-                        <span>없다</span>
-                        <span>53%</span>
+                      <div class="bar-col-wrap">
+                        <div class="bar-col bar-col-1"></div>
+                        <div class="bar-col-txt">
+                          <span>없다</span>
+                          <span>53%</span>
+                        </div>
                       </div>
-                      <div class="bar-col bar-col-2">
-                        <span>있다</span>
-                        <span>47%</span>
+                      <div class="bar-col-wrap">
+                        <div class="bar-col bar-col-2"></div>
+                        <div class="bar-col-txt">
+                          <span>있다</span>
+                          <span>47%</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -470,6 +478,7 @@
       .survey-box {
         background-color: #fafafa;
         overflow: hidden;
+        width: 100%;
 
         .con {
           max-width: 1620px;
@@ -572,6 +581,7 @@
               height: 820px;
               position: relative;
               overflow: hidden;
+              clip-path: inset(0% 100% 0% 0%);
 
               .graph-box-wrap {
                 padding: 40px 60px;
@@ -671,12 +681,16 @@
                 height: 563px;
                 bottom: -240px;
                 left: -24px;
+                transform: scale(0);
+                transform-origin: left bottom;
               }
 
               .graph-line {
                 position: absolute;
                 bottom: 150px;
                 left: 390px;
+                clip-path: inset(0% 100% 0% 0%);
+                opacity: 0;
               }
 
               .bar-graph-box {
@@ -700,42 +714,54 @@
                     align-items: center;
                     gap: 20px;
                     width: 100%;
+                    position: relative;
+
+                    span {
+                      color: #ff873d;
+                      font-size: 20px;
+                      font-weight: 400;
+                      position: absolute;
+                      top: 50%;
+                      left: 20px;
+                      transform: translateY(-50%);
+                    }
+
+                    .bar-bar {
+                      border-radius: 4px 10px 10px 4px;
+                      /* padding: 0px 20px; */
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      overflow: hidden;
+                      transform: scaleX(0);
+                      transform-origin: left center;
+                    }
 
                     .bar-bar-sub {
                       background-color: #fffaf6;
                       height: 50px;
-
-                      span {
-                        color: #ff873d;
-                        font-size: 20px;
-                        line-height: 32px;
-                        font-weight: 400;
-                      }
                     }
 
-                    .bar-line {
-                      display: flex;
-                      align-items: center;
-                      justify-content: flex-end;
-                      width: 100%;
-                      height: 100%;
+                    .bar-bar-1 {
+                      background-color: #ff873d;
+                      width: 519px;
+                      height: 70px;
+                    }
+
+                    .bar-bar-2 {
+                      width: 150px;
+                    }
+
+                    .bar-bar-3 {
+                      width: 209px;
+                    }
+
+                    .bar-bar-4 {
+                      width: 116px;
                     }
                   }
 
-                  .bar-bar {
-                    border-radius: 4px 10px 10px 4px;
-                    padding: 0px 20px;
-                    display: flex;
-                    gap: 10px;
-                    align-items: center;
-                    overflow: hidden;
-                  }
-
-                  .bar-bar-1 {
-                    background-color: #ff873d;
-                    width: 519px;
-                    height: 70px;
-
+                  .bar-bar-wrap:first-child {
                     span {
                       color: #ffffff;
                       font-size: 26px;
@@ -743,16 +769,14 @@
                     }
                   }
 
-                  .bar-bar-2 {
-                    width: 150px;
-                  }
-
-                  .bar-bar-3 {
-                    width: 209px;
-                  }
-
-                  .bar-bar-4 {
-                    width: 116px;
+                  .bar-line {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    width: 100%;
+                    height: 100%;
+                    transform: scaleX(0);
+                    transform-origin: left center;
                   }
                 }
 
@@ -797,30 +821,58 @@
                   width: 100%;
                   position: relative;
 
-                  .bar-col {
-                    border-radius: 20px 20px 4px 4px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    overflow: hidden;
+                  .bar-col-wrap {
+                    position: relative;
 
-                    span {
-                      color: #ffffff;
-                      font-size: 26px;
-                      font-weight: 700;
+                    .bar-col-txt {
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+
+                      span {
+                        color: #ffffff;
+                        font-size: 26px;
+                        font-weight: 700;
+                      }
+                    }
+
+                    .bar-col {
+                      border-radius: 20px 20px 4px 4px;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                      overflow: hidden;
+                      transform: scaleY(0);
+                      transform-origin: center bottom;
+                    }
+
+                    .bar-col-1 {
+                      background: linear-gradient(
+                        180deg,
+                        rgba(255, 135, 61, 1) 40.00000059604645%,
+                        rgba(255, 190, 144, 1) 100%
+                      );
+                      width: 252px;
+                      height: 265px;
+                    }
+
+                    .bar-col-2 {
+                      background: linear-gradient(
+                        180deg,
+                        rgba(255, 190, 144, 1) 39.99999761581421%,
+                        rgba(255, 230, 213, 1) 100%
+                      );
+                      width: 153px;
+                      height: 190px;
                     }
                   }
 
-                  .bar-col-1 {
-                    background: linear-gradient(
-                      180deg,
-                      rgba(255, 135, 61, 1) 40.00000059604645%,
-                      rgba(255, 190, 144, 1) 100%
-                    );
-                    width: 252px;
-                    height: 265px;
-
+                  .bar-col-wrap:first-child {
                     span:last-child {
                       font-size: 48px;
                       line-height: 63px;
@@ -828,15 +880,7 @@
                     }
                   }
 
-                  .bar-col-2 {
-                    background: linear-gradient(
-                      180deg,
-                      rgba(255, 190, 144, 1) 39.99999761581421%,
-                      rgba(255, 230, 213, 1) 100%
-                    );
-                    width: 153px;
-                    height: 190px;
-
+                  .bar-col-wrap:last-child {
                     span:first-child {
                       font-size: 22px;
                       line-height: 35px;
@@ -852,6 +896,7 @@
                 padding: 40px;
                 display: flex;
                 overflow: hidden;
+                transform: scale(0);
 
                 .answer-box-wrap {
                   display: flex;
@@ -910,6 +955,8 @@
                 position: absolute;
                 left: 430px;
                 top: 100px;
+                clip-path: inset(0% 100% 0% 0%);
+                opacity: 0;
               }
             }
           }
