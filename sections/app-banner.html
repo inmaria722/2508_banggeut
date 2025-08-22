@@ -14,6 +14,9 @@
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="../JS/app-banner.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <div class="app-banner">
@@ -35,37 +38,42 @@
           />
         </svg>
       </div>
-      <div class="spray">
+      <div class="spray" slide="right">
         <svg
-          width="469"
-          height="909"
-          viewBox="0 0 469 909"
+          width="1085"
+          height="1035"
+          viewBox="0 0 1085 1035"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M-170.652 466.548C-131.924 379.092 -29.6322 339.59 57.8237 378.318L152.835 420.391C240.291 459.119 279.794 561.411 241.066 648.867C202.338 736.323 100.046 775.825 12.5905 737.097L-82.4212 695.024C-169.877 656.296 -209.379 554.004 -170.652 466.548Z"
+          <rect
+            x="229.47"
+            y="307.414"
+            width="450.279"
+            height="346.369"
+            rx="173.184"
+            transform="rotate(23.8849 229.47 307.414)"
             fill="#3C98FF"
           />
           <path
-            d="M113.935 251.642L208.947 293.715L170.495 466.093L12.1422 395.97L113.935 251.642Z"
+            d="M443.935 250.86L538.947 292.934L500.495 465.311L342.142 395.189L443.935 250.86Z"
             fill="#3C98FF"
           />
           <path
-            d="M57.1699 37.1016L460.272 215.605C465.03 217.712 467.18 223.277 465.072 228.036C458.694 242.439 445.54 252.702 430.017 255.384L365.28 266.573C346.791 269.768 334.393 287.347 337.588 305.836L352.476 391.981C352.863 394.223 352.579 396.529 351.658 398.609C347.326 408.39 333.163 407.503 330.086 397.258L299.277 294.671C295.503 282.106 284.954 272.752 272.028 270.508L222.766 261.955L208.742 293.626L113.73 251.553L127.754 219.882C103.282 190.104 39.9404 162.055 43.1469 68.7728C43.331 68.8543 50.3432 53.019 57.1699 37.1016Z"
+            d="M387.17 36.3203L790.272 214.823C795.03 216.931 797.179 222.496 795.072 227.254V227.254C788.694 241.658 775.539 251.921 760.017 254.603L695.28 265.791C676.791 268.987 664.392 286.565 667.588 305.055L682.476 391.2C682.863 393.442 682.578 395.748 681.657 397.828V397.828C677.326 407.609 663.163 406.722 660.086 396.477L629.277 293.89C625.503 281.325 614.954 271.97 602.028 269.726L552.766 261.174L538.741 292.845L443.73 250.771L457.754 219.101C433.281 189.323 369.94 161.274 373.147 67.9916C373.331 68.0731 380.343 52.2378 387.17 36.3203Z"
             fill="#EBF4FF"
           />
-          <g opacity="0.2" filter="url(#filter0_f_4712_133773)">
+          <g opacity="0.2" filter="url(#filter0_f_5161_131154)">
             <path
-              d="M-49.9922 368.18C-102.573 379.293 -149.247 414.643 -172.67 467.537C-211.397 554.993 -171.895 657.285 -84.4395 696.013L10.5723 738.087C48.4222 754.848 89.0503 756.952 126.103 746.861C-0.17984 626.376 -42.3367 470.606 -49.9922 368.18Z"
+              d="M280.008 367.401C227.427 378.515 180.753 413.865 157.33 466.759C118.602 554.215 158.104 656.507 245.56 695.234L340.572 737.309C378.422 754.069 419.05 756.174 456.102 746.083C329.82 625.598 287.663 469.828 280.008 367.401Z"
               fill="#EBF4FF"
             />
           </g>
           <defs>
             <filter
-              id="filter0_f_4712_133773"
-              x="-197.545"
-              y="358.18"
+              id="filter0_f_5161_131154"
+              x="132.455"
+              y="357.398"
               width="333.647"
               height="404.781"
               filterUnits="userSpaceOnUse"
@@ -80,13 +88,13 @@
               />
               <feGaussianBlur
                 stdDeviation="5"
-                result="effect1_foregroundBlur_4712_133773"
+                result="effect1_foregroundBlur_5161_131154"
               />
             </filter>
           </defs>
         </svg>
       </div>
-      <div class="bubble">
+      <div class="bubble" slide="right">
         <svg
           width="1078"
           height="802"
@@ -100,7 +108,7 @@
           />
         </svg>
       </div>
-      <div class="semi">
+      <div class="semi" slide="right">
         <svg
           width="1265"
           height="1263"
@@ -235,7 +243,7 @@
           </defs>
         </svg>
       </div>
-      <div class="tool">
+      <div class="tool" slide="up">
         <svg
           width="406"
           height="360"
@@ -269,7 +277,7 @@
           />
         </svg>
       </div>
-      <div class="basket">
+      <div class="basket" slide="left">
         <svg
           width="1014"
           height="1047"
@@ -327,7 +335,7 @@
         </svg>
       </div>
       <div class="con">
-        <div class="title">
+        <div class="title" fade="up">
           <svg
             width="562"
             height="401"
@@ -362,7 +370,7 @@
         .spray {
           position: absolute;
           top: 134px;
-          left: 0;
+          left: -350px;
         }
 
         .bubble {
@@ -403,6 +411,7 @@
           position: absolute;
           z-index: 10;
           max-width: 1620px;
+          margin: 0 auto;
           width: 100%;
           height: 100%;
           top: 0;
@@ -412,13 +421,15 @@
 
           .title {
             width: 100%;
-            text-align: center;
+            display: flex;
+            justify-content: center;
           }
 
           .phone-box {
             width: 100%;
             display: flex;
             justify-content: center;
+            background-color: transparent;
 
             img {
               width: 1077px;
