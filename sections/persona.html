@@ -14,6 +14,9 @@
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="../JS/persona.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <section class="persona-box">
@@ -22,10 +25,10 @@
       </div>
       <div class="con">
         <div class="title-box">
-          <div class="title">
+          <div class="title" fade="up">
             <h1>Persona</h1>
           </div>
-          <div class="desc">
+          <div class="desc" fade="up" data-delay="0.2">
             <span
               >user research를 통한 인사이트를 기반으로 퍼소나 모델링을
               진행했어요</span
@@ -34,156 +37,150 @@
         </div>
         <div class="main-box">
           <div class="profile-box">
-            <div class="pf-img-box">
-              <svg
-                class="pf-img"
-                width="278"
-                height="278"
-                viewBox="0 0 278 278"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_4712_132155)">
-                  <rect
-                    x="0.5"
-                    y="0.21875"
-                    width="277"
-                    height="277"
-                    rx="138.5"
-                    fill="#FF873D"
-                  />
-                  <path
-                    d="M3.36894 254.065L109.39 71.2705C122.58 48.5289 155.42 48.5289 168.61 71.2705L274.631 254.065C287.866 276.885 271.401 305.469 245.021 305.469H139H32.979C6.59846 305.469 -9.86663 276.885 3.36894 254.065Z"
-                    fill="url(#paint0_linear_4712_132155)"
-                  />
-                  <g filter="url(#filter0_n_4712_132155)">
+            <div class="pf-img-box" fade="up" data-delay="0.6">
+              <div class="pf-img">
+                <div class="semi" slide="up" data-delay="1.2">
+                  <svg
+                    width="278"
+                    height="258"
+                    viewBox="0 0 278 258"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
-                      d="M3.36894 254.065L109.39 71.2705C122.58 48.5289 155.42 48.5289 168.61 71.2705L274.631 254.065C287.866 276.885 271.401 305.469 245.021 305.469H139H32.979C6.59846 305.469 -9.86663 276.885 3.36894 254.065Z"
-                      fill="url(#paint1_linear_4712_132155)"
+                      d="M3.36912 234.065L109.39 51.2705C122.58 28.5289 155.42 28.5289 168.61 51.2705L274.631 234.065C287.866 256.885 271.401 285.469 245.021 285.469H139H32.9791C6.59865 285.469 -9.86645 256.885 3.36912 234.065Z"
+                      fill="url(#paint0_linear_4009_141920)"
                     />
-                  </g>
-                  <circle
-                    cx="115.714"
-                    cy="180.847"
-                    r="11.1755"
-                    fill="#525252"
-                  />
-                  <circle
-                    cx="160.418"
-                    cy="180.847"
-                    r="11.1755"
-                    fill="#525252"
-                  />
-                  <circle cx="133.595" cy="214.374" r="20.116" fill="#FF8E3D" />
-                  <rect
-                    x="1.11755"
-                    y="-1.11755"
-                    width="33.5266"
-                    height="24.5862"
-                    rx="12.2931"
-                    transform="matrix(1 0 0 -1 104.538 225.538)"
-                    fill="#FF8E3D"
-                    stroke="#FFD588"
-                    stroke-width="2.23511"
-                  />
-                </g>
-                <defs>
-                  <filter
-                    id="filter0_n_4712_132155"
-                    x="-1.30273"
-                    y="54.2148"
-                    width="280.604"
-                    height="251.254"
-                    filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
-                  >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feBlend
-                      mode="normal"
-                      in="SourceGraphic"
-                      in2="BackgroundImageFix"
-                      result="shape"
-                    />
-                    <feTurbulence
-                      type="fractalNoise"
-                      baseFrequency="0.87642359733581543 0.87642359733581543"
-                      stitchTiles="stitch"
-                      numOctaves="3"
-                      result="noise"
-                      seed="4670"
-                    />
-                    <feColorMatrix
-                      in="noise"
-                      type="luminanceToAlpha"
-                      result="alphaNoise"
-                    />
-                    <feComponentTransfer in="alphaNoise" result="coloredNoise1">
-                      <feFuncA
-                        type="discrete"
-                        tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+                    <g filter="url(#filter0_n_4009_141920)">
+                      <path
+                        d="M3.36912 234.065L109.39 51.2705C122.58 28.5289 155.42 28.5289 168.61 51.2705L274.631 234.065C287.866 256.885 271.401 285.469 245.021 285.469H139H32.9791C6.59865 285.469 -9.86645 256.885 3.36912 234.065Z"
+                        fill="url(#paint1_linear_4009_141920)"
                       />
-                    </feComponentTransfer>
-                    <feComposite
-                      operator="in"
-                      in2="shape"
-                      in="coloredNoise1"
-                      result="noise1Clipped"
+                    </g>
+                    <circle
+                      cx="115.714"
+                      cy="160.847"
+                      r="11.1755"
+                      fill="#525252"
                     />
-                    <feFlood
-                      flood-color="rgba(255, 226, 197, 0.23)"
-                      result="color1Flood"
+                    <circle
+                      cx="160.418"
+                      cy="160.847"
+                      r="11.1755"
+                      fill="#525252"
                     />
-                    <feComposite
-                      operator="in"
-                      in2="noise1Clipped"
-                      in="color1Flood"
-                      result="color1"
+                    <circle
+                      cx="133.595"
+                      cy="194.374"
+                      r="20.116"
+                      fill="#FF8E3D"
                     />
-                    <feMerge result="effect1_noise_4712_132155">
-                      <feMergeNode in="shape" />
-                      <feMergeNode in="color1" />
-                    </feMerge>
-                  </filter>
-                  <linearGradient
-                    id="paint0_linear_4712_132155"
-                    x1="202.448"
-                    y1="244.333"
-                    x2="205.321"
-                    y2="305.138"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0.242195" stop-color="#FFD588" />
-                    <stop offset="1" stop-color="#FFBA4C" />
-                  </linearGradient>
-                  <linearGradient
-                    id="paint1_linear_4712_132155"
-                    x1="202.448"
-                    y1="244.333"
-                    x2="205.504"
-                    y2="299.439"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop
-                      offset="0.0527574"
-                      stop-color="#FFCC7B"
-                      stop-opacity="0"
-                    />
-                    <stop offset="1" stop-color="#FFB135" />
-                  </linearGradient>
-                  <clipPath id="clip0_4712_132155">
                     <rect
-                      x="0.5"
-                      y="0.21875"
-                      width="277"
-                      height="277"
-                      rx="138.5"
-                      fill="white"
+                      x="1.11755"
+                      y="-1.11755"
+                      width="33.5266"
+                      height="24.5862"
+                      rx="12.2931"
+                      transform="matrix(1 0 0 -1 104.538 205.538)"
+                      fill="#FF8E3D"
+                      stroke="#FFD588"
+                      stroke-width="2.23511"
                     />
-                  </clipPath>
-                </defs>
-              </svg>
+                    <defs>
+                      <filter
+                        id="filter0_n_4009_141920"
+                        x="-1.30212"
+                        y="34.2148"
+                        width="280.604"
+                        height="251.254"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feTurbulence
+                          type="fractalNoise"
+                          baseFrequency="0.87642359733581543 0.87642359733581543"
+                          stitchTiles="stitch"
+                          numOctaves="3"
+                          result="noise"
+                          seed="4670"
+                        />
+                        <feColorMatrix
+                          in="noise"
+                          type="luminanceToAlpha"
+                          result="alphaNoise"
+                        />
+                        <feComponentTransfer
+                          in="alphaNoise"
+                          result="coloredNoise1"
+                        >
+                          <feFuncA
+                            type="discrete"
+                            tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+                          />
+                        </feComponentTransfer>
+                        <feComposite
+                          operator="in"
+                          in2="shape"
+                          in="coloredNoise1"
+                          result="noise1Clipped"
+                        />
+                        <feFlood
+                          flood-color="rgba(255, 226, 197, 0.23)"
+                          result="color1Flood"
+                        />
+                        <feComposite
+                          operator="in"
+                          in2="noise1Clipped"
+                          in="color1Flood"
+                          result="color1"
+                        />
+                        <feMerge result="effect1_noise_4009_141920">
+                          <feMergeNode in="shape" />
+                          <feMergeNode in="color1" />
+                        </feMerge>
+                      </filter>
+                      <linearGradient
+                        id="paint0_linear_4009_141920"
+                        x1="202.448"
+                        y1="224.333"
+                        x2="205.321"
+                        y2="285.138"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0.242195" stop-color="#FFD588" />
+                        <stop offset="1" stop-color="#FFBA4C" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_4009_141920"
+                        x1="202.448"
+                        y1="224.333"
+                        x2="205.504"
+                        y2="279.439"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop
+                          offset="0.0527574"
+                          stop-color="#FFCC7B"
+                          stop-opacity="0"
+                        />
+                        <stop offset="1" stop-color="#FFB135" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
             </div>
-            <div class="pf-info-box">
+            <div class="pf-info-box" fade="up" data-delay="0.8">
               <div class="user-info-box">
                 <div class="user-name">
                   <span>유세미</span>
@@ -225,7 +222,7 @@
               </div>
             </div>
           </div>
-          <div class="info-box">
+          <div class="info-box" fade="up" data-delay="1">
             <div class="persona-talk">
               <h1>“집안일? <span>생각날 때</span> 대충 하는거죠”</h1>
             </div>
@@ -274,11 +271,11 @@
                   </li>
                 </div>
               </div>
-              <div class="info-item needs-box">
+              <div class="info-item p-needs-box">
                 <div class="title">
                   <span>needs</span>
                 </div>
-                <div class="info-item-text needs">
+                <div class="info-item-text p-needs">
                   <li>정보를 저장해두고 반복 사용, 쉽게 찾고 싶어요</li>
                   <li>사람들의 후기나 Before/After 사례를 보고 싶어요</li>
                   <li>성취감을 느낄 수 있는 ‘집안일 챌린지’ 콘텐츠를 원해요</li>
@@ -294,40 +291,22 @@
     </section>
 
     <style>
-      /* ----------------- font - start ----------------- */
-      @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-
-      html,
-      html > body {
-        font-family: "Pretendard Variable", Pretendard, -apple-system,
-          BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-          "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
-          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-      }
-      /* ----------------- font - end ----------------- */
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      span {
-        margin: 0;
-        padding: 0;
-        white-space: nowrap;
-      }
-
       .persona-box {
-        width: 1920px;
         color: #1a1a1a;
+        position: relative;
 
         .bg-pattern {
           position: absolute;
           width: 1920px;
-          height: 1228px;
+          height: 1234px;
           top: 0;
           left: 0;
           aspect-ratio: 1.78;
           object-fit: cover;
+
+          img {
+            height: 100%;
+          }
         }
 
         .con {
@@ -371,7 +350,13 @@
               padding-bottom: 20px;
 
               .pf-img {
+                padding: 20px 0px 0px;
+                width: 277px;
+                height: 277px;
+                background: #ff873d;
+                border-radius: 50000px;
                 margin: 0 auto;
+                overflow: hidden;
               }
             }
 
@@ -463,7 +448,6 @@
           .info-box {
             width: 1232px;
             height: 100%;
-            border: 1px solid red;
             background-color: #fff;
             border: 2px solid #ff873d;
             border-radius: 40px;
@@ -500,6 +484,8 @@
                 align-items: flex-start;
                 gap: 20px;
                 padding: 0px 0px 10px;
+                font-size: 20px;
+                font-weight: 400;
 
                 span {
                   background-color: #fff4ec;
@@ -510,9 +496,10 @@
                 }
 
                 .orange {
-                  background-color: #ff873d;
-                  border: none;
-                  color: #fff;
+                  background-color: #fff4ec;
+                  border: 1px solid #ffbe90;
+                  color: #ff873d;
+                  animation: toOrange 0.6s 2s ease-in-out forwards;
                 }
               }
 
@@ -524,6 +511,19 @@
               }
             }
           }
+        }
+      }
+
+      @keyframes toOrange {
+        0% {
+          background-color: #fff4ec;
+          border-color: #ffbe90;
+          color: #ff873d;
+        }
+        100% {
+          background-color: #ff873d;
+          border-color: #ff873d;
+          color: #fff;
         }
       }
     </style>
