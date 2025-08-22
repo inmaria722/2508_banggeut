@@ -4342,7 +4342,7 @@ img {
 
       .level-3-up {
         position: absolute;
-        top: -40px;
+        top: 50px;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -4391,10 +4391,16 @@ img {
 
       span {
         margin-top: 20px;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
-        color: #ff873d;
+        color: #ffa264;
         text-align: center;
+        transition: all 0.3s;
+      }
+
+      span.active {
+        font-size: 20px;
+        color: #ff873d;
       }
 
       .circle-box {

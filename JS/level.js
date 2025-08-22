@@ -1,23 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  //공동 속성
-  $('[fade="up"]').each(function (i, e) {
-    const delay = $(e).data("delay") || 0;
-
-    gsap.from(e, {
-      opacity: 0,
-      y: 60,
-      duration: 0.8,
-      delay: delay,
-      scrollTrigger: {
-        trigger: e,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-      },
-    });
-  });
-
   $('[slide="up"]').each(function (i, e) {
     const delay = $(e).data("delay") || 0;
 
@@ -41,13 +24,13 @@ window.addEventListener("DOMContentLoaded", function () {
     ScrollTrigger.create({
       trigger: e,
       animation: tl,
-      start: "top 90%",
+      start: "top 80%",
       toggleActions: "play reverse play reverse",
     });
   });
 
   gsap.fromTo(
-    ".bg-clover",
+    ".level-box .bg-clover",
     {
       scale: 0,
       opacity: 0,
@@ -58,9 +41,9 @@ window.addEventListener("DOMContentLoaded", function () {
       duration: 1,
       ease: "power3.out",
       scrollTrigger: {
-        trigger: ".logo-box",
-        start: "top bottom", // 로고박스가 화면 중간에 올 때 시작
-        toggleActions: "play none none none",
+        trigger: ".level-box",
+        start: "top center",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -79,6 +62,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".gauge-box-wrap",
         start: "top 80%",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -97,6 +81,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".gauge-box-wrap",
         start: "top 80%",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -110,9 +95,29 @@ window.addEventListener("DOMContentLoaded", function () {
     {
       scale: 1,
       opacity: 1,
-      duration: 1,
+      duration: 1.5,
       delay: 1,
       ease: "back.out(1.7)",
+      scrollTrigger: {
+        trigger: ".gauge-box-wrap",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      },
     }
   );
+
+  $(window).on("scroll", function () {
+    const $target = $(".current-box");
+    const $span = $target.find("span");
+
+    const scrollTop = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const targetOffset = $target.offset().top;
+
+    if (scrollTop + windowHeight - 200 > targetOffset) {
+      $span.addClass("active");
+    } else {
+      $span.removeClass("active");
+    }
+  });
 });

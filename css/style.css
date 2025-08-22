@@ -3868,7 +3868,7 @@ img {
 }
 .level-box .main-box .level-card-box .level-3-up {
   position: absolute;
-  top: -40px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -3910,10 +3910,15 @@ img {
 }
 .level-box .main-box .current-box span {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  color: #ff873d;
+  color: #ffa264;
   text-align: center;
+  transition: all 0.3s;
+}
+.level-box .main-box .current-box span.active {
+  font-size: 20px;
+  color: #ff873d;
 }
 .level-box .main-box .current-box .circle-box {
   display: flex;
