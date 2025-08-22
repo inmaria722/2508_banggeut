@@ -2,15 +2,15 @@ window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.to(".app-screen-box", {
-    borderTopLeftRadius: "900px",
-    borderTopRightRadius: "900px",
-
+    borderTopLeftRadius: "600px",
+    borderTopRightRadius: "600px",
     ease: "none",
-
+    duration: 0.4,
     scrollTrigger: {
       trigger: ".app-screen-box",
-      start: "top top",
-      scrub: true,
+      start: "top center",
+      end: "bottom center",
+      toggleActions: "play none none reverse",
     },
   });
 });
