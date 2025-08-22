@@ -14,10 +14,14 @@
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- 라이브러리 -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/JS/shopping-improvement.js"></script>
   </head>
   <body>
     <section class="shopping-improvement-box">
-      <div class="clover-g">
+      <div class="clover-g" fade="in" data-delay="0.2">
         <svg
           width="124"
           height="125"
@@ -31,7 +35,7 @@
           />
         </svg>
       </div>
-      <div class="clover-b">
+      <div class="clover-b" fade="in" data-delay="0.9">
         <svg
           width="124"
           height="125"
@@ -45,7 +49,7 @@
           />
         </svg>
       </div>
-      <div class="clover-o">
+      <div class="clover-o" fade="in" data-delay="0.5">
         <svg
           width="124"
           height="125"
@@ -61,17 +65,17 @@
       </div>
       <div class="con">
         <div class="title-box">
-          <div class="category category-im">
+          <div class="category category-im" fade="up">
             <span>쇼핑 리뷰</span>
           </div>
-          <div class="title">
+          <div class="title" fade="up" data-delay="0.2">
             <h1>
               리뷰 페이지를
               <br />
               더보기 구조로 정리했어요
             </h1>
           </div>
-          <div class="desc">
+          <div class="desc" fade="up" data-delay="0.4">
             <span>
               사용자 리뷰에 ‘...더보기’ 구조를 사용하여 가독성을
               <br />
@@ -80,7 +84,7 @@
           </div>
         </div>
         <div class="main-box">
-          <div class="as-is">
+          <div class="as-is" fade="up" data-delay="0.8">
             <div class="text-box">
               <span>AS-IS</span>
               <p>긴 리뷰와 짧은 리뷰가 섞여<br />보기 불편하고 피로했어요</p>
@@ -89,18 +93,18 @@
               <div class="phone-box phone-left">
                 <img
                   class="shopping-as-is-img-l"
-                  src="./img_yuna/shopping-as-is__img-l.png"
+                  src="/img_yuna/shopping-as-is__img-l.png"
                 />
               </div>
               <div class="phone-box phone-right">
                 <img
                   class="shopping-as-is-img-r"
-                  src="./img_yuna/shopping-as-is__img-r.png"
+                  src="/img_yuna/shopping-as-is__img-r.png"
                 />
               </div>
             </div>
           </div>
-          <div class="to-be">
+          <div class="to-be" fade="up" data-delay="1">
             <div class="text-box">
               <span class="to-be-blue">TO-BE</span>
               <p>
@@ -111,11 +115,11 @@
             <div class="phone-box">
               <img
                 class="community-to-be-img"
-                src="./img_yuna/shopping-to-be__img.png"
+                src="/img_yuna/shopping-to-be__img.png"
               />
             </div>
-            <div class="comment">
-              <img src="./img_yuna/shopping-comment__img.png" />
+            <div class="comment" fade="zoom-in-up" data-delay="1.3">
+              <img src="/img_yuna/shopping-comment__img.png" />
             </div>
             <div class="im-line">
               <svg
@@ -144,12 +148,14 @@
           position: absolute;
           left: calc(50% - 750px);
           top: 507px;
+          animation: rotateCounterClockwise 4s ease-in-out infinite;
         }
 
         .clover-b {
           position: absolute;
           left: calc(50% - -549px);
           top: 355px;
+          animation: rotateClockwise 5s ease-in-out infinite;
         }
 
         .clover-o {
@@ -157,6 +163,7 @@
           position: absolute;
           left: calc(50% - -133px);
           top: 806px;
+          animation: rotateClockwise 7s ease-in-out infinite;
         }
 
         .con {
@@ -317,6 +324,24 @@
               overflow: visible;
             }
           }
+        }
+      }
+
+      @keyframes rotateClockwise {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes rotateCounterClockwise {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(-360deg);
         }
       }
     </style>
