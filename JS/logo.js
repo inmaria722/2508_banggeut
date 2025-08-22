@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".logo-box",
-        start: "top bottom", // 로고박스가 화면 중간에 올 때 시작
-        toggleActions: "play none none none",
+        start: "top center",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".logo-box",
         start: "top center",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".logo-box",
         start: "top center",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".logo-box",
         start: "top center",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );

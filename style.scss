@@ -3958,6 +3958,16 @@ img {
 
     .typography-box {
       background-color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lines-v {
+      position: absolute;
+    }
+
+    .lines-h {
+      position: absolute;
     }
   }
 }
