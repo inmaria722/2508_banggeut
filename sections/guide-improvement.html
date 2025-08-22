@@ -14,23 +14,27 @@
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- 라이브러리 -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/JS/guide-improvement.js"></script>
   </head>
   <body>
     <section class="guide-improvement-box">
       <div class="bg-circle"></div>
       <div class="con">
         <div class="title-box">
-          <div class="category category-im">
+          <div class="category category-im" fade="up">
             <span>상황별 가이드</span>
           </div>
-          <div class="title">
+          <div class="title" fade="up" data-delay="0.2">
             <h1>
               탐색하기 쉽도록
               <br />
               상황별 페이지를 구분했어요
             </h1>
           </div>
-          <div class="desc">
+          <div class="desc" fade="up" data-delay="0.4">
             <span>
               기존의 아코디언 형식이 아닌, 상황별 페이지를 추가하여
               <br />
@@ -43,17 +47,17 @@
             <div class="phone-box">
               <img
                 class="guide-as-is-img-l"
-                src="./img_yuna/guide-as-is__img-c.png"
+                src="/img_yuna/guide-as-is__img-l.png"
               />
             </div>
             <div class="phone-box phone-box-2">
               <img
                 class="guide-as-is-img-c"
-                src="./img_yuna/guide-as-is__img-r.png"
+                src="/img_yuna/guide-as-is__img-c.png"
               />
             </div>
             <div class="as-is">
-              <div class="text-box">
+              <div class="text-box" fade="in" data-delay="1.5">
                 <span>AS-IS</span>
                 <p>
                   보여지는 가이드가 제한적이라<br />한눈에 파악할 수 없었어요
@@ -62,13 +66,13 @@
               <div class="phone-box">
                 <img
                   class="guide-as-is-img-r"
-                  src="./img_yuna/guide-to-be__img.png"
+                  src="/img_yuna/guide-as-is__img-r.png"
                 />
               </div>
             </div>
           </div>
           <div class="to-be">
-            <div class="text-box">
+            <div class="text-box" fade="in" data-delay="2.2">
               <span class="to-be-orange">TO-BE</span>
               <p>
                 각 상황별 페이지를 추가해 사용자의<br />용도에 따라 탐색하기
@@ -78,7 +82,7 @@
             <div class="phone-box">
               <img
                 class="guide-to-be-img"
-                src="https://i.ibb.co/C5S1b80Y/guide-to-be-img.png"
+                src="/img_yuna/guide-to-be__img.png"
               />
             </div>
           </div>
@@ -98,7 +102,7 @@
               />
             </svg>
           </div>
-          <div class="step step-1">
+          <div class="step step-1" fade="in" data-delay="1.4">
             <div class="dot">
               <svg
                 width="16"
@@ -112,7 +116,7 @@
             </div>
             <span>step 1</span>
           </div>
-          <div class="step step-2">
+          <div class="step step-2" fade="in" data-delay="1.6">
             <div class="dot">
               <svg
                 width="16"
@@ -126,7 +130,7 @@
             </div>
             <span class="step-2">step 2</span>
           </div>
-          <div class="to-be-dot">
+          <div class="to-be-dot" fade="in" data-delay="2.4">
             <svg
               width="52"
               height="53"
@@ -361,6 +365,7 @@
               width: 1374px;
               height: 40px;
               position: relative;
+              transform-origin: left center;
             }
 
             .step {
