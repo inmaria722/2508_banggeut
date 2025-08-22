@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
   //marquee
-  const $wrap = $(".marquee-wrap");
+  const $wrap = $(".marquee-box .marquee-wrap");
   const $box = $(".marquee-box");
   const originalContent = $wrap.html();
 
