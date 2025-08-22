@@ -1,7 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  //공동 속성
   $('[fade="up"]').each(function (i, e) {
     const delay = $(e).data("delay") || 0;
 
@@ -12,8 +11,8 @@ window.addEventListener("DOMContentLoaded", function () {
       delay: delay,
       scrollTrigger: {
         trigger: e,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
       },
     });
   });
@@ -50,6 +49,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".pf-info-box",
         start: "top 80%",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -67,6 +67,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".pf-info-box",
         start: "top 80%",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -84,6 +85,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".pf-info-box",
         start: "top 80%",
+        toggleActions: "play reverse play reverse",
       },
     }
   );

@@ -3466,7 +3466,13 @@ img {
         padding-bottom: 20px;
 
         .pf-img {
+          padding: 20px 0px 0px;
+          width: 277px;
+          height: 277px;
+          background: #ff873d;
+          border-radius: 50000px;
           margin: 0 auto;
+          overflow: hidden;
         }
       }
 
@@ -3558,7 +3564,6 @@ img {
     .info-box {
       width: 1232px;
       height: 100%;
-      border: 1px solid red;
       background-color: #fff;
       border: 2px solid #ff873d;
       border-radius: 40px;
@@ -3595,6 +3600,8 @@ img {
           align-items: flex-start;
           gap: 20px;
           padding: 0px 0px 10px;
+          font-size: 20px;
+          font-weight: 400;
 
           span {
             background-color: #fff4ec;
@@ -3605,9 +3612,7 @@ img {
           }
 
           .orange {
-            background-color: #ff873d;
-            border: none;
-            color: #fff;
+            animation: toOrange 0.6s 2s ease-in-out forwards !important;
           }
         }
 
@@ -6857,5 +6862,18 @@ footer {
   }
   to {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes toOrange {
+  0% {
+    background-color: #fff4ec;
+    border-color: #ffbe90;
+    color: #ff873d;
+  }
+  100% {
+    background-color: #ff873d;
+    border-color: #ff873d;
+    color: #fff;
   }
 }
