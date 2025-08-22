@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.fromTo(
-    ".phone-mockup",
+    ".phone-box .phone-mockup",
     {
       y: 1000,
     },
@@ -11,17 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 1.5,
       ease: "power3.out",
       scrollTrigger: {
-        trigger: ".main-box",
-        start: "top bottom-=100px",
+        trigger: ".phone-box .main-box",
+        start: "top center",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
 
-  gsap.to(".main-box", {
+  gsap.to(".phone-box .main-box", {
     height: "1800px",
     ease: "none",
     scrollTrigger: {
-      trigger: ".main-box",
+      trigger: ".phone-box .main-box",
       start: "top top",
       end: "+=500",
       scrub: true,
@@ -29,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   gsap.fromTo(
-    ".clover",
+    ".phone-box .clover",
     {
       rotate: 0,
     },
@@ -38,9 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 1,
       ease: "power3.out",
       scrollTrigger: {
-        trigger: ".phone-box",
+        trigger: ".phone-box .main-box",
         start: "top center",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
