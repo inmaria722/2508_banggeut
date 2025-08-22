@@ -33,4 +33,20 @@ window.addEventListener("DOMContentLoaded", function () {
       },
     });
   });
+
+  $('[fade="right"]').each(function (i, e) {
+    const delay = $(e).data("delay") || 0;
+
+    gsap.from(e, {
+      opacity: 0,
+      x: -60,
+      duration: 0.8,
+      delay: delay,
+      scrollTrigger: {
+        trigger: e,
+        start: "top center",
+        toggleActions: "play reverse play reverse",
+      },
+    });
+  });
 });
