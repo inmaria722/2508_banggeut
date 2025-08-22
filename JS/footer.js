@@ -1,24 +1,8 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  $('[fade="up"]').each(function (i, e) {
-    const delay = $(e).data("delay") || 0;
-
-    gsap.from(e, {
-      opacity: 0,
-      y: 60,
-      duration: 0.8,
-      delay: delay,
-      scrollTrigger: {
-        trigger: e,
-        start: "top 80%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-  });
-
   gsap.fromTo(
-    ".semi",
+    "footer .semi",
     {
       x: 1000,
     },
@@ -51,7 +35,7 @@ window.addEventListener("DOMContentLoaded", function () {
   );
 
   gsap.fromTo(
-    ".clover-right",
+    "footer .clover-right",
     {
       rotate: 0,
     },
