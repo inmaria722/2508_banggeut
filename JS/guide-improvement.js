@@ -34,12 +34,12 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   // guide-improvement
-  $(".phone-box").each(function (i, box) {
+  $(".guide-improvement-box .phone-box").each(function (i, box) {
     const fromX = i === 3 ? 700 : -500;
     gsap.set(box, { x: fromX, opacity: 0 });
   });
 
-  gsap.set(".flow-line-box .line", {
+  gsap.set(".guide-improvement-box .flow-line-box .line", {
     scaleX: 0,
     transformOrigin: "left center",
     opacity: 0,
@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", function () {
       });
 
       // flow-line
-      gsap.to(".flow-line-box .line", {
+      gsap.to(".guide-improvement-box .flow-line-box .line", {
         scaleX: 1,
         duration: 1.2,
         delay: 1,
