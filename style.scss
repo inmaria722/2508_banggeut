@@ -4490,53 +4490,55 @@ img {
 
 /* ----------------- item choose - start ----------------- */
 .item-choose-box {
-  height: 624px;
-  background-color: #3c98ff;
-  position: relative;
-  overflow: visible;
+        height: 624px;
+        background-color: #3c98ff;
+        position: relative;
+        overflow: visible;
 
-  .phone-mockup {
-    position: absolute;
-    width: 505.32px;
-    height: 1046.9px;
-    left: 480px;
-    top: 120px;
-    transform: rotate(-39.03deg);
-  }
+        .phone-mockup {
+          position: absolute;
+          width: 505.32px;
+          height: 1046.9px;
+          left: 480px;
+          top: 120px;
+          transform: rotate(-39.03deg);
+        }
 
-  .sticker-semi {
-    position: absolute;
-    left: 1028.51px;
-    top: 292.51px;
-    z-index: 1;
-  }
+        .sticker-semi {
+          position: absolute;
+          left: 1028.51px;
+          top: 292.51px;
+          z-index: 1;
+        }
 
-  .left-hand {
-    position: absolute;
-    left: 994px;
-    top: 489.22px;
-    z-index: 2;
-  }
+        .left-hand {
+          position: absolute;
+          left: 994px;
+          top: 489.22px;
+          z-index: 2;
+          animation: rotateCounterClockwise2 1s 2.2s ease-in-out infinite;
+        }
 
-  .right-hand {
-    position: absolute;
-    left: 1380px;
-    top: 520.22px;
-    z-index: 2;
-  }
+        .right-hand {
+          position: absolute;
+          left: 1380px;
+          top: 520.22px;
+          z-index: 2;
+          animation: rotateClockwise2 1s 2.2s ease-in-out infinite;
+        }
 
-  .speech-bubble {
-    position: absolute;
-    left: 1443.53px;
-    top: 274.39px;
-  }
+        .speech-bubble {
+          position: absolute;
+          left: 1443.53px;
+          top: 274.39px;
+        }
 
-  .sticker-box {
-    position: absolute;
-    left: 665.08px;
-    top: -111.41px;
-  }
-}
+        .sticker-box {
+          position: absolute;
+          left: 665.08px;
+          top: -111.41px;
+        }
+      }
 /* ----------------- item choose - end ----------------- */
 
 /* ----------------- phone - start ----------------- */
@@ -6937,6 +6939,30 @@ footer {
     transform: rotate(-360deg);
   }
 }
+
+@keyframes rotateClockwise2 {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(30deg);
+        }
+        100% {
+          transform: rotate(0);
+        }
+      }
+
+      @keyframes rotateCounterClockwise2 {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(-30deg);
+        }
+        100% {
+          transform: rotate(0);
+        }
+      }
 
 @keyframes toOrange {
   0% {

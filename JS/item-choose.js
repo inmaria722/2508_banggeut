@@ -1,24 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.registerPlugin(ScrollTrigger);
-
-  $('[fade="up"]').each(function (i, e) {
-    const delay = $(e).data("delay") || 0;
-
-    gsap.from(e, {
-      opacity: 0,
-      y: 60,
-      duration: 0.8,
-      delay: delay,
-      scrollTrigger: {
-        trigger: e,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-      },
-    });
-  });
-
   $(".sticker-box").each(function (_, box) {
     const svg = box.querySelector("svg");
     if (!svg) return;
@@ -50,7 +32,7 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   gsap.fromTo(
-    ".phone-mockup",
+    ".item-choose-box .phone-mockup",
     {
       y: 1000,
     },
@@ -60,7 +42,7 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".item-choose-box",
-        start: "top 90%",
+        start: "top 80%",
       },
     }
   );
