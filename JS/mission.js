@@ -12,8 +12,8 @@ window.addEventListener("DOMContentLoaded", function () {
       delay: delay,
       scrollTrigger: {
         trigger: e,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
       },
     });
   });
@@ -28,14 +28,14 @@ window.addEventListener("DOMContentLoaded", function () {
       delay: delay,
       scrollTrigger: {
         trigger: e,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
       },
     });
   });
 
   gsap.fromTo(
-    ".phone-mockup",
+    ".mission-box .phone-mockup",
     {
       y: 1000,
     },
@@ -45,14 +45,14 @@ window.addEventListener("DOMContentLoaded", function () {
       delay: 0.8,
       ease: "power3.out",
       scrollTrigger: {
-        trigger: ".main-box",
-        start: "top bottom-=100px",
+        trigger: ".mission-box .main-box",
+        start: "top 80%",
       },
     }
   );
 
   gsap.fromTo(
-    ".popup",
+    ".mission-box .popup",
     {
       scale: 0,
       opacity: 0,
@@ -64,9 +64,9 @@ window.addEventListener("DOMContentLoaded", function () {
       delay: 0.4,
       ease: "power3.out",
       scrollTrigger: {
-        trigger: ".logo-box",
-        start: "top bottom",
-        toggleActions: "play none none none",
+        trigger: ".mission-box .main-box",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
