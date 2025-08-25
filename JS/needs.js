@@ -2,72 +2,50 @@ window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
   // needs
+  const needsInterview1 = gsap.timeline();
+
+  ScrollTrigger.create({
+    animation: needsInterview1,
+    trigger: ".needs-box",
+    start: "top top",
+    end: "bottom 110%",
+    scrub: 1,
+  });
+  needsInterview1.to(
+    ".needs-box .interview-box-wrap-1",
+    { clipPath: "inset(0% 0% 0% 0%)" },
+    0
+  );
+
+  const needsInterview2 = gsap.timeline();
+  ScrollTrigger.create({
+    animation: needsInterview2,
+    trigger: ".needs-box",
+    start: "top top",
+    end: "bottom 110%",
+    scrub: 1,
+  });
+  needsInterview1.to(
+    ".needs-box .interview-box-wrap-2",
+    { clipPath: "inset(0% 0% 0% 0%)" },
+    0.2
+  );
+
+  // needs - insight-btn
   {
-    const selector = ".needs-box .interview-box-wrap";
-    const baseStagger = 0.1;
-    const dur = 0.6;
-
-    $(selector).each(function () {
-      const $el = $(this);
-      const type = ($el.data("anim") || "slide-left").toLowerCase();
-
-      if (type === "zoom-in") {
-        gsap.set($el, {
-          autoAlpha: 0,
-          scale: 0.85,
-          y: 10,
-          transformOrigin: "center center",
-        });
-      } else if (type === "slide-right") {
-        gsap.set($el, { autoAlpha: 0, x: 80 });
-      } else {
-        gsap.set($el, { autoAlpha: 0, x: -80 });
-      }
-    });
-
-    ScrollTrigger.batch(selector, {
-      start: "top 85%",
-      onEnter: (batch) => {
-        $(batch).each(function (i) {
-          const $el = $(this);
-          const type = ($el.data("anim") || "slide-left").toLowerCase();
-          const extraDelay = parseFloat($el.data("delay") || "0");
-
-          const common = {
-            autoAlpha: 1,
-            duration: dur,
-            ease: "power3.out",
-            delay: i * baseStagger + extraDelay,
-          };
-
-          if (type === "zoom-in") {
-            gsap.to($el, { ...common, scale: 1, y: 0 });
-          } else if (type === "slide-right") {
-            gsap.to($el, { ...common, x: 0 });
-          } else {
-            gsap.to($el, { ...common, x: 0 });
-          }
-        });
-      },
-    });
-  }
-
-  // ----- insight-btn -----
-  {
-    const $btn = $(".needs-box .insight-btn");
-    const $circle = $btn.find(".needs-box .insight-circle");
-    const $label = $btn.find(".needs-box span");
-    const $right = $(".needs-box .insight-text");
-
+    const $btn = $(".insight-btn");
+    const $circle = $btn.find(".insight-circle");
+    const $label = $btn.find("span");
+    const $right = $(".insight-text");
     if (!$btn.length || !$circle.length || !$label.length || !$right.length)
       return;
 
-    const expandedWidth = $btn.outerWidth();
-    const circleW = $circle.outerWidth() || 90;
+    const expandedWidth = $btn[0].getBoundingClientRect().width;
+    const circleW = $circle[0].getBoundingClientRect().width || 90;
     const collapsedWidth = circleW + 60;
-    const labelNaturalW = $label.outerWidth();
+    const labelNaturalW = $label[0].getBoundingClientRect().width;
 
-    gsap.set($btn, {
+    gsap.set($btn[0], {
       width: collapsedWidth,
       paddingLeft: 30,
       paddingRight: 30,
@@ -75,22 +53,22 @@ window.addEventListener("DOMContentLoaded", function () {
       x: 0,
       overflow: "hidden",
     });
-    gsap.set($label, {
+    gsap.set($label[0], {
       autoAlpha: 0,
       x: -8,
       maxWidth: 0,
       display: "inline-block",
     });
-    gsap.set($right, { autoAlpha: 0, x: -30 });
+    gsap.set($right[0], { autoAlpha: 0, x: -30 });
 
     const tl = gsap.timeline();
     const holdDur = 0.3;
     const shoveDist = 28;
 
     tl.to({}, { duration: holdDur })
-      .to($btn, { x: shoveDist, duration: 0.22, ease: "power2.in" })
+      .to($btn[0], { x: shoveDist, duration: 0.22, ease: "power2.in" })
       .to(
-        $btn,
+        $btn[0],
         {
           width: expandedWidth,
           paddingLeft: 40,
@@ -103,17 +81,17 @@ window.addEventListener("DOMContentLoaded", function () {
       )
       .add("expanded")
       .to(
-        $label,
+        $label[0],
         { maxWidth: labelNaturalW, duration: 0.35, ease: "power2.out" },
         "<+0.10"
       )
       .to(
-        $label,
+        $label[0],
         { autoAlpha: 1, x: 0, duration: 0.25, ease: "power2.out" },
         "<"
       )
       .to(
-        $right,
+        $right[0],
         { autoAlpha: 1, x: 0, duration: 0.77, ease: "power3.out" },
         "expanded"
       );

@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
   //blue
-  // 배경 네모 -> 동그랗게
+  // blue-box-1
   const $el = $(".blue-box-1 .bg-blue");
   if (!$el.length) return;
   const el = $el[0];
@@ -17,7 +17,6 @@ window.addEventListener("DOMContentLoaded", function () {
       start: "top 95%", // 더 빨리 시작
       end: "+=250", // 짧게 끝나서 빨리 완성
       scrub: true,
-      // markers: true,
       onEnter: () => (el.style.willChange = "border-radius"),
       onEnterBack: () => (el.style.willChange = "border-radius"),
       onLeave: () => (el.style.willChange = ""),
@@ -25,7 +24,7 @@ window.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // section-4 앱 인터랙션
+  // blue-box-4
   const num = (el, k, d) => {
     const v = Number($(el).data(k));
     return Number.isFinite(v) ? v : d;

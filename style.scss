@@ -1839,12 +1839,19 @@ img {
   position: relative;
   align-items: center;
   height: 1119px;
+  overflow: hidden;
   background: linear-gradient(
     180deg,
     rgba(135, 191, 255, 1) 0%,
     rgba(204, 228, 255, 1) 59%,
     rgba(235, 244, 255, 1) 100%
   );
+
+  .blue-2-star {
+    position: absolute;
+    top: -330px;
+    left: 177px;
+  }
 
   .con {
     display: flex;
@@ -1879,6 +1886,7 @@ img {
       }
     }
   }
+
   span {
     padding: 2px 6px;
     border-radius: 4px;
@@ -2088,7 +2096,6 @@ img {
 
   .user-img {
     display: flex;
-    width: 200px;
     height: 200px;
     align-items: flex-end;
     justify-content: center;
@@ -2358,9 +2365,10 @@ img {
     }
 
     .user-img {
-      padding-top: 30px;
       position: relative;
-      width: 200px;
+      display: flex;
+      align-items: flex-end;
+      height: 200px;
     }
   }
 }
@@ -2946,6 +2954,7 @@ img {
     border-radius: 40px;
     background: linear-gradient(0deg, #fffaf6 0%, #fffaf6 100%);
     overflow: hidden;
+    clip-path: inset(0% 100% 0% 0%);
 
     .interview-title {
       width: 100%;
@@ -6081,7 +6090,6 @@ img {
 
 /* ----------------- community - start ----------------- */
 .community-box {
-  width: 100%;
   position: relative;
   overflow: hidden;
 
@@ -6320,6 +6328,7 @@ img {
 .change-box {
   background: var(--main-mcg, #6ec487);
   position: relative;
+  width: 1920px;
   overflow: hidden;
 
   .bg-box {
@@ -6347,7 +6356,6 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid black;
 
     .clover-o-ol {
       position: absolute;

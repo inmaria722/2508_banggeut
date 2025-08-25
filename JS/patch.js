@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     ScrollTrigger.create({
       trigger: box,
-      start: "top 90%",
+      start: "top 70%",
       onEnter: () => {
         gsap.to(patch, {
           opacity: 1,

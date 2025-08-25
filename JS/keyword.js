@@ -1,4 +1,4 @@
-$(function () {
+window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
   // keyword
@@ -8,7 +8,7 @@ $(function () {
   if (!$cards.length) return;
 
   gsap.fromTo(
-    $cards.toArray(), // jQuery 객체 → DOM 배열
+    $cards.toArray(),
     { opacity: 0, scale: 0.7 },
     {
       opacity: 1,
@@ -17,9 +17,9 @@ $(function () {
       ease: "power2.out",
       stagger: { each: 0.15, from: "random" },
       scrollTrigger: {
-        trigger: ".keyword-box .keyword-box",
-        start: "top 80%",
-        once: true,
+        trigger: ".keyword-box",
+        start: "top 20%",
+        toggleActions: "play none none reverse",
       },
     }
   );
