@@ -5,10 +5,10 @@ window.addEventListener("DOMContentLoaded", function () {
   // 왼쪽 → 오른쪽 페이드 인 (data-anim="fade-ltr")
   $('[data-anim="fade-ltr"]').each(function () {
     const $el = $(this);
-    const delay = Number($el.data("delay")) || 0; // 지연
-    const dist = Number($el.data("dist")) || 60; // 시작 x 오프셋(px)
-    const dur = Number($el.data("dur")) || 0.8; // 지속시간
-    const start = $el.data("start") || "top 85%";
+    const delay = Number($el.data("delay")) || 0;
+    const dist = Number($el.data("dist")) || 60;
+    const dur = Number($el.data("dur")) || 0.8;
+    const start = $el.data("start") || "top 80%";
     const once = String($el.data("once")).toLowerCase() === "true";
 
     gsap.fromTo(
@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", function () {
         ease: "power3.out",
         delay,
         scrollTrigger: {
-          trigger: this, // jQuery 객체 X, DOM 요소 O
+          trigger: this,
           start,
           toggleActions: once
             ? "play none none none"
@@ -71,8 +71,18 @@ window.addEventListener("DOMContentLoaded", function () {
     );
   });
 
-  // 이미지/폰트 후 레이아웃 변할 수 있으니 새로고침
-  //   $(window).on("load", function () {
-  //     ScrollTrigger.refresh();
-  //   });
+  gsap.fromTo(
+    ".banner .phone",
+    {
+      y: 1000,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 1.5,
+      delay: 0.4,
+      ease: "power3.out",
+    }
+  );
 });

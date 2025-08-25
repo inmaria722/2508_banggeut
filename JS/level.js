@@ -8,13 +8,13 @@ window.addEventListener("DOMContentLoaded", function () {
 
     tl.fromTo(
       e,
-      { y: 40, opacity: 1 },
+      { y: 60, opacity: 1 },
       { y: 0, opacity: 1, duration: 0.8, delay: delay, ease: "power2.out" }
     );
 
     if ($(e).hasClass("level-3-up")) {
       tl.to(e, {
-        y: -40,
+        y: -60,
         duration: 0.5,
         delay: 0.2,
         ease: "power1.out",
