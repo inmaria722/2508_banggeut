@@ -11,8 +11,9 @@ window.addEventListener("DOMContentLoaded", function () {
       duration: 1.5,
       ease: "power3.out",
       scrollTrigger: {
-        trigger: ".todo-box .main-box",
+        trigger: ".todo-box",
         start: "top center",
+        toggleActions: "play none none none",
       },
     }
   );

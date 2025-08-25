@@ -1,39 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  //공동 속성
-  $('[fade="up"]').each(function (i, e) {
-    const delay = $(e).data("delay") || 0;
-
-    gsap.from(e, {
-      opacity: 0,
-      y: 60,
-      duration: 0.8,
-      delay: delay,
-      scrollTrigger: {
-        trigger: e,
-        start: "top 80%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-  });
-
-  $('[fade="right"]').each(function (i, e) {
-    const delay = $(e).data("delay") || 0;
-
-    gsap.from(e, {
-      opacity: 0,
-      x: -60,
-      duration: 0.8,
-      delay: delay,
-      scrollTrigger: {
-        trigger: e,
-        start: "top 80%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-  });
-
   gsap.fromTo(
     ".mission-box .phone-mockup",
     {
@@ -47,6 +14,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".mission-box .main-box",
         start: "top 80%",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -66,7 +34,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".mission-box .main-box",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );

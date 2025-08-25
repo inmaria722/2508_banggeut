@@ -8,6 +8,7 @@ html > body {
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+
 /* ----------------- font - end ----------------- */
 
 ::-webkit-scrollbar {
@@ -26,6 +27,10 @@ section {
 img {
   display: block;
   width: 100%;
+}
+
+[fade="up"] {
+  opacity: 0;
 }
 
 /* ----------------- banner - start ----------------- */
@@ -3442,20 +3447,7 @@ img {
     .semi-circle {
       position: absolute;
       left: 759px;
-      top: 2px;
-      width: 101px;
-      height: 101px;
-      background: #ffa264;
-      border: 5px solid #6ec487;
-      border-radius: 100%;
-      overflow: hidden;
-
-      .semi {
-        position: relative;
-        top: 6px;
-        width: 120px;
-        height: 120px;
-      }
+      top: 0;
     }
   }
 }
@@ -3940,6 +3932,8 @@ img {
 
 /* ----------------- service concept - start ----------------- */
 .service-concept-box {
+  overflow: hidden;
+
   .con {
     width: 100%;
     margin: 0 auto;
@@ -4490,55 +4484,55 @@ img {
 
 /* ----------------- item choose - start ----------------- */
 .item-choose-box {
-        height: 624px;
-        background-color: #3c98ff;
-        position: relative;
-        overflow: visible;
+  height: 624px;
+  background-color: #3c98ff;
+  position: relative;
+  overflow: visible;
 
-        .phone-mockup {
-          position: absolute;
-          width: 505.32px;
-          height: 1046.9px;
-          left: 480px;
-          top: 120px;
-          transform: rotate(-39.03deg);
-        }
+  .phone-mockup {
+    position: absolute;
+    width: 505.32px;
+    height: 1046.9px;
+    left: 480px;
+    top: 120px;
+    transform: rotate(-39.03deg);
+  }
 
-        .sticker-semi {
-          position: absolute;
-          left: 1028.51px;
-          top: 292.51px;
-          z-index: 1;
-        }
+  .sticker-semi {
+    position: absolute;
+    left: 1028.51px;
+    top: 292.51px;
+    z-index: 1;
+  }
 
-        .left-hand {
-          position: absolute;
-          left: 994px;
-          top: 489.22px;
-          z-index: 2;
-          animation: rotateCounterClockwise2 1s 2.2s ease-in-out infinite;
-        }
+  .left-hand {
+    position: absolute;
+    left: 994px;
+    top: 489.22px;
+    z-index: 2;
+    animation: rotateCounterClockwise2 1s ease-in-out infinite;
+  }
 
-        .right-hand {
-          position: absolute;
-          left: 1380px;
-          top: 520.22px;
-          z-index: 2;
-          animation: rotateClockwise2 1s 2.2s ease-in-out infinite;
-        }
+  .right-hand {
+    position: absolute;
+    left: 1380px;
+    top: 520.22px;
+    z-index: 2;
+    animation: rotateClockwise2 1s ease-in-out infinite;
+  }
 
-        .speech-bubble {
-          position: absolute;
-          left: 1443.53px;
-          top: 274.39px;
-        }
+  .speech-bubble {
+    position: absolute;
+    left: 1443.53px;
+    top: 274.39px;
+  }
 
-        .sticker-box {
-          position: absolute;
-          left: 665.08px;
-          top: -111.41px;
-        }
-      }
+  .sticker-box {
+    position: absolute;
+    left: 665.08px;
+    top: -111.41px;
+  }
+}
 /* ----------------- item choose - end ----------------- */
 
 /* ----------------- phone - start ----------------- */
@@ -4788,99 +4782,99 @@ img {
 
 /* ----------------- mission - start ----------------- */
 .mission-box {
-        .con {
-          max-width: 1620px;
-          width: 100%;
-          height: 100%;
-          margin: 0 auto;
-          padding: 200px 0;
+  .con {
+    max-width: 1620px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 200px 0;
 
-          .title-box {
-            height: 300px;
-            padding: 16px 0 0 16px;
+    .title-box {
+      height: 300px;
+      padding: 16px 0 0 16px;
 
-            .title {
-              font-size: 44px;
-              font-weight: 700;
-              margin-bottom: 20px;
-            }
-
-            .desc {
-              font-size: 20px;
-              font-weight: 400;
-              line-height: 2;
-            }
-
-            .orange {
-              color: #ff873d;
-            }
-          }
-
-          .category-box {
-            margin-bottom: 40px;
-          }
-
-          .category-2 {
-            background-color: rgba(255, 135, 61, 0.16);
-            padding: 4px 12px;
-            border-radius: 4px;
-            display: inline-block;
-            color: #ff873d;
-            font-size: 16px;
-            font-weight: 700;
-          }
-
-          .main-box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-          }
-
-          .right {
-            width: 928px;
-            height: 780px;
-            background-color: #6ec487;
-            border-radius: 60px;
-            padding: 100px 80px 0 80px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-
-            .phone-mockup {
-              width: 586px;
-              height: 1218px;
-              filter: drop-shadow(0px 0px 50px rgba(255, 244, 236, 0.3));
-            }
-          }
-
-          .left {
-            flex-grow: 1;
-
-            .img-box {
-              height: 480px;
-              background-color: #3c98ff;
-              border-radius: 60px;
-              position: relative;
-              overflow: hidden;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
-
-            .popup {
-              width: 330px;
-              height: 377.36px;
-              box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
-            }
-
-            .particles {
-              position: absolute;
-              top: 0;
-            }
-          }
-        }
+      .title {
+        font-size: 44px;
+        font-weight: 700;
+        margin-bottom: 20px;
       }
+
+      .desc {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 2;
+      }
+
+      .orange {
+        color: #ff873d;
+      }
+    }
+
+    .category-box {
+      margin-bottom: 40px;
+    }
+
+    .category-2 {
+      background-color: rgba(255, 135, 61, 0.16);
+      padding: 4px 12px;
+      border-radius: 4px;
+      display: inline-block;
+      color: #ff873d;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .main-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .right {
+      width: 928px;
+      height: 780px;
+      background-color: #6ec487;
+      border-radius: 60px;
+      padding: 100px 80px 0 80px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      .phone-mockup {
+        width: 586px;
+        height: 1218px;
+        filter: drop-shadow(0px 0px 50px rgba(255, 244, 236, 0.3));
+      }
+    }
+
+    .left {
+      flex-grow: 1;
+
+      .img-box {
+        height: 480px;
+        background-color: #3c98ff;
+        border-radius: 60px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .popup {
+        width: 330px;
+        height: 377.36px;
+        box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+      }
+
+      .particles {
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}
 /* ----------------- mission - end ----------------- */
 
 /* ----------------- routine - start ----------------- */
@@ -6941,28 +6935,28 @@ footer {
 }
 
 @keyframes rotateClockwise2 {
-        0% {
-          transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(30deg);
-        }
-        100% {
-          transform: rotate(0);
-        }
-      }
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 
-      @keyframes rotateCounterClockwise2 {
-        0% {
-          transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(-30deg);
-        }
-        100% {
-          transform: rotate(0);
-        }
-      }
+@keyframes rotateCounterClockwise2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 
 @keyframes toOrange {
   0% {

@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     ScrollTrigger.create({
       trigger: box,
-      start: "top 90%",
+      start: "top 80%",
       onEnter: () => {
         gsap.to(patch, {
           opacity: 1,
@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function () {
       onLeaveBack: () => {
         gsap.to(patch, {
           opacity: 0,
-          scale: 1.2,
+          scale: 1.4,
           duration: 0.6,
           ease: "power2.in",
         });

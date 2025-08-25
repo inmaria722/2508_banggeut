@@ -12,13 +12,13 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: "footer",
-        start: "top center",
+        start: "top 80%",
       },
     }
   );
 
   gsap.fromTo(
-    ".clover-left",
+    "footer .clover-left",
     {
       rotate: 0,
     },
@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: "footer",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: "footer",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );

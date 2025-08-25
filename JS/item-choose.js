@@ -25,8 +25,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
     ScrollTrigger.create({
       trigger: box,
-      start: "top 85%",
-      toggleActions: "play reverse play reverse",
+      start: "top 80%",
+      toggleActions: "play none none none",
       animation: tl,
     });
   });
@@ -43,6 +43,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".item-choose-box",
         start: "top 80%",
+        toggleActions: "play none none none",
       },
     }
   );

@@ -1,23 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  //공동 속성
-  $('[fade="up"]').each(function (i, e) {
-    const delay = $(e).data("delay") || 0;
-
-    gsap.from(e, {
-      opacity: 0,
-      y: 60,
-      duration: 0.8,
-      delay: delay,
-      scrollTrigger: {
-        trigger: e,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-      },
-    });
-  });
-
   $('[slide="right"]').each(function (i, e) {
     const delay = $(e).data("delay") || 0;
 
@@ -32,8 +15,8 @@ window.addEventListener("DOMContentLoaded", function () {
     ScrollTrigger.create({
       trigger: e,
       animation: tl,
-      start: "top center",
-      toggleActions: "play reverse play reverse",
+      start: "top 80%",
+      toggleActions: "play none none none",
     });
   });
 
@@ -51,8 +34,8 @@ window.addEventListener("DOMContentLoaded", function () {
     ScrollTrigger.create({
       trigger: e,
       animation: tl,
-      start: "top 90%",
-      toggleActions: "play reverse play reverse",
+      start: "top 80%",
+      toggleActions: "play none none none",
     });
   });
 
@@ -79,8 +62,8 @@ window.addEventListener("DOMContentLoaded", function () {
     ScrollTrigger.create({
       trigger: e,
       animation: tl,
-      start: "top 90%",
-      toggleActions: "play reverse play reverse",
+      start: "top 80%",
+      toggleActions: "play none none none",
     });
   });
 
@@ -97,8 +80,8 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".app-banner",
-        start: "top bottom",
-        toggleActions: "play reverse play reverse",
+        start: "top 80%",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -117,8 +100,8 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".app-banner",
-        start: "top bottom",
-        toggleActions: "play reverse play reverse",
+        start: "top 80%",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -131,8 +114,7 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.inOut",
       scrollTrigger: {
         trigger: ".app-banner",
-        start: "top bottom",
-        end: "bottom top",
+        start: "top 80%",
         scrub: true,
       },
     }

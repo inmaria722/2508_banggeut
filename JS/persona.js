@@ -15,8 +15,8 @@ window.addEventListener("DOMContentLoaded", function () {
     ScrollTrigger.create({
       trigger: e,
       animation: tl,
-      start: "top 90%",
-      toggleActions: "play reverse play reverse",
+      start: "top 80%",
+      toggleActions: "play none none none",
     });
   });
 
@@ -29,11 +29,11 @@ window.addEventListener("DOMContentLoaded", function () {
       width: "30%",
       duration: 1,
       ease: "power2.out",
-      delay: 0.8,
+      delay: 0.4,
       scrollTrigger: {
         trigger: ".pf-info-box",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -47,11 +47,11 @@ window.addEventListener("DOMContentLoaded", function () {
       width: "55%",
       duration: 1,
       ease: "power2.out",
-      delay: 1,
+      delay: 0.6,
       scrollTrigger: {
         trigger: ".pf-info-box",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -65,11 +65,11 @@ window.addEventListener("DOMContentLoaded", function () {
       width: "88%",
       duration: 1,
       ease: "power2.out",
-      delay: 1.2,
+      delay: 0.8,
       scrollTrigger: {
         trigger: ".pf-info-box",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -86,12 +86,12 @@ window.addEventListener("DOMContentLoaded", function () {
       borderColor: "#ff873d",
       color: "#fff",
       duration: 0.6,
-      delay: 2,
+      delay: 1,
       ease: "ease.inOut",
       scrollTrigger: {
         trigger: ".persona-box",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );

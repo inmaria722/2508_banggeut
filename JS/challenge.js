@@ -12,8 +12,8 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".challenge-box .main-box",
-        start: "top center",
-        toggleActions: "play reverse play reverse",
+        start: "top bottom",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -22,8 +22,8 @@ window.addEventListener("DOMContentLoaded", function () {
     .timeline({
       scrollTrigger: {
         trigger: ".challenge-list-box-wrap",
-        start: "top center",
-        toggleActions: "play reverse play reverse",
+        start: "top bottom",
+        toggleActions: "play none none none",
       },
     })
     .from(".challenge-item", {

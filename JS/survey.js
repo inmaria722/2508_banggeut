@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
   ScrollTrigger.create({
     animation: surveyBox1,
     trigger: ".survey-box",
-    start: "top top",
+    start: "top 80%",
     end: "bottom 110%",
     scrub: 1,
   });

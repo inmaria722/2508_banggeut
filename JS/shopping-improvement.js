@@ -14,8 +14,8 @@ window.addEventListener("DOMContentLoaded", function () {
       delay: delay,
       scrollTrigger: {
         trigger: e,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
+        start: "top 80%",
+        toggleActions: "play none none none",
       },
     });
   });

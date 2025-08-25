@@ -8,13 +8,13 @@ window.addEventListener("DOMContentLoaded", function () {
 
     tl.fromTo(
       e,
-      { y: 60, opacity: 1 },
+      { y: 40, opacity: 1 },
       { y: 0, opacity: 1, duration: 0.8, delay: delay, ease: "power2.out" }
     );
 
     if ($(e).hasClass("level-3-up")) {
       tl.to(e, {
-        y: -60,
+        y: -40,
         duration: 0.5,
         delay: 0.2,
         ease: "power1.out",
@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", function () {
       trigger: e,
       animation: tl,
       start: "top 80%",
-      toggleActions: "play reverse play reverse",
+      toggleActions: "play none none none",
     });
   });
 
@@ -42,8 +42,8 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".level-box",
-        start: "top center",
-        toggleActions: "play reverse play reverse",
+        start: "top 80%",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".gauge-box-wrap",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -81,13 +81,13 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".gauge-box-wrap",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );
 
   gsap.fromTo(
-    ".speech-bubble",
+    ".level-box .speech-bubble",
     {
       scale: 0,
       opacity: 0,
@@ -101,7 +101,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".gauge-box-wrap",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none none",
       },
     }
   );

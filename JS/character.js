@@ -19,8 +19,8 @@ window.addEventListener("DOMContentLoaded", function () {
           ease: "power3.out",
           scrollTrigger: {
             trigger: el,
-            start: "top center",
-            toggleActions: "play none none",
+            start: "top 90%",
+            toggleActions: "play none none reverse",
           },
         }
       );
@@ -40,8 +40,8 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".character-box .speech-bubble",
-        start: "top center",
-        toggleActions: "play none none none",
+        start: "top 90%",
+        toggleActions: "play none none reverse",
       },
     }
   );

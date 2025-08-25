@@ -8,9 +8,8 @@ window.addEventListener("DOMContentLoaded", function () {
     duration: 0.4,
     scrollTrigger: {
       trigger: ".app-screen-box",
-      start: "top center",
-      end: "bottom center",
-      toggleActions: "play none none reverse",
+      start: "top 80%",
+      toggleActions: "play none none none",
     },
   });
 });

@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".logo-box",
-        start: "top center",
-        toggleActions: "play reverse play reverse",
+        start: "top 80%",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".logo-box",
-        start: "top center",
-        toggleActions: "play reverse play reverse",
+        start: "top 80%",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".logo-box",
-        start: "top center",
-        toggleActions: "play reverse play reverse",
+        start: "top 80%",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -74,8 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".logo-box",
-        start: "top center",
-        toggleActions: "play reverse play reverse",
+        start: "top 80%",
+        toggleActions: "play none none none",
       },
     }
   );
