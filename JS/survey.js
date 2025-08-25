@@ -1,45 +1,13 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  //공동 속성
-  $('[fade="up"]').each(function (i, e) {
-    const delay = $(e).data("delay") || 0;
-
-    gsap.from(e, {
-      opacity: 0,
-      y: 60,
-      duration: 0.8,
-      delay: delay,
-      scrollTrigger: {
-        trigger: e,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-      },
-    });
-  });
-
-  $('[fade="in"]').each(function (i, e) {
-    const delay = $(e).data("delay") || 0;
-
-    gsap.from(e, {
-      opacity: 0,
-      duration: 1.5,
-      delay: delay,
-      scrollTrigger: {
-        trigger: e,
-        start: "top 90%",
-        toggleActions: "play none none reverse",
-      },
-    });
-  });
-
   // survey
   const surveyBox1 = gsap.timeline();
   ScrollTrigger.create({
     animation: surveyBox1,
     trigger: ".survey-box",
-    start: "top top",
-    end: "bottom 110%",
+    start: "top 20%",
+    end: "bottom 100%",
     scrub: 1,
   });
   surveyBox1
@@ -63,8 +31,8 @@ window.addEventListener("DOMContentLoaded", function () {
   ScrollTrigger.create({
     animation: surveyBox2,
     trigger: ".survey-box",
-    start: "bottom 160%",
-    end: "bottom 100%", // 전체 연결 시 타이밍 조절하기_80%정도로?
+    start: "bottom 180%",
+    end: "bottom 80%", // 전체 연결 시 타이밍 조절하기_80%정도로?
     scrub: 1,
   });
   surveyBox2

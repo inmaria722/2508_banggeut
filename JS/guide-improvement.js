@@ -50,8 +50,8 @@ window.addEventListener("DOMContentLoaded", function () {
     start: "top 85%",
     onEnter: () => {
       // phone-box
-      $(".phone-box").each(function (i, box) {
-        const extraDelay = i === 3 ? 0.5 : 0;
+      $(".guide-improvement-box .phone-box").each(function (i, box) {
+        const extraDelay = i === 3 ? 0.3 : 0;
         gsap.delayedCall(i * 0.15 + 1 + extraDelay, () => {
           gsap.to(box, {
             x: 0,
