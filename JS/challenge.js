@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".challenge-box .main-box",
         start: "top bottom",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -23,12 +23,13 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".challenge-list-box-wrap",
         start: "top bottom",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     })
     .from(".challenge-item", {
       y: -50,
       opacity: 0,
+      delay: 0.4,
       duration: 0.6,
       ease: "power3.out",
       stagger: { each: 0.16, from: "start" },

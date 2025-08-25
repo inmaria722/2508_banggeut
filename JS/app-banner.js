@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", function () {
       trigger: e,
       animation: tl,
       start: "top 80%",
-      toggleActions: "play none none none",
+      toggleActions: "play reverse play reverse",
     });
   });
 
@@ -35,26 +35,7 @@ window.addEventListener("DOMContentLoaded", function () {
       trigger: e,
       animation: tl,
       start: "top 80%",
-      toggleActions: "play none none none",
-    });
-  });
-
-  $('[slide="up"]').each(function (i, e) {
-    const delay = $(e).data("delay") || 0;
-
-    const tl = gsap.timeline();
-
-    tl.fromTo(
-      e,
-      { y: 100, opacity: 1 },
-      { y: 0, opacity: 1, duration: 0.8, delay: delay, ease: "power3.out" }
-    );
-
-    ScrollTrigger.create({
-      trigger: e,
-      animation: tl,
-      start: "top 80%",
-      toggleActions: "play none none none",
+      toggleActions: "play reverse play reverse",
     });
   });
 
@@ -72,7 +53,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".app-banner",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -92,7 +73,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".app-banner",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );

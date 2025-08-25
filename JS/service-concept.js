@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".service-concept-box .app-logo-box",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play revere play reverse",
       },
     }
   );

@@ -44,7 +44,26 @@ window.addEventListener("DOMContentLoaded", function () {
   ScrollTrigger.create({
     trigger: ".background-box-2 .main-box .graph-box-wrap",
     start: "top 80%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play reverse play reverse",
     animation: tl,
   });
+
+  gsap.fromTo(
+    ".background-box-2 .circle-box-img",
+    {
+      scale: 0,
+      opacity: 0,
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".background-box-2",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
+      },
+    }
+  );
 });

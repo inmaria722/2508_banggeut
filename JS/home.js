@@ -6,15 +6,15 @@ window.addEventListener("DOMContentLoaded", function () {
 
     gsap.fromTo(
       e,
-      { opacity: 0 }, // 🔥 y 제거
+      { opacity: 0 },
       {
         opacity: 1,
-        duration: 0.8,
+        duration: 1.4,
         delay: delay,
         scrollTrigger: {
           trigger: e,
           start: "top 80%",
-          toggleActions: "play none none none",
+          toggleActions: "play reverse play reverse",
         },
       }
     );

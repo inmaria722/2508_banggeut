@@ -106,7 +106,6 @@ img {
     position: relative;
     width: fit-content;
     margin-top: -1px;
-    font-family: "Pretendard-Bold", Helvetica;
     font-weight: 700;
     color: #ffffff;
     font-size: 20px;
@@ -128,7 +127,6 @@ img {
     position: relative;
     width: fit-content;
     margin-top: -1px;
-    font-family: "Pretendard-Bold", Helvetica;
     font-weight: 700;
     color: #ffffff;
     font-size: 20px;
@@ -1260,7 +1258,6 @@ img {
 .survey-box {
   background-color: #fafafa;
   overflow: hidden;
-  width: 100%;
 
   .con {
     max-width: 1620px;
@@ -2049,15 +2046,9 @@ img {
 
   .text-wrapper-2 {
     flex: 1;
-    font-family: var(--font-family);
-    font-weight: var(--font-weight);
     color: #808080;
-    font-size: var(--font-size);
-    line-height: var(--line-height);
     position: relative;
     margin-top: -1px;
-    letter-spacing: var(--letter-spacing);
-    font-style: var(--font-style);
   }
 
   .pain-user {
@@ -2414,7 +2405,6 @@ img {
   .competitive-analysis {
     color: var(--main-mcb, #3c98ff);
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Bold", sans-serif);
     font-size: var(---font-size, 16px);
     font-weight: var(---font-weight, 700);
     position: relative;
@@ -2435,7 +2425,6 @@ img {
   .main-text {
     color: var(--gray-gc9, #333333);
     text-align: left;
-    font-family: var(---font-family, "Pretendard-Bold", sans-serif);
     font-size: 44px;
     line-height: 58px;
     font-weight: 700;
@@ -2456,7 +2445,6 @@ img {
   .title-sub {
     color: var(--base-bcb, #000000);
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Regular", sans-serif);
     font-size: var(---font-size, 20px);
     line-height: var(---line-height, 32px);
     font-weight: var(---font-weight, 400);
@@ -2655,7 +2643,6 @@ img {
   .servece {
     color: #3c98ff;
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Bold", sans-serif);
     font-size: 20px;
     font-weight: 700;
     position: relative;
@@ -2676,7 +2663,6 @@ img {
   .div5 {
     color: var(--base-bcb, #000000);
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Regular", sans-serif);
     font-size: var(---font-size, 16px);
     line-height: var(---line-height, 23px);
     font-weight: var(---font-weight, 400);
@@ -2703,7 +2689,6 @@ img {
   ._2 {
     color: var(--main-mcb, #3c98ff);
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Bold", sans-serif);
     font-size: var(---font-size, 20px);
     font-weight: var(---font-weight, 700);
     position: relative;
@@ -2712,7 +2697,6 @@ img {
   ._12 {
     color: var(--base-bcb, #000000);
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Regular", sans-serif);
     font-size: var(---font-size, 16px);
     line-height: var(---line-height, 23px);
     font-weight: var(---font-weight, 400);
@@ -2747,7 +2731,6 @@ img {
   ._3 {
     color: var(--main-mcb, #3c98ff);
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Bold", sans-serif);
     font-size: 20px;
     font-weight: 700;
     position: relative;
@@ -2854,9 +2837,8 @@ img {
   .div2 {
     color: var(--base-bcw, #ffffff);
     text-align: center;
-    font-family: "Pretendard-Bold", sans-serif;
-    font-size: 48px;
-    line-height: 65px;
+    font-size: 44px;
+    line-height: 68px;
     font-weight: 700;
     position: relative;
   }
@@ -4572,6 +4554,7 @@ img {
         text-align: center;
         font-size: 44px;
         font-weight: 700;
+        line-height: 58px;
         margin: 20px 0 30px 0;
       }
 
@@ -5153,7 +5136,6 @@ img {
     .search {
       color: #ffffff;
       text-align: center;
-      font-family: "Pretendard-Bold", sans-serif;
       font-size: 55px;
       font-weight: 700;
       position: relative;
@@ -5257,6 +5239,18 @@ img {
     }
   }
 
+  .title {
+    padding: 20px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 1620px;
+    position: relative;
+  }
+
   .search-layout {
     display: flex;
     flex-direction: row;
@@ -5269,7 +5263,6 @@ img {
     .search-layout-text {
       color: var(--main-mclb, #ebf4ff);
       text-align: left;
-      font-family: var(---font-family, "Pretendard-Bold", sans-serif);
       font-size: var(---font-size, 16px);
       font-weight: var(---font-weight, 700);
       position: relative;
@@ -5283,26 +5276,16 @@ img {
     position: relative;
     overflow: visible;
   }
-  .title {
-    padding: 20px 0px 30px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    width: 1620px;
-    position: relative;
-  }
+
   .main-text {
     color: var(--base-bcw, #ffffff);
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Bold", sans-serif);
     font-size: var(---font-size, 44px);
-    line-height: var(---line-height, 58px);
+    line-height: var(---line-height, 66px);
     font-weight: var(---font-weight, 700);
     position: relative;
   }
+
   .title-sub {
     display: flex;
     flex-direction: row;
@@ -5313,15 +5296,16 @@ img {
     flex-shrink: 0;
     position: relative;
   }
+
   .sub-text {
     color: #ffffff;
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Regular", sans-serif);
     font-size: var(---font-size, 20px);
     line-height: var(---line-height, 32px);
     font-weight: var(---font-weight, 400);
     position: relative;
   }
+
   .main-box {
     display: flex;
     flex-direction: row;
@@ -5333,6 +5317,7 @@ img {
     height: 1013px;
     position: relative;
   }
+
   .left {
     padding: 0px 0px 100px 0px;
     display: flex;
@@ -5345,6 +5330,7 @@ img {
     width: 652px;
     position: relative;
   }
+
   .folder-box {
     display: flex;
     flex-direction: row;
@@ -5355,6 +5341,7 @@ img {
     height: 496px;
     position: relative;
   }
+
   .index-1 {
     border-radius: 0px;
     flex-shrink: 0;
@@ -5412,7 +5399,6 @@ img {
   .folder-desc {
     color: var(--gray-gc10, #1a1a1a);
     text-align: left;
-    font-family: var(---font-family, "Pretendard-Bold", sans-serif);
     font-size: var(---font-size, 24px);
     font-weight: var(---font-weight, 700);
     position: relative;
@@ -5545,7 +5531,6 @@ img {
   .guide-layout {
     color: var(--main-mco, #ff873d);
     text-align: left;
-    font-family: var(---font-family, "Pretendard-Bold", sans-serif);
     font-size: var(---font-size, 16px);
     font-weight: var(---font-weight, 700);
     position: relative;
@@ -5571,9 +5556,8 @@ img {
   .div {
     color: var(--gray-gc9, #333333);
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Bold", sans-serif);
     font-size: var(---font-size, 44px);
-    line-height: var(---line-height, 58px);
+    line-height: var(---line-height, 66px);
     font-weight: var(---font-weight, 700);
     position: relative;
   }
@@ -5590,7 +5574,6 @@ img {
   .div2 {
     color: var(--gray-gc9, #333333);
     text-align: center;
-    font-family: var(---font-family, "Pretendard-Regular", sans-serif);
     font-size: var(---font-size, 20px);
     line-height: var(---line-height, 32px);
     font-weight: var(---font-weight, 400);
@@ -5639,7 +5622,6 @@ img {
   .div3 {
     color: var(--gray-gc10, #1a1a1a);
     text-align: left;
-    font-family: var(---font-family, "Pretendard-SemiBold", sans-serif);
     font-size: var(---font-size, 20px);
     font-weight: var(---font-weight, 600);
     position: relative;
@@ -5751,7 +5733,6 @@ img {
   .div4 {
     color: var(--gray-gc9, #333333);
     text-align: center;
-    font-family: "Pretendard-Bold", sans-serif;
     font-size: var(--t-26, 26px);
     font-weight: var(--w-7, 700);
     position: relative;
@@ -5809,57 +5790,17 @@ img {
     .bg-clover {
       width: 1252px;
       height: 1252px;
-      position: static;
-      position: relative;
-      z-index: 0;
-
-      .bg-clover-1 {
-        background: #f5f9ff;
-        border-radius: 50%;
-        width: 688.6px;
-        height: 688.6px;
-        position: absolute;
-        left: 184px;
-        top: 500px;
-      }
-      .bg-clover-2 {
-        background: #f5f9ff;
-        border-radius: 50%;
-        width: 688.6px;
-        height: 688.6px;
-        position: absolute;
-        left: 184px;
-        top: 1010px;
-      }
-      .bg-clover-3 {
-        background: #f5f9ff;
-        border-radius: 50%;
-        width: 688.6px;
-        height: 688.6px;
-        position: absolute;
-        left: 747.4px;
-        top: 500px;
-      }
-      .bg-clover-4 {
-        background: #f5f9ff;
-        border-radius: 50%;
-        width: 688.6px;
-        height: 688.6px;
-        position: absolute;
-        left: 747.4px;
-        top: 1010px;
-      }
+      position: absolute;
+      top: 660px;
+      left: 184px;
     }
 
     .star {
       border-radius: 0px;
       flex-shrink: 0;
-      width: 220.46px;
-      height: 220.46px;
       position: absolute;
-      left: 1053.83px;
+      left: 950px;
       top: 875px;
-      transform: translate(-115.87px, 55.97px);
       overflow: visible;
     }
     .semi {
@@ -5926,7 +5867,6 @@ img {
         .scrap-layout {
           color: #3c98ff;
           text-align: left;
-          font-family: var(---font-family, "Pretendard-Bold", sans-serif);
           font-size: 16px;
           font-weight: 700;
           position: relative;
@@ -5957,9 +5897,8 @@ img {
   .title-main {
     color: #333333;
     text-align: center;
-    font-family: "Pretendard-Bold", sans-serif;
     font-size: 44px;
-    line-height: 58px;
+    line-height: 66px;
     font-weight: 700;
     position: relative;
   }
@@ -5978,7 +5917,6 @@ img {
   .title-sub-text {
     color: #333333;
     text-align: center;
-    font-family: "Pretendard-Regular", sans-serif;
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
@@ -6052,7 +5990,6 @@ img {
   .btn-text {
     color: #333333;
     text-align: center;
-    font-family: "Pretendard-Bold", sans-serif;
     font-size: 26px;
     font-weight: 700;
     position: relative;
@@ -6091,7 +6028,7 @@ img {
 
     svg:first-child {
       position: absolute;
-      top: 500px;
+      top: 550px;
       left: 50%;
       transform: translateX(-80%);
     }
@@ -6331,7 +6268,7 @@ img {
       position: absolute;
       bottom: -550px;
       left: 50%;
-      transform: translateX(-80%);
+      transform: translateX(-81%);
     }
 
     svg:last-child {

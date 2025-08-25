@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
   $('[data-anim="fade-ltr"]').each(function () {
     const $el = $(this);
     const delay = Number($el.data("delay")) || 0;
-    const dist = Number($el.data("dist")) || 60;
+    const dist = Number($el.data("dist")) || 100;
     const dur = Number($el.data("dur")) || 0.8;
     const start = $el.data("start") || "top 80%";
     const once = String($el.data("once")).toLowerCase() === "true";
@@ -51,7 +51,7 @@ window.addEventListener("DOMContentLoaded", function () {
         ? true
         : String(fadeAttr).toLowerCase() !== "false";
     const start = str("start", "top 85%");
-    const end = str("end", "+=300");
+    const end = str("end", "+=000");
     const scrubVal = num("scrub", 0.6);
 
     gsap.fromTo(
@@ -81,7 +81,7 @@ window.addEventListener("DOMContentLoaded", function () {
       y: 0,
       opacity: 1,
       duration: 1.5,
-      delay: 0.4,
+      delay: 0.8,
       ease: "power3.out",
     }
   );

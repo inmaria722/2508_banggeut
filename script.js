@@ -11,19 +11,21 @@ window.addEventListener("DOMContentLoaded", () => {
     const dir = el.getAttribute("fade");
     const delay = Number(el.dataset.delay) || 0;
 
+    // 방향별 from 상태 정의
     const from = { opacity: 0 };
     if (dir === "up") from.y = 60;
     if (dir === "down") from.y = -60;
     if (dir === "left") from.x = 60;
     if (dir === "right") from.x = -60;
 
+    // 타임라인 + toggleActions로 재생/역재생을 보장
     gsap
       .timeline({
         scrollTrigger: {
           trigger: el,
           start: "top 85%",
           end: "bottom top",
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play reverse play reverse", // ← 핵심
           invalidateOnRefresh: true,
         },
         defaults: { ease: "power2.out" },

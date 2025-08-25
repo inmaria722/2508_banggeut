@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
-  $('[slide="up"]').each(function (i, e) {
+  $('[slide="up-2"]').each(function (i, e) {
     const delay = $(e).data("delay") || 0;
 
     const tl = gsap.timeline();
@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", function () {
       trigger: e,
       animation: tl,
       start: "top 80%",
-      toggleActions: "play none none none",
+      toggleActions: "play reverse play reverse",
     });
   });
 
@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".pf-info-box",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -51,7 +51,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".pf-info-box",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -69,7 +69,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".pf-info-box",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -91,7 +91,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".persona-box",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
