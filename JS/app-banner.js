@@ -50,15 +50,6 @@ window.addEventListener("DOMContentLoaded", function () {
       { y: 0, opacity: 1, duration: 0.8, delay: delay, ease: "power3.out" }
     );
 
-    if ($(e).hasClass("level-3-up")) {
-      tl.to(e, {
-        y: -60,
-        duration: 0.5,
-        delay: 0.2,
-        ease: "power1.out",
-      });
-    }
-
     ScrollTrigger.create({
       trigger: e,
       animation: tl,
@@ -68,7 +59,7 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   gsap.fromTo(
-    ".star-left",
+    ".app-banner .star-left",
     {
       scale: 0,
       opacity: 0,
@@ -87,7 +78,7 @@ window.addEventListener("DOMContentLoaded", function () {
   );
 
   gsap.fromTo(
-    ".star-right",
+    ".app-banner .star-right",
     {
       scale: 0,
       opacity: 0,
@@ -107,7 +98,7 @@ window.addEventListener("DOMContentLoaded", function () {
   );
 
   gsap.fromTo(
-    ".spray",
+    ".app-banner .spray",
     { rotation: 0 },
     {
       rotation: 50,
@@ -121,7 +112,7 @@ window.addEventListener("DOMContentLoaded", function () {
   );
 
   $(document).ready(function () {
-    gsap.to(".phone-box", {
+    gsap.to(".app-banner .phone-box", {
       y: -50,
       duration: 1,
       ease: "power1.inOut",
