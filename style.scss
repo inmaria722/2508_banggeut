@@ -1260,7 +1260,6 @@ img {
 .survey-box {
   background-color: #fafafa;
   overflow: hidden;
-  width: 100%;
 
   .con {
     max-width: 1620px;
@@ -5809,46 +5808,9 @@ img {
     .bg-clover {
       width: 1252px;
       height: 1252px;
-      position: static;
-      position: relative;
-      z-index: 0;
-
-      .bg-clover-1 {
-        background: #f5f9ff;
-        border-radius: 50%;
-        width: 688.6px;
-        height: 688.6px;
-        position: absolute;
-        left: 184px;
-        top: 500px;
-      }
-      .bg-clover-2 {
-        background: #f5f9ff;
-        border-radius: 50%;
-        width: 688.6px;
-        height: 688.6px;
-        position: absolute;
-        left: 184px;
-        top: 1010px;
-      }
-      .bg-clover-3 {
-        background: #f5f9ff;
-        border-radius: 50%;
-        width: 688.6px;
-        height: 688.6px;
-        position: absolute;
-        left: 747.4px;
-        top: 500px;
-      }
-      .bg-clover-4 {
-        background: #f5f9ff;
-        border-radius: 50%;
-        width: 688.6px;
-        height: 688.6px;
-        position: absolute;
-        left: 747.4px;
-        top: 1010px;
-      }
+      position: absolute;
+      top: 660px;
+      left: 184px;
     }
 
     .star {
@@ -6091,7 +6053,7 @@ img {
 
     svg:first-child {
       position: absolute;
-      top: 500px;
+      top: 550px;
       left: 50%;
       transform: translateX(-80%);
     }
@@ -6331,7 +6293,7 @@ img {
       position: absolute;
       bottom: -550px;
       left: 50%;
-      transform: translateX(-80%);
+      transform: translateX(-81%);
     }
 
     svg:last-child {

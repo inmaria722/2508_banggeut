@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
     onEnter: () => {
       // phone-box
       $(".guide-improvement-box .phone-box").each(function (i, box) {
-        const extraDelay = i === 3 ? 0.5 : 0;
+        const extraDelay = i === 3 ? 0.3 : 0;
         gsap.delayedCall(i * 0.15 + 1 + extraDelay, () => {
           gsap.to(box, {
             x: 0,

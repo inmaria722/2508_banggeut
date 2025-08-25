@@ -6,8 +6,8 @@ window.addEventListener("DOMContentLoaded", function () {
   ScrollTrigger.create({
     animation: surveyBox1,
     trigger: ".survey-box",
-    start: "top 80%",
-    end: "bottom 110%",
+    start: "top 20%",
+    end: "bottom 100%",
     scrub: 1,
   });
   surveyBox1
@@ -31,8 +31,8 @@ window.addEventListener("DOMContentLoaded", function () {
   ScrollTrigger.create({
     animation: surveyBox2,
     trigger: ".survey-box",
-    start: "bottom 160%",
-    end: "bottom 100%", // 전체 연결 시 타이밍 조절하기_80%정도로?
+    start: "bottom 180%",
+    end: "bottom 80%", // 전체 연결 시 타이밍 조절하기_80%정도로?
     scrub: 1,
   });
   surveyBox2
