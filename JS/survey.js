@@ -6,8 +6,8 @@ window.addEventListener("DOMContentLoaded", function () {
   ScrollTrigger.create({
     animation: surveyBox1,
     trigger: ".survey-box",
-    start: "top 20%",
-    end: "bottom 100%",
+    start: "top 50%",
+    end: "bottom 150%",
     scrub: 1,
   });
   surveyBox1
@@ -31,8 +31,8 @@ window.addEventListener("DOMContentLoaded", function () {
   ScrollTrigger.create({
     animation: surveyBox2,
     trigger: ".survey-box",
-    start: "bottom 180%",
-    end: "bottom 80%", // 전체 연결 시 타이밍 조절하기_80%정도로?
+    start: "bottom 200%",
+    end: "bottom 100%", // 전체 연결 시 타이밍 조절하기_80%정도로?
     scrub: 1,
   });
   surveyBox2
@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", function () {
     .to(
       ".survey-box .survey-con-box-2 .bar-col-line",
       { clipPath: "inset(0% 0% 0% 0%)", opacity: 1 },
-      0.6
+      0
     )
-    .to(".survey-box .survey-con-box-2 .right-box-con", { scale: 1 }, 0.7);
+    .to(".survey-box .survey-con-box-2 .right-box-con", { scale: 1 }, 0);
 });

@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
       .timeline({
         scrollTrigger: {
           trigger: el,
-          start: "top 85%",
+          start: "top 90%",
           end: "bottom top",
           toggleActions: "play none none reverse",
           invalidateOnRefresh: true,

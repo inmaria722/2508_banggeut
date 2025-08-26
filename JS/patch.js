@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function () {
       onLeaveBack: () => {
         gsap.to(patch, {
           opacity: 0,
-          scale: 1.2,
+          scale: 1.4,
           duration: 0.6,
           ease: "power2.in",
         });

@@ -195,7 +195,7 @@ img {
   position: relative;
   width: 758px;
   height: 723.73px;
-  margin-bottom: -50px;
+  bottom: 30px;
 }
 
 /* ----------------- banner - end ----------------- */
@@ -4034,10 +4034,10 @@ img {
   border-radius: 110px;
 }
 .phone-box .con .main-box video {
-  width: 98%;
+  width: 95%;
   position: absolute;
-  top: 0;
-  left: 5px;
+  top: 10px;
+  left: 15px;
   z-index: -1;
 }
 
@@ -5149,10 +5149,10 @@ img {
   height: 750px;
 }
 .guide-box video {
-  width: 362px;
-  height: 750px;
+  width: 340px;
   position: absolute;
-  top: 0;
+  top: 5px;
+  left: 10px;
   z-index: -1;
 }
 
