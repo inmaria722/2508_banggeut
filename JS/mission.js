@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scale: 1,
       opacity: 1,
       duration: 1.5,
-      delay: 0.4,
+      delay: 0.6,
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".mission-box .main-box",
