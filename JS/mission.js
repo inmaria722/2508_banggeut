@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".mission-box .main-box",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".mission-box .main-box",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );

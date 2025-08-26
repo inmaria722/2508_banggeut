@@ -12,8 +12,8 @@ window.addEventListener("DOMContentLoaded", function () {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".todo-box",
-        start: "top center",
-        toggleActions: "play none none none",
+        start: "top 80%",
+        toggleActions: "play reverse play reverse",
       },
     }
   );

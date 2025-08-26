@@ -99,7 +99,7 @@ window.addEventListener("DOMContentLoaded", function () {
     ScrollTrigger.create({
       trigger: ".needs-box .insight-box",
       start: "top 80%",
-      toggleActions: "play none none reverse",
+      toggleActions: "play reverse play reverse",
       animation: tl,
     });
   }

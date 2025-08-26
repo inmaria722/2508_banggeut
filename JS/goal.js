@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".goal-box .goal-list-box-wrap",
         start: "top 60%",
-        toggleActions: "play none none reverse",
+        toggleActions: "play reverse play reverse",
       },
     });
   }
@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: $arrows[0],
         start: "top 55%",
-        toggleActions: "play none none reverse",
+        toggleActions: "play reverse play reverse",
       },
     });
   }
@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".conclusion-box",
         start: "top 55%",
-        toggleActions: "play none none reverse",
+        toggleActions: "play reverse play reverse",
       },
     });
   }

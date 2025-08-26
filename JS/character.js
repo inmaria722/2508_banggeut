@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function () {
           scrollTrigger: {
             trigger: el,
             start: "top 90%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play reverse play reverse",
           },
         }
       );
@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".character-box .speech-bubble",
         start: "top 90%",
-        toggleActions: "play none none reverse",
+        toggleActions: "play reverse play reverse",
       },
     }
   );

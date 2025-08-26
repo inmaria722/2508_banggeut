@@ -18,9 +18,8 @@ window.addEventListener("DOMContentLoaded", function () {
   ScrollTrigger.create({
     trigger: ".guide-improvement-box",
     start: "top 80%",
-    toggleActions: "play reverse play reverse", // 🔄 스크롤 업 시 역재생
+    toggleActions: "play reverse play reverse",
     onEnter: () => {
-      // phone-box 등장 애니메이션
       $(".guide-improvement-box .phone-box").each(function (i, box) {
         const extraDelay = i === 3 ? 0.3 : 0;
         gsap.delayedCall(i * 0.15 + 1 + extraDelay, () => {
@@ -33,7 +32,6 @@ window.addEventListener("DOMContentLoaded", function () {
         });
       });
 
-      // flow-line 등장
       gsap.to(".guide-improvement-box .flow-line-box .line", {
         scaleX: 1,
         duration: 1.2,
@@ -44,9 +42,8 @@ window.addEventListener("DOMContentLoaded", function () {
     },
 
     onLeaveBack: () => {
-      // phone-box 역방향 애니메이션 (fromX로 되돌리기)
       $(".guide-improvement-box .phone-box").each(function (i, box) {
-        const fromX = parseFloat(box.dataset.fromX); // 저장했던 방향값 사용
+        const fromX = parseFloat(box.dataset.fromX);
         gsap.to(box, {
           x: fromX,
           opacity: 0,
@@ -55,7 +52,6 @@ window.addEventListener("DOMContentLoaded", function () {
         });
       });
 
-      // flow-line 역방향 애니메이션
       gsap.to(".guide-improvement-box .flow-line-box .line", {
         scaleX: 0,
         opacity: 0,

@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: "footer",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );
@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: "footer",
         start: "top 80%",
-        toggleActions: "play none none none",
+        toggleActions: "play reverse play reverse",
       },
     }
   );

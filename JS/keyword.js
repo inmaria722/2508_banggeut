@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".keyword-box",
         start: "top 20%",
-        toggleActions: "play none none reverse",
+        toggleActions: "play reverse play reverse",
       },
     }
   );

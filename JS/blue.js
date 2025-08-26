@@ -71,7 +71,9 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: group,
         start,
-        toggleActions: once ? "play none none none" : "play none none reverse",
+        toggleActions: once
+          ? "play reverse play reverse"
+          : "play reverse play reverse",
         scrub: scrub ? 0.3 : false,
       },
     });
