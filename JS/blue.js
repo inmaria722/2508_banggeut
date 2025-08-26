@@ -72,8 +72,8 @@ window.addEventListener("DOMContentLoaded", function () {
         trigger: group,
         start,
         toggleActions: once
-          ? "play reverse play reverse"
-          : "play reverse play reverse",
+          ? "play none none reverse"
+          : "play none none reverse",
         scrub: scrub ? 0.3 : false,
       },
     });

@@ -1,6 +1,23 @@
 window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
+  //공동 속성
+  $('[fade="up"]').each(function (i, e) {
+    const delay = $(e).data("delay") || 0;
+
+    gsap.from(e, {
+      opacity: 0,
+      y: 60,
+      duration: 0.8,
+      delay: delay,
+      scrollTrigger: {
+        trigger: e,
+        start: "top 90%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
+
   //ia
   $(".ia-box").each(function (i, box) {
     const blueBox = $(box).find(".blue-rounded");
@@ -11,8 +28,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
       ScrollTrigger.create({
         trigger: box,
-        start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        start: "top 90%",
         onEnter: () => {
           gsap.to(bB, {
             opacity: 1,
@@ -38,8 +54,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
       ScrollTrigger.create({
         trigger: box,
-        start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        start: "top 90%",
         onEnter: () => {
           gsap.to(semi, {
             opacity: 1,

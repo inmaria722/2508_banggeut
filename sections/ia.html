@@ -13,29 +13,33 @@
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- 라이브러리 -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/JS/ia.js"></script>
   </head>
   <body>
     <section class="ia-box">
       <div class="con">
         <div class="title-box">
-          <div class="category">
+          <div class="category" fade="up">
             <span class="span">information architecture</span>
           </div>
-          <div class="title">
+          <div class="title" fade="up" data-delay="0.2">
             <h1 class="span">효율적인 정보구조도를 설계했어요</h1>
           </div>
         </div>
 
-        <div class="main-box">
+        <div class="main-box" fade="up" data-delay="0.6">
           <div class="main-box-bg-img">
-            <img class="ia-img" src="./img_yuna/main-box.png" />
+            <img class="ia-img" src="/img_yuna/main-box.png" />
           </div>
-          <div class="blue-rounded"></div>
-          <div class="semi-circle semi-circle-o">
-            <img src="./img_yuna/basic-semi.png" alt="" />
+          <div class="blue-rounded" data-delay="1"></div>
+          <div class="semi-circle semi-circle-o" data-delay="1.4">
+            <img src="/img_yuna/basic-semi.png" alt="" />
           </div>
-          <div class="semi-circle semi-circle-b">
-            <img src="./img_yuna/basic-semi.png" alt="" />
+          <div class="semi-circle semi-circle-b" data-delay="1.6">
+            <img src="/img_yuna/basic-semi.png" alt="" />
           </div>
         </div>
       </div>
@@ -117,8 +121,9 @@
               height: 54px;
               position: absolute;
               left: 50%;
-              transform: translateX(-50%);
+              transform: translateX(-50%) scale(0);
               top: 333.9px;
+              opacity: 0;
             }
 
             .semi-circle {
@@ -132,6 +137,8 @@
               height: 36px;
               position: absolute;
               overflow: hidden;
+              transform: scale(1.5);
+              opacity: 0;
 
               img {
                 height: 36px;

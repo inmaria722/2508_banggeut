@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", function () {
   ScrollTrigger.create({
     trigger: ".background-box-2 .main-box .graph-box-wrap",
     start: "top 80%",
-    toggleActions: "play reverse play reverse",
+    toggleActions: "play none none reverse",
     animation: tl,
   });
 
@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".background-box-2",
         start: "top 80%",
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none none reverse",
       },
     }
   );

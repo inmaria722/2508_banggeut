@@ -16,29 +16,32 @@ window.addEventListener("DOMContentLoaded", function () {
   tl.to(".community-box .phone-mockup", {
     opacity: 1,
     y: 0,
-    duration: 0.4,
+    duration: 0.3,
     ease: "power2.out",
   })
-    .to(
-      ".community-box .popup-img-box",
-      { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" },
-      "+=0.08"
-    )
-    .to(
-      ".community-box .coummunity-img",
-      { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" },
-      "+=0.08"
-    )
-    .to(
-      ".community-box .btn-img-box",
-      { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" },
-      "+=0.08"
-    );
+    .to(".community-box .popup-img-box", {
+      opacity: 1,
+      y: 0,
+      duration: 0.3,
+      ease: "power2.out",
+    })
+    .to(".community-box .coummunity-img", {
+      opacity: 1,
+      y: 0,
+      duration: 0.3,
+      ease: "power2.out",
+    })
+    .to(".community-box .btn-img-box", {
+      opacity: 1,
+      y: 0,
+      duration: 0.3,
+      ease: "power2.out",
+    });
 
   ScrollTrigger.create({
     trigger: ".community-box .phone-layer-box",
     start: "top 75%",
-    toggleActions: "play reverse play reverse",
+    toggleActions: "play none none reverse",
     animation: tl,
   });
 
@@ -57,7 +60,7 @@ window.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".community-box .point-box-wrap",
       start: "top 80%",
-      toggleActions: "play reverse play reverse",
+      toggleActions: "play none none reverse",
     },
   });
 });

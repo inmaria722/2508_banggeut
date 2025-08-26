@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", function () {
     animation: surveyBox2,
     trigger: ".survey-box",
     start: "bottom 180%",
-    end: "bottom 60%", // 전체 연결 시 타이밍 조절하기_80%정도로?
+    end: "bottom 80%", // 전체 연결 시 타이밍 조절하기_80%정도로?
     scrub: 1,
   });
   surveyBox2

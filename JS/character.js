@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function () {
           scrollTrigger: {
             trigger: el,
             start: "top 90%",
-            toggleActions: "play reverse play reverse",
+            toggleActions: "play none none reverse",
           },
         }
       );

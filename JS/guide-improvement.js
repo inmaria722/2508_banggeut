@@ -18,10 +18,9 @@ window.addEventListener("DOMContentLoaded", function () {
   ScrollTrigger.create({
     trigger: ".guide-improvement-box",
     start: "top 80%",
-    toggleActions: "play reverse play reverse",
     onEnter: () => {
       $(".guide-improvement-box .phone-box").each(function (i, box) {
-        const extraDelay = i === 3 ? 0.3 : 0;
+        const extraDelay = i === 3 ? 0.2 : 0;
         gsap.delayedCall(i * 0.15 + 1 + extraDelay, () => {
           gsap.to(box, {
             x: 0,

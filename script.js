@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
           trigger: el,
           start: "top 85%",
           end: "bottom top",
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play none none reverse",
           invalidateOnRefresh: true,
         },
         defaults: { ease: "power2.out" },
