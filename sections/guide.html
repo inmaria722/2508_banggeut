@@ -75,18 +75,22 @@
           </div>
         </div>
         <div class="main-box">
-          <div class="phone-box-phone-box-1">
-            <img
-              class="phone-mockup"
-              src="./img_mina/guide-section.images/phone-mockup.png"
-            />
+          <div class="phone-box-1">
+            <div class="phone-box">
+              <img class="phone-video" src="../imgs/phone-video.png" alt="" />
+              <video
+                src="../video/housework - screen.mp4"
+                autoplay
+                loop
+              ></video>
+            </div>
             <div class="desc2">
               <div class="span">
                 <div class="div3">집안일 가이드</div>
               </div>
             </div>
           </div>
-          <div class="phone-box-phone-box-2">
+          <div class="phone-box-2">
             <div class="btn-box">
               <div class="btn">
                 <div class="clover-circle">
@@ -112,7 +116,7 @@
               </div>
             </div>
           </div>
-          <div class="phone-box-phone-box-3">
+          <div class="phone-box-3">
             <img
               class="phone-mockup"
               src="./img_mina/guide-section.images/phone-mockup-3.png"
@@ -280,7 +284,13 @@
           height: 1360px;
           position: relative;
         }
-        .phone-box-phone-box-1 {
+        .phone-box {
+          width: 362px;
+          height: 750px;
+          overflow: hidden;
+          border: 1px solid red;
+        }
+        .phone-box-1 {
           display: flex;
           flex-direction: column;
           gap: 15px;
@@ -316,7 +326,7 @@
           font-weight: var(---font-weight, 600);
           position: relative;
         }
-        .phone-box-phone-box-2 {
+        .phone-box-2 {
           display: flex;
           flex-direction: column;
           gap: 15px;
@@ -438,7 +448,7 @@
           width: 320px;
           position: relative;
         }
-        .phone-box-phone-box-3 {
+        .phone-box-3 {
           display: flex;
           flex-direction: column;
           gap: 15px;
@@ -447,6 +457,18 @@
           align-self: stretch;
           flex: 1;
           position: relative;
+        }
+        .phone-video {
+          width: 362px;
+          height: 750px;
+        }
+        video {
+          width: 360px;
+          height: 750px;
+          position: absolute;
+          top: 365px;
+          z-index: -1;
+          border: 1px solid blue;
         }
       }
     </style>

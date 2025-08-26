@@ -4024,11 +4024,20 @@ img {
   gap: 10px;
 }
 .phone-box .con .main-box .phone-mockup {
-  position: absolute;
+  position: relative;
   width: 650px;
   height: 1346px;
   left: 485px;
   top: 147px;
+  overflow: hidden;
+  border-radius: 110px;
+}
+.phone-box .con .main-box video {
+  width: 98%;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  z-index: -1;
 }
 
 /* ----------------- phone - end ----------------- */
@@ -4985,7 +4994,7 @@ img {
   height: 1360px;
   position: relative;
 }
-.guide-box .phone-box-phone-box-1 {
+.guide-box .phone-box-1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -5015,13 +5024,13 @@ img {
   position: relative;
 }
 .guide-box .div3 {
-  color: var(--gray-gc10, #1a1a1a);
+  color: var(--gray-gc10, #ffa264);
   text-align: left;
   font-size: var(---font-size, 20px);
   font-weight: var(---font-weight, 600);
   position: relative;
 }
-.guide-box .phone-box-phone-box-2 {
+.guide-box .phone-box-2 {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -5055,31 +5064,6 @@ img {
   justify-content: center;
   flex-shrink: 0;
   position: relative;
-}
-.guide-box .clover-circle {
-  background: var(--gray-gc1, #f2f2f2);
-  border-radius: 100px;
-  border-style: solid;
-  border-color: var(--gray-gc2, #e6e6e6);
-  border-width: 1px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 45px;
-  height: 45px;
-  position: relative;
-  overflow: hidden;
-}
-.guide-box .clover3 {
-  flex-shrink: 0;
-  width: 25px;
-  height: 25px;
-  position: static;
-  aspect-ratio: 1;
 }
 .guide-box .ellipse-92 {
   background: var(--main-mco, #ff873d);
@@ -5134,15 +5118,13 @@ img {
 }
 .guide-box .desc3 {
   display: flex;
-  flex-direction: row;
-  gap: 0px;
   align-items: flex-end;
   justify-content: center;
   flex-shrink: 0;
   width: 320px;
   position: relative;
 }
-.guide-box .phone-box-phone-box-3 {
+.guide-box .phone-box-3 {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -5151,6 +5133,24 @@ img {
   align-self: stretch;
   flex: 1;
   position: relative;
+}
+.guide-box .phone-box {
+  width: 362px;
+  height: 750px;
+  border-radius: 60px;
+  overflow: hidden;
+  background-color: transparent;
+}
+.guide-box .phone-video {
+  width: 362px;
+  height: 750px;
+}
+.guide-box video {
+  width: 362px;
+  height: 750px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 /* ----------------- guide - end ----------------- */
@@ -6255,14 +6255,14 @@ img {
 /* ----------------- guide improvement - end ----------------- */
 /* ----------------- app screens - start ----------------- */
 .app-screen-box {
-  height: 2700px;
+  height: 3000px;
   background-color: #ff873d;
   overflow: hidden;
   position: relative;
 }
 .app-screen-box .con {
   width: 100%;
-  height: 2700px;
+  height: 3000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6270,7 +6270,7 @@ img {
 .app-screen-box .mockup-box {
   position: absolute;
   left: 150px;
-  top: 0;
+  top: 150px;
   z-index: 1;
 }
 .app-screen-box .mockup-box .phone-mockup {

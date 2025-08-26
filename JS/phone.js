@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
         trigger: ".phone-box .main-box",
         start: "top 80%",
         toggleActions: "play none none reverse",
+        onEnter: () => {
+          const video = document.querySelector(".phone-mockup video");
+          if (video) {
+            video.currentTime = 0;
+            video.play();
+          }
+        },
       },
     }
   );
