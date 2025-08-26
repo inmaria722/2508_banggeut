@@ -5135,12 +5135,13 @@ img {
   flex: 1;
   position: relative;
 }
-.guide-box .phone-box {
+.guide-box .video-box {
   width: 362px;
   height: 750px;
   border-radius: 60px;
   overflow: hidden;
   background-color: transparent;
+  position: relative;
 }
 .guide-box .phone-video {
   width: 362px;
